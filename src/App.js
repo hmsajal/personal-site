@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import AppComp from './appComp'
+import AppComp from './components/appComp'
 
 function App() {
   return (
