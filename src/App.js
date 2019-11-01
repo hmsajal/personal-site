@@ -1,9 +1,9 @@
 import React from 'react';
-import AppComp from './components/appComp'
+import SiteRoute from './router/siteRoute'
 
 function App() {
   return (
-    <AppComp/>
+    <SiteRoute/>
   );
 }
 

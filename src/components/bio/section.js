@@ -1,17 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import 'antd/dist/antd.css'
 
 const Div = styled.div`      
-      display: flex; 
+      display: flex;
       flex-direction:column;
-      justify-content:flex-start;      
+      justify-content:flex-start;
       width: 68%;
-      vertical-align: top            
+      vertical-align: top;      
 `
 
 export default function Section(props){
     return(
+        
         <Div>             
                 <h3>A very few things to add</h3>
 

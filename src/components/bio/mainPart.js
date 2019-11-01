@@ -7,10 +7,10 @@ import Section from './section'
 
 const Div = styled.div`
     padding: 40px 100px; 
-    background-color: #fff  
+    background-color: #fff; 
     display:flex;
     flex-direction:row;
-    justify-content:space-between
+    justify-content:space-between;
 `  
 
 

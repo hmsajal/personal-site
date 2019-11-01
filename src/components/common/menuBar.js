@@ -1,4 +1,5 @@
 import React from 'react'
+import {BrowserRouter,Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {Menu,Affix} from 'antd'
 import 'antd/dist/antd.css'
@@ -33,16 +34,17 @@ function MenuBar(props){
                     
                     <NameItem key='sajal' style={{fontSize:25, fontFamily:'Comic Sans MS',
                                 width:'27%',textAlign:'center'}}  >
-                        HASAN MAHMUD
+                        <Link to="/">HASAN MAHMUD</Link>
+                        
                     </NameItem>                   
-                    <NormalItem style={{width:'50%',}}>
+                    <NormalItem key="all" style={{width:'50%',}}>
                         <Menu mode='horizontal' style={{backgroundColor:'#eee',textAlign:'center'}}>
-                                <NormalItem key='a' style={{fontSize:20,fontFamily:'consolas'}}>                        
-                                    Bio
+                                <NormalItem key='bio' style={{fontSize:20,fontFamily:'consolas'}}>                        
+                                        <Link to="/bio">Bio</Link>
                                 </NormalItem>                    
                                 
-                                <NormalItem key='b' style={{fontSize:20,fontFamily:'consolas'}}>
-                                    Blog
+                                <NormalItem key='blog' style={{fontSize:20,fontFamily:'consolas'}}>
+                                        <Link to="/blog">Blog</Link>
                                 </NormalItem>                    
 
                                 <SubMenuItem title="Projects" style={{fontSize:20,fontFamily:'consolas'}}>
