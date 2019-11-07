@@ -4,30 +4,26 @@ import styled from 'styled-components'
 import HomeNav from './homeNav'
 import HomeInfo from './homeInfo'
 import ProfileLinks from '../common/profileLinks'
-import MyImage from '../common/myImage'
 
 const Div = styled.div`
-      display:flex; 
-      flex-direction:column;   
-      justify-content:center;
-      align-items:center;           
+      display:flex;       
+      width:100%;      
+      flex-direction:column;               
+      align-items:center;         
+      background-color:#60a677;
 `      
 const InfoDiv = styled.div`
       display:flex;
       justify-content:center;
       align-items:center;
-      width:40%;
-      height:250px;
+      width:45%;            
 `
 
 function Home(){
     return(
-        <Div>               
-            <HomeNav/>  
-           <div style={{marginTop:'80px'}}>
-              <MyImage/>     
-           </div>            
-            <InfoDiv>
+        <Div style={{height:window.innerHeight}}>               
+            <HomeNav/>                        
+            <InfoDiv style={{height:window.innerHeight*.8}}>
                 <HomeInfo/>
             </InfoDiv>
             <ProfileLinks/>

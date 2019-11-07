@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import ProfileLinks from '../common/profileLinks'
-import HomeInfo from '../home/homeInfo'
 import MyImage from '../common/myImage'
 
 const Div = styled.div`            
@@ -17,11 +16,9 @@ const Div = styled.div`
 export default function SideInfo(props){    
     return (        
             <Div>      
-                <MyImage/>   
-                <br/> <br/> <br/>                        
-                <ProfileLinks/>  
-                
-                <HomeInfo/>                                                
+                <MyImage/>
+                <div style={{height:'40px'}}/>                                        
+                <ProfileLinks colorful="colorful" iconSize="20px"/>                                                                                
             </Div>
     )        
 }

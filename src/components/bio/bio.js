@@ -1,7 +1,9 @@
 import React from 'react';
 
-import MenuBar from '../common/menuBar'
-import MinusMenu from './minusMenu'
+import MenuBar from '../common/menu'
+import MainPart from './mainPart'
+import Footer from  '../common/footer'
+
 
 
 export default function Bio(props){    
@@ -9,7 +11,8 @@ export default function Bio(props){
         return(
             <div style={{display:'flex',flexDirection:'column'}}>
                 <MenuBar/>
-                <MinusMenu/>           
+                <MainPart/>
+                <Footer/>           
             </div>
         )    
 }

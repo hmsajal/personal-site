@@ -7,9 +7,9 @@ const Foot = styled.footer`
 `
 
 export default function Footer(props){    
-return(
-        <Foot>
-            --- footer is under construction... ---
-        </Foot>
-    )
+    return(
+            <Foot>
+                --- footer is under construction... ---
+            </Foot>
+        )
 }

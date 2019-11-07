@@ -18,7 +18,7 @@ export default function MainPart(){
     return(
         <Div>
             <SideInfo/>   
-            <Divider type="vertical" style={{height:500,alignSelf:'center',backgroundColor:'#666'}}/>       
+            <Divider type="vertical" style={{height:500,alignSelf:'center',backgroundColor:'#ddd'}}/>       
             <Section/>
         </Div>
     )
