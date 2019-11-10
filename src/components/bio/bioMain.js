@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {Divider} from 'antd'
 
-import SideInfo from './sideInfo'
-import Section from './section'
+import Left from './bioLeft'
+import Middle from './bioMiddle'
 
 const Div = styled.div`
     padding: 40px 100px; 
@@ -14,12 +14,12 @@ const Div = styled.div`
 `  
 
 
-export default function MainPart(){
+export default function BioMain(){
     return(
         <Div>
-            <SideInfo/>   
+            <Left/>   
             <Divider type="vertical" style={{height:500,alignSelf:'center',backgroundColor:'#ddd'}}/>       
-            <Section/>
+            <Middle/>
         </Div>
     )
 }

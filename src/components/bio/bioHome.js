@@ -1,17 +1,17 @@
 import React from 'react';
-import styled,{ThemeProvider} from 'styled-components'
+import styled, {ThemeProvider} from 'styled-components'
 
 import MenuBar from '../common/menu'
-import Footer from '../common/footer'
-import BlogContent from './blogContent'
+import MainPart from './bioMain'
+import Footer from  '../common/footer'
 
 const theme = {
-    currentItemRoute: '/blog',
+    currentItemRoute: '/bio',
     currentItemColor:'white',
     currentItemBack:'#60a677'
 }
 
-export default function BlogHome(props){    
+export default function BioHome(props){    
      
         return(
             <div style={{display:'flex',flexDirection:'column'}}>
@@ -22,9 +22,9 @@ export default function BlogHome(props){
                                     routeProp3={{link:'career',name:'Career and Crafts'}}  
                                     routeProp4={{}}
                         />                                
-                </ThemeProvider>                              
-                <BlogContent/>                                               
-                <Footer/>         
+                </ThemeProvider>    
+                <MainPart/>
+                <Footer/>       
             </div>
         )    
 }

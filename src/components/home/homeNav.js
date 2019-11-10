@@ -49,8 +49,8 @@ function HomeNav() {
                     blog
                 </StyledNavLink>
 
-                <StyledNavLink to="/">
-                    others
+                <StyledNavLink to="/work">
+                    dev
                 </StyledNavLink>
             </NavMenu>
         </Div>        
