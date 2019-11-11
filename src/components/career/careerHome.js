@@ -1,8 +1,9 @@
 import React from 'react'
-import {ThemeProvider} from 'styled-components'
+import styled,{ThemeProvider} from 'styled-components'
 
 import MenuBar from '../common/menu'
-
+import Footer from '../common/footer'
+     
 const theme = {
     currentItemRoute: '/career',
     currentItemColor:'white',
@@ -19,7 +20,8 @@ export default function CareerHome(props) {
                              routeProp3={{link:'career',name:'Career and Crafts'}}  
                              routeProp4={{}}
                     />  
-            </ThemeProvider>            
+            </ThemeProvider>              
+            <Footer/>         
         </div>
     )
 }

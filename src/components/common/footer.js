@@ -8,7 +8,7 @@ const Foot = styled.footer`
 
 export default function Footer(props){    
     return(
-            <Foot>
+            <Foot style={{height:(window.innerHeight*.01*12),backgroundColor:'#eee'}}>
                 --- footer is under construction... ---
             </Foot>
         )
