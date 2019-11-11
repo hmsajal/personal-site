@@ -2,7 +2,7 @@ import React from 'react';
 import styled, {ThemeProvider} from 'styled-components'
 
 import MenuBar from '../common/menu'
-import MainPart from './bioMain'
+import TabView from './bioTabView'
 import Footer from  '../common/footer'
 
 const theme = {
@@ -23,7 +23,7 @@ export default function BioHome(props){
                                     routeProp4={{}}
                         />                                
                 </ThemeProvider>    
-                <MainPart/>
+                <TabView/>
                 <Footer/>       
             </div>
         )    

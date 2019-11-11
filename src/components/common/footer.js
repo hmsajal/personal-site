@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Foot = styled.footer`
       padding:5px 100px; 
-      background-color: #fff;        
+      background-color: #fff;              
 `
 
 export default function Footer(props){    

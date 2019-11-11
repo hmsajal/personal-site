@@ -13,7 +13,7 @@ const Div = styled.div`
 `
 
 
-export default function BioLeft(props){    
+export default function SideInfo(props){    
     return (        
             <Div>      
                 <MyImage/>
