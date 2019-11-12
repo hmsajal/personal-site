@@ -4,13 +4,13 @@ import styled from 'styled-components'
 import ProfileLinks from '../common/profileLinks'
 import MyImage from '../common/myImage'
 
-const Div = styled.div`    
-      padding: 0px 100px; 
+const Div = styled.div`          
       background-color: #fff;                        
       display: flex;  
       flex-direction:column;
       justify-content:flex-start;
-      align-items:center;            
+      align-items:center;    
+      width:100%;      
 `
 
 

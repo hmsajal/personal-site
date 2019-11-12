@@ -5,10 +5,11 @@ import BlogLeft from './blogLeft.js'
 import BlogRight from './blogRight'
 
 const Div = styled.div`
-      padding: 30px 100px;
+      padding: 40px 100px;
       display:flex;
       justify-content:space-between;
       align-items:flex-start;
+      background-color:#f0f0f0;
 `
 
 function BlogContent() {

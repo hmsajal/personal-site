@@ -42,15 +42,15 @@ function HomeNav() {
             <MyName>HASAN MAHMUD</MyName>
             <NavMenu>            
                 <StyledNavLink to="/bio" >
-                    bio
+                    Bio
+                </StyledNavLink>                
+
+                <StyledNavLink to="/career">
+                    Career
                 </StyledNavLink>
 
                 <StyledNavLink to="/blog" >
-                    blog
-                </StyledNavLink>
-
-                <StyledNavLink to="/work">
-                    dev
+                    Blog
                 </StyledNavLink>
             </NavMenu>
         </Div>        
