@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Foot = styled.footer`
-      padding:5px 100px; 
+      padding:10px 120px; 
       background-color: #ddd;              
 `
 
