@@ -13,19 +13,19 @@ const StyledList = styled.ul`
           padding-right:40px;    
 
    #in:hover{
-      color:#0077b5;
+      color:#226088;
    };
    #mail:hover{
-      color:#b23121;
+      color:#883121;
    };
    #git:hover{
       color:#000; 
    }; 
    #fb:hover{
-      color:#35609f;
+      color:#359;
    };
    #angel:hover{
-      color:#272727;
+      color:#222;
    }; 
 `
 const A = styled.a`            

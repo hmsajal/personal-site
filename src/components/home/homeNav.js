@@ -21,13 +21,13 @@ const MyName = styled.span`
       font-size:32px;      
       font-family:fira sans,sans-serif;
       letter-spacing:1.5px;
-      color:#214;       
+      color:#6c6;       
       width:60%;    
       padding:40px 0px 0px 70px;      
 `
 const StyledNavLink = styled(NavLink)`
       color:#214;      
-      font-size:24px;  
+      font-size:22px;  
       font-family:lato;    
       
           :hover{

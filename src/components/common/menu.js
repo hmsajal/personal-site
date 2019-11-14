@@ -23,8 +23,8 @@ const NameDiv = styled.div`
       font-weight:bold;
       font-family: 'Special elite', cursive;
       letter-spacing:1px;       
-      a{color:#666}; 
-      a:hover{color:#999};            
+      a{color:#444}; 
+      a:hover{color:#555b};            
 `
 const NavDiv = styled.div`
       display:flex;    
@@ -47,10 +47,10 @@ const LinkItem = styled(Link)`
       justify-content:center;
       align-items:center;      
       padding:2px 20px;            
-      color:${props=>props.to==props.theme.currentItemRoute?'white':'#60a677'};
-      background-color:${props=>props.to==props.theme.currentItemRoute?'#60a677':'white'};
+      color:${props=>props.to==props.theme.currentItemRoute?props.theme.currentItemColor:props.theme.otherItemsColor};      
       :hover{
-          color:#444;
+          color:${props=>props.to==props.theme.currentItemRoute?props.theme.currentItemColor:props.theme.otherItemsColor};
+          opacity: ${props=>props.to==props.theme.currentItemRoute?1:.8};
       };
 `
 

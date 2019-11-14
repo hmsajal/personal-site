@@ -6,17 +6,17 @@ import BioMain from './bioMain'
 import Footer from  '../common/footer'
 
 const theme = {
-    currentItemRoute: '/bio',
-    currentItemColor:'white',
-    currentItemBack:'#60a677'
+    currentItemRoute: '/bio',    
+    currentItemColor:'#001b64bb',
+    otherItemsColor:'#fdfdfd'
 }
 
 export default function BioHome(props){    
-     
+
         return(
             <div style={{display:'flex',flexDirection:'column'}}>
                 <ThemeProvider theme={theme}>
-                        <MenuBar    scaleOfHundredHeight={11} colorBack="white"
+                        <MenuBar    scaleOfHundredHeight={11} colorBack="#60a677"
                                     routeProp1={{link:'bio',name:'About Me'}}
                                     routeProp2={{link:'blog',name:'Blog'}}
                                     routeProp3={{link:'career',name:'Career and Crafts'}}  

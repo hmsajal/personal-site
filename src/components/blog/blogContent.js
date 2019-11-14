@@ -5,7 +5,7 @@ import BlogLeft from './blogLeft.js'
 import BlogRight from './blogRight'
 
 const Div = styled.div`
-      padding: 40px 100px;
+      padding: 40px 120px;
       display:flex;
       justify-content:space-between;
       align-items:flex-start;

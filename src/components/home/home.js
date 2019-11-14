@@ -11,6 +11,7 @@ const Div = styled.div`
       flex-direction:column;               
       align-items:center;         
       background-color:#60a677;
+      background:linear-gradient(to bottom right,#226051, #60a677,#adefd1);
 `      
 const InfoDiv = styled.div`
       display:flex;
