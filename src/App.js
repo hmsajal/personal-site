@@ -1,9 +1,9 @@
 import React from 'react';
-import SiteRoute from './router/siteRoute'
+import Routing from './router/routing'
 
 function App() {
-  return (
-    <SiteRoute/>
+  return (    
+    <Routing/>
   );
 }
 

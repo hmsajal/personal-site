@@ -66,15 +66,15 @@ function Menu(props) {
                     
                     <NavDiv>
                         <LinkDiv style={{width:'25%'}}>
-                             <LinkItem to={"/"+props.routeProp1.link}>{props.routeProp1.name}</LinkItem>                        
+                             <LinkItem to={props.routeProp1.link}>{props.routeProp1.name}</LinkItem>                        
                         </LinkDiv>
 
                         <LinkDiv style={{width:'20%'}}>
-                             <LinkItem to={"/"+props.routeProp2.link}>{props.routeProp2.name}</LinkItem>
+                             <LinkItem to={props.routeProp2.link}>{props.routeProp2.name}</LinkItem>
                         </LinkDiv>
                         
                         <LinkDiv style={{width:'40%'}}>
-                             <LinkItem to={"/"+props.routeProp3.link}>{props.routeProp3.name}</LinkItem>                        
+                             <LinkItem to={props.routeProp3.link}>{props.routeProp3.name}</LinkItem>                        
                         </LinkDiv>
                              
                         <LinkDiv style={{width:'15%'}}>

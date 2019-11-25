@@ -16,7 +16,7 @@ function HomeInfo(props) {
         <Div>
             <p style={{display:"inline"}}>An account of personal interests and information on </p>
             
-            <Link to="/bio" style={{display:"inline",color:'#216',fontWeight:500}}>Hasan Mahmud Sajal,</Link>
+            <Link to="/mybio" style={{display:"inline",color:'#216',fontWeight:500}}>Hasan Mahmud Sajal,</Link>
             
             <p style={{display:"inline"}}> but it might interest you too.</p>      
         </Div>

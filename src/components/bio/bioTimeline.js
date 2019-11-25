@@ -3,6 +3,11 @@ import {Timeline,Icon} from 'antd'
 import styled from 'styled-components'
 import 'antd/dist/antd.css'
 
+const Div = styled.div`
+      display:flex;
+      flex-direction:column;
+      align-items:center;         
+`
 const HeadingDiv = styled.div`
       display:flex;
       justify-content:center;
@@ -12,13 +17,13 @@ const h = window.innerHeight;
 
 export default function bioTimeline() {
     return (
-        <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>            
+        <Div style={{height:h}}>            
 
             <HeadingDiv style={{height:h*.2}} id="component-anchor-timeline">
                 <h3 style={{color:'#2e856e',fontSize:18}}>My life timeline so far</h3>                                   
             </HeadingDiv>
 
-            <Timeline mode="alternate" color="#60a677">            
+            <Timeline mode="alternate" color="#60a677" pending="loading..." style={{width:'50%'}}>            
                 <Timeline.Item color="#60a677">
                     Born in 1992.
                 </Timeline.Item>    
@@ -49,13 +54,9 @@ export default function bioTimeline() {
 
                 <Timeline.Item>
                     Developed this site in 2019.
-                </Timeline.Item>
-
-                <Timeline.Item color="#60a677"> 
-                     Loading...
-                </Timeline.Item >
+                </Timeline.Item>                
             </Timeline>
 
-        </div>
+        </Div>
     )
 }
