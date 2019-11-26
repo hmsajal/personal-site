@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import styled from 'styled-components'
-import {BrowserRouter,NavLink,useRouteMatch} from 'react-router-dom'
-import {Slide} from 'react-burger-menu'
+
+import {NavMenu,NavBar} from './navigationAlternatives'
 
 
 const Div = styled.div`
@@ -11,34 +11,20 @@ const Div = styled.div`
       width:100%;    
       justify-content:space-between;                                
 `
-
-const NavItemsGroup = styled.nav`
-      width:420px;                  
-      display:flex;      
-      justify-content:space-evenly;
-      align-items:center;  
-      height:100%;      
-      padding-right:20px;                     
-`
 const MyName = styled.span`
-      font-size:32px;      
+      font-size:31px;      
       font-family:fira sans,sans-serif;
       letter-spacing:1.5px;
       color:#6c6;  
-      padding-left:60px;                          
-`
-const StyledNavLink = styled(NavLink)`
-      color:#214;      
-      font-size:22px;  
-      font-family:lato;    
+      padding-left:60px;
       
-          :hover{
-              color:#ddd;
-          }
-        
+      @media screen and (max-width:890px){
+        padding-left:40px;
+        letter-spacing:1px;
+        font-size: 28px;
+      }                            
 `
-   
-const {url,path} =useRouteMatch;
+
 
 function HomeNav() {
     return (
@@ -52,32 +38,6 @@ function HomeNav() {
 export function ChoosingNavMenu(){     
     const widthMatching = window.matchMedia("(max-width:890px)")
     return widthMatching.matches ? <NavBar/> : <NavMenu/>     
-}
-
-
-export function NavMenu(){
-            return(
-                <NavItemsGroup>            
-                    <StyledNavLink to="${url}/bio" >
-                        Bio
-                    </StyledNavLink>                
-
-                    <StyledNavLink to="/site/career">
-                        Career
-                    </StyledNavLink>
-
-                    <StyledNavLink to="/site/blog" >
-                        Blog
-                    </StyledNavLink>
-                </NavItemsGroup>
-            )
-}
-
-export function NavBar(){
-    return(
-        <div>Hamburger</div>
-
-   )
 }
 
 export default HomeNav;
