@@ -3,12 +3,20 @@ import styled from 'styled-components'
 import {BrowserRouter,NavLink} from 'react-router-dom'
 import {Drawer,Button, Icon} from 'antd'
 
-const NavButtonDiv = styled.div`
-      margin-right:50px;
+const NavButtonDiv = styled.div`      
       .navigationButton{
           border-color:#333;
           border-width:2px;
-      };            
+      };      
+      margin-right:60px;      
+
+      @media screen and (max-width:640px){
+          margin-right:30px;
+      }
+
+      @media screen and (min-width:641px) and (max-width:1099px){
+          margin-right:50px;
+      }
 `
 
 const NavItemsGroup = styled.nav`
@@ -33,15 +41,15 @@ const StyledNavLink = styled(NavLink)`
 export function NavMenu(){
     return(
         <NavItemsGroup>            
-            <StyledNavLink to="${url}/bio" >
+            <StyledNavLink to="site/bio" >
                 Bio
             </StyledNavLink>                
 
-            <StyledNavLink to="/site/career">
+            <StyledNavLink to="site/career">
                 Career
             </StyledNavLink>
 
-            <StyledNavLink to="/site/blog" >
+            <StyledNavLink to="site/blog" >
                 Blog
             </StyledNavLink>
         </NavItemsGroup>
