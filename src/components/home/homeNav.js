@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import styled from 'styled-components'
 import {BrowserRouter,NavLink,useRouteMatch} from 'react-router-dom'
 import {Slide} from 'react-burger-menu'
@@ -37,8 +37,8 @@ const StyledNavLink = styled(NavLink)`
           }
         
 `
+   
 const {url,path} =useRouteMatch;
-console.log(url,path)
 
 function HomeNav() {
     return (
@@ -49,10 +49,11 @@ function HomeNav() {
     )
 }
 
-export function ChoosingNavMenu(){
-    var matching = window.matchMedia("(max-width: 890px)")
-    return(matching ? <NavBar/> : <NavMenu/>)
+export function ChoosingNavMenu(){     
+    const widthMatching = window.matchMedia("(max-width:890px)")
+    return widthMatching.matches ? <NavBar/> : <NavMenu/>     
 }
+
 
 export function NavMenu(){
             return(
@@ -74,9 +75,7 @@ export function NavMenu(){
 
 export function NavBar(){
     return(
-        <Slide>
-            
-        </Slide>
+        <div>Hamburger</div>
 
    )
 }
