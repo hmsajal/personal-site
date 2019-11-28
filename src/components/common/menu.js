@@ -46,13 +46,10 @@ const LinkItem = styled(Link)`
       display:flex;                
       justify-content:center;
       align-items:center;      
-      padding:2px 20px;            
-      color:${props=>props.to==props.theme.currentItemRoute?props.theme.currentItemColor:props.theme.otherItemsColor};      
-      :hover{
-          color:${props=>props.to==props.theme.currentItemRoute?props.theme.currentItemColor:props.theme.otherItemsColor};
-          opacity: ${props=>props.to==props.theme.currentItemRoute?1:.8};
-      };
+      padding:2px 20px;                
 `
+//use styled components props to select color and hover color of menu items 
+// and also to mark the current item
 
 function Menu(props) {
     return (
@@ -66,20 +63,16 @@ function Menu(props) {
                     
                     <NavDiv>
                         <LinkDiv style={{width:'25%'}}>
-                             <LinkItem to={props.routeProp1.link}>{props.routeProp1.name}</LinkItem>                        
+                             <LinkItem to={"/bio"}>About Me</LinkItem>                        
                         </LinkDiv>
 
-                        <LinkDiv style={{width:'20%'}}>
-                             <LinkItem to={props.routeProp2.link}>{props.routeProp2.name}</LinkItem>
+                        <LinkDiv style={{width:'40%'}}>
+                             <LinkItem to={"/career"}>Career and Skills</LinkItem>
                         </LinkDiv>
                         
-                        <LinkDiv style={{width:'40%'}}>
-                             <LinkItem to={props.routeProp3.link}>{props.routeProp3.name}</LinkItem>                        
-                        </LinkDiv>
-                             
-                        <LinkDiv style={{width:'15%'}}>
-                             <LinkItem to={"/"+props.routeProp4.link}>{props.routeProp4.name}</LinkItem>
-                        </LinkDiv>
+                        <LinkDiv style={{width:'20%'}}>
+                             <LinkItem to={"/blog"}>Blog</LinkItem>                        
+                        </LinkDiv>                                                    
                     </NavDiv>
                 </Div>                                        
             </div>

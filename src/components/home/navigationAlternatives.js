@@ -8,24 +8,14 @@ const NavButtonDiv = styled.div`
           border-color:#333;
           border-width:2px;
       };      
-      margin-right:60px;      
-
-      @media screen and (max-width:640px){
-          margin-right:30px;
-      }
-
-      @media screen and (min-width:641px) and (max-width:1099px){
-          margin-right:50px;
-      }
 `
 
 const NavItemsGroup = styled.nav`
-      width:420px;                  
+      width:280px;                  
       display:flex;      
-      justify-content:space-evenly;
+      justify-content:space-between;
       align-items:center;  
-      height:100%;      
-      padding-right:20px;                     
+      height:100%;                            
 `
 const StyledNavLink = styled(NavLink)`
       color:#214;      
@@ -33,7 +23,7 @@ const StyledNavLink = styled(NavLink)`
       font-family:lato;    
       
           :hover{
-              color:#ddd;
+              color:#ccc;
           }        
 `
 
@@ -41,15 +31,15 @@ const StyledNavLink = styled(NavLink)`
 export function NavMenu(){
     return(
         <NavItemsGroup>            
-            <StyledNavLink to="site/bio" >
+            <StyledNavLink to="/bio" >
                 Bio
             </StyledNavLink>                
 
-            <StyledNavLink to="site/career">
+            <StyledNavLink to="/career">
                 Career
             </StyledNavLink>
 
-            <StyledNavLink to="site/blog" >
+            <StyledNavLink to="/blog" >
                 Blog
             </StyledNavLink>
         </NavItemsGroup>
