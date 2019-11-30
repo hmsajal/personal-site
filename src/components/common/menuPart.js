@@ -11,20 +11,23 @@ const NavButtonDiv = styled.div`
 `
 
 const NavItemsGroup = styled.nav`
-      width:280px;                  
+      width:50%;                  
       display:flex;      
       justify-content:space-between;
       align-items:center;  
-      height:100%;                            
+      height:100%;                                    
 `
 const StyledNavLink = styled(NavLink)`
-      color:#214;      
+      color:#e2ee82;      
       font-size:22px;  
-      font-family:lato;    
-      
+      font-family:lato;                        
           :hover{
-              color:#ccc;
-          }        
+              color:#e2ee6c;
+              opacity:.6;
+
+          };
+      font-family:Libre Baskervville,serif;              
+      font-weight:700;
 `
 
 

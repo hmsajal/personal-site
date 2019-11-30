@@ -7,7 +7,8 @@ const Div = styled.div`
       display:flex;
       flex-direction:column;
       align-items:center;     
-      margin-bottom:50px;    
+      margin-bottom:50px;   
+      width:100%; 
 `
 const HeadingDiv = styled.div`
       display:flex;

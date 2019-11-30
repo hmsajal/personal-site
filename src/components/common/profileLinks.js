@@ -8,7 +8,7 @@ import {faFacebookF,faGithub,faLinkedinIn,faAngellist} from '@fortawesome/free-b
 const StyledList = styled.ul`                
           display:flex;          
           justify-content:space-between;             
-          padding:3px 55px;             
+          padding:3px 40px;             
           background:${(props)=>props.backColor};         
    #in:hover{
       color:#226088;

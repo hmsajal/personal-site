@@ -14,7 +14,7 @@ export default function MenuRoute(){
         <Router>
             <div>    
                 <div>
-                    <Menu    scaleOfHundredHeight={11} colorBack="#eee"/>                                
+                    <Menu/>                                
                 </div>            
                 
                 <Switch>

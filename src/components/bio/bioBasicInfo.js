@@ -24,13 +24,10 @@ const ImgParaDiv = styled.div`
       width:35%;  
       align-items:center;                 
       flex-direction:column;        
-      background:linear-gradient(to bottom,#fcfcfc,#f3f3f3,#e2e2e2,#f3f3f3,#fcfcfc);      
-      @media screen and (min-width:641px) and (max-width:1024px){
-          width:80%;                    
-      };
-      @media screen and (max-width:640px){
+      background:linear-gradient(to bottom,#fcfcfc,#f3f3f3,#e2e2e2,#f3f3f3,#fcfcfc);            
+      @media screen and (max-width:1024px){
           width:100%
-      }                 
+      }                       
 `
 const ImgDiv = styled.div`      
       padding:10px;   
@@ -51,7 +48,7 @@ export default function BioBasicInfo(props){
                     <ImgDiv>
                         <MyImage/>
                     </ImgDiv>                                         
-                    <ProfileLinks iconSize={18} width="92%" colorful="colorful" backColor="linear-gradient(to right,#fafafa,#e2e2e2,#eaeaea,#fafafa)"/>                    
+                    <ProfileLinks iconSize={18} width="255px" colorful="colorful" backColor="linear-gradient(to right,#fafafa,#e2e2e2,#eaeaea,#fafafa)"/>                    
                     <ParaDiv>
                         Hi, Sajal here. This is my portfolio website. 
                         If you are interested about me or my website, you can browse this site.

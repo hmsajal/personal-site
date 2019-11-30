@@ -2,18 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Div = styled.div`
-      width:60%;
-      @media screen and (max-width:640px){
+      width:60%;      
+      @media screen and (max-width:1024px){
           width:100%;
           margin-top:20px;
-      };
-      @media screen and (min-width:641px) and (max-width:1024px){
-          width: 80%;
-          margin-top:20px;
-      };
+      };      
       display:flex;
       flex-direction:column;
-      align-items:flex-start;      
+      align-items:flex-start;             
 `
 
 export default function BioInformation() {
