@@ -65,14 +65,15 @@ export function NavBar(){
                 closable={false}
                 onClose={()=>setVisibleState(false)}
                 visible={visibleState}
-                drawerStyle={{backgroundColor:"#666"}}
+                drawerStyle={{backgroundColor:"#555"}}
             >
-                <div style={{display:'flex',flexDirection:'column',alignItems:'flex-start',justifyContent:'space-evenly',
+                     <div style={{display:'flex',flexDirection:'column',alignItems:'flex-start',justifyContent:'space-evenly',
                      color:'black',height:100}}>
                         <NavLink to="/bio">Bio</NavLink>
                         <NavLink to="/career">Career and Skills</NavLink>
                         <NavLink to="/blog">Blog</NavLink>  
-                </div>                    
+                    </div>                      
+                    
             </Drawer>
         </NavButtonDiv>
     )

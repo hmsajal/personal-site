@@ -14,7 +14,7 @@ const Div = styled.div`
       @media screen and (max-width:640px){   
         padding:0px 20px;
       };
-      @media screen and (min-width:641px) and (max-width:1099px){
+      @media screen and (min-width:641px) and (max-width:1024px){
         padding:0px 45px;
       };                     
 `
@@ -28,7 +28,7 @@ const MyName = styled.span`
         font-size: 26px;
         letter-spacing:0px;
       };
-      @media screen and (min-width:641px) and (max-width:1099px){
+      @media screen and (min-width:641px) and (max-width:1024px){
         font-size:30px;
         letter-spacing:.5px;
       }

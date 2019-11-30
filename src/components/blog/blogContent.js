@@ -8,8 +8,7 @@ const Div = styled.div`
       padding: 40px 120px;
       display:flex;
       justify-content:space-between;
-      align-items:flex-start;
-      background-color:#f0f0f0;
+      align-items:flex-start;      
 `
 
 function BlogContent() {

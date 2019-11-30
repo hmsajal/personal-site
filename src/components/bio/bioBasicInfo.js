@@ -3,54 +3,62 @@ import styled from 'styled-components'
 
 import ProfileLinks from '../common/profileLinks'
 import MyImage from '../common/myImage'
+import BioInfo from './bioInformation'
 
 const h = window.innerHeight;
 
-const Div = styled.div`                                 
+const Div = styled.div`                                    
       display: flex;  
-      flex-direction:column;
-      justify-content:flex-start;
-      align-items:center;          
-      padding:30px 10px;                 
+      justify-content:space-between;
+      align-self:center;          
+      margin-bottom:80px;  
+      @media screen and (max-width:1024px){
+          flex-direction:column;
+          justify-content:flex-start;
+          align-items:center;                    
+      }         
 `
 
-const ImgDiv = styled.div`
-      display:flex;
-      flex-direction:column;  
-      align-items:center;   
-      width:60%;     
-
-      @media screen and (min-width: 991px){          
-          height:150px;          
-          flex-direction:row;
-          padding-left:25px;
-          background:linear-gradient(to top, #22605188,#60a67766,#90ee9066)
-      }              
-`
-const ParaDiv = styled.div`
-      display:flex;
-      align-items:flex-start;
-        
-      @media screen and (min-width: 991px){
-          width:75%;     
-          padding-left:25px;     
+const ImgParaDiv = styled.div`
+      display:flex;     
+      width:35%;  
+      align-items:center;                 
+      flex-direction:column;        
+      background:linear-gradient(to bottom,#fcfcfc,#f3f3f3,#e2e2e2,#f3f3f3,#fcfcfc);      
+      @media screen and (min-width:641px) and (max-width:1024px){
+          width:80%;                    
       };
-      @media screen and (max-width: 990px){
-          padding-top:20px;
+      @media screen and (max-width:640px){
+          width:100%
       }                 
+`
+const ImgDiv = styled.div`      
+      padding:10px;   
+      margin:30px;     
+`
+const ParaDiv = styled.div`      
+      display:flex; 
+      padding:10px; 
+      font-size:15px;  
+      color:#444;                                 
 `
 
 
 export default function BioBasicInfo(props){    
     return (        
-            <Div id='component-anchor-basic' style={{height:h}}>                     
-                 
-                <ImgDiv>
-                    <MyImage/> 
+            <Div id="about">                                      
+                <ImgParaDiv>
+                    <ImgDiv>
+                        <MyImage/>
+                    </ImgDiv>                                         
+                    <ProfileLinks iconSize={18} width="92%" colorful="colorful" backColor="linear-gradient(to right,#fafafa,#e2e2e2,#eaeaea,#fafafa)"/>                    
                     <ParaDiv>
-                        <p>Hi, Sajal here. This is my portfolio website. If you are interested about me you can browse this site and you can know a bit. Best wishes.</p>
-                    </ParaDiv>                    
-                </ImgDiv>                                                                                           
+                        Hi, Sajal here. This is my portfolio website. 
+                        If you are interested about me or my website, you can browse this site.
+                        I hope that you can know a bit about me.                        
+                    </ParaDiv>                                
+                </ImgParaDiv>    
+                <BioInfo/>                                                                                       
             </Div>
     )        
 }

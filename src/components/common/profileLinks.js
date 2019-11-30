@@ -5,13 +5,11 @@ import {faEnvelope} from '@fortawesome/free-regular-svg-icons'
 import {faFacebookF,faGithub,faLinkedinIn,faAngellist} from '@fortawesome/free-brands-svg-icons'
 
 
-const StyledList = styled.ul`      
-          font-size:22px;          
+const StyledList = styled.ul`                
           display:flex;          
-          justify-content:space-evenly;                         
-          width:360px; 
-          padding-right:40px;    
-
+          justify-content:space-between;             
+          padding:3px 55px;             
+          background:${(props)=>props.backColor};         
    #in:hover{
       color:#226088;
    };
@@ -34,7 +32,7 @@ const A = styled.a`
 
 export default function ProfileLinks(props){         
    return(        
-        <StyledList style={{fontSize:props.iconSize}}>  
+        <StyledList backColor={props.backColor} style={{fontSize:props.iconSize,width:props.width}}>  
             <li style={{listStyleType:'none'}}>
                <A colored={props.colorful} iColor="#0077b5" href="https://linkedin.com/in/hmsajal" id="in">
                   <FontAwesomeIcon icon={faLinkedinIn} />

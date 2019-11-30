@@ -1,83 +1,53 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import styled from 'styled-components'
-import {BrowserRouter,Link} from 'react-router-dom'
 import {Affix} from 'antd'
-import 'antd/dist/antd.css'
 
-const w = window.innerWidth;
-const h = window.innerHeight;
+import {NavMenu,NavBar} from './menuPart'
+
 
 const Div = styled.div`
-      display:flex;         
-      justify-content:space-between;       
-      align-items:center;  
-      height:100%;                                      
+      background:#60a677;      
+      display:flex;  
+      align-items:center;
+      width:100%;    
+      justify-content:space-between;  
+      padding:0px 65px;       
+      @media screen and (max-width:640px){   
+        padding:0px 20px;
+      };      
+      @media screen and (min-width:641px) and (max-width:1024px){
+        padding:0px 45px;
+      };                     
 `
-const NameDiv = styled.div`
-      display:flex;
-      width:25%;
-      height:100%;
-      justify-content:center;
-      align-items:center;         
-      font-size:30px;
-      font-weight:bold;
-      font-family: 'Special elite', cursive;
-      letter-spacing:1px;       
-      a{color:#444}; 
-      a:hover{color:#555b};            
+const MyName = styled.span`
+      font-size:32px;      
+      letter-spacing:1px;
+      font-family:fira sans,sans-serif;
+      color:#002040;  
+      
+      @media screen and (max-width:640px){   
+        font-size: 26px;
+        letter-spacing:0px;
+      };
+      @media screen and (min-width:641px) and (max-width:1024px){
+        font-size:30px;
+        letter-spacing:.5px;
+      }
 `
-const NavDiv = styled.div`
-      display:flex;    
-      justify-content:space-evenly;
-      align-items:center; 
-      width:65%;  
-      height:100%;      
-      font-family:consolas;
-      font-size:20px;
-      font-weight:bold;             
-`
-const LinkDiv = styled.div`
-      display:flex;
-      justify-content:center;      
-      align-items:center;     
-      height:100%;            
-`
-const LinkItem = styled(Link)`                               
-      display:flex;                
-      justify-content:center;
-      align-items:center;      
-      padding:2px 20px;                
-`
-//use styled components props to select color and hover color of menu items 
-// and also to mark the current item
 
-function Menu(props) {
+
+export default function Menu() {
     return (
-        <Affix>            
-            <div style={{height:h*.01*props.scaleOfHundredHeight,backgroundColor:props.colorBack,
-                         padding:'0px 100px',borderBottom:'1px solid #bbb5'}}>                               
-                <Div>
-                    <NameDiv>
-                        <Link to="/">Hasan Mahmud</Link>
-                    </NameDiv>
-                    
-                    <NavDiv>
-                        <LinkDiv style={{width:'25%'}}>
-                             <LinkItem to={"/bio"}>About Me</LinkItem>                        
-                        </LinkDiv>
-
-                        <LinkDiv style={{width:'40%'}}>
-                             <LinkItem to={"/career"}>Career and Skills</LinkItem>
-                        </LinkDiv>
-                        
-                        <LinkDiv style={{width:'20%'}}>
-                             <LinkItem to={"/blog"}>Blog</LinkItem>                        
-                        </LinkDiv>                                                    
-                    </NavDiv>
-                </Div>                                        
-            </div>
-        </Affix>
+        <Affix>   
+            <Div style={{display:'flex',flexDirection:'row',height:window.innerHeight*.11}}>
+                <MyName>HASAN MAHMUD</MyName>
+                <ChoosingNavMenu/>
+            </Div>        
+        </Affix>        
     )
 }
 
-export default Menu
+export function ChoosingNavMenu(){     
+    const widthMatching = window.matchMedia("(max-width:790px)")
+    return widthMatching.matches ? <NavBar/> : <NavMenu/>     
+}

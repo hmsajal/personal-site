@@ -3,8 +3,7 @@ import styled from 'styled-components'
 
 const Div = styled.div`
      width:25%; 
-     height:500px; 
-     background:white;
+     height:500px;      
 `
 
 function BlogRight() {

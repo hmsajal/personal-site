@@ -27,7 +27,7 @@ function Home(){
             <InfoDiv style={{height:window.innerHeight*.8}}>
                 <HomeInfo/>
             </InfoDiv>
-            <ProfileLinks/>
+            <ProfileLinks iconSize={22} width="25%"/>
         </Div>
     )
 }

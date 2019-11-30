@@ -6,21 +6,22 @@ import 'antd/dist/antd.css'
 const Div = styled.div`
       display:flex;
       flex-direction:column;
-      align-items:center;         
+      align-items:center;     
+      margin-bottom:50px;    
 `
 const HeadingDiv = styled.div`
       display:flex;
       justify-content:center;
-      align-items:center;             
+      align-items:center;  
+      padding-bottom:20px;           
 `
 const h = window.innerHeight;
 
 export default function bioTimeline() {
     return (
-        <Div style={{height:h}}>            
-
-            <HeadingDiv style={{height:h*.2}} id="component-anchor-timeline">
-                <h3 style={{color:'#2e856e',fontSize:18}}>My life timeline so far</h3>                                   
+        <Div>            
+            <HeadingDiv id="timeline">
+                <h3 style={{color:'#333',fontSize:16}}>My life timeline so far</h3>                                   
             </HeadingDiv>
 
             <Timeline mode="alternate" color="#60a677" pending="loading..." style={{width:'50%'}}>            
@@ -56,7 +57,6 @@ export default function bioTimeline() {
                     Developed this site in 2019.
                 </Timeline.Item>                
             </Timeline>
-
         </Div>
     )
 }

@@ -3,13 +3,12 @@ import styled from 'styled-components'
 
 const Div = styled.div`     
      width:70%;  
-     height:500px;
-     background:white;
+     height:500px;     
 `
 function BlogLeft() {
     return (
-        <Div>
-            
+        <Div style={{fontSize:'16px',fontWeight:'bold'}}>
+            Blog is coming soon...
         </Div>
     )
 }
