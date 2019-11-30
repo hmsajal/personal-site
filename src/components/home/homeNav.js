@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import {NavMenu,NavBar} from './navigationAlternatives'
 
 
-const Div = styled.div`
-      margin-top:40px;
+const Div = styled.div`      
       display:flex;      
       align-items:center;
+      height:20%;
       width:100%;    
       justify-content:space-between;  
       padding:0px 60px;       
@@ -16,7 +16,7 @@ const Div = styled.div`
       };
       @media screen and (min-width:641px) and (max-width:1024px){
         padding:0px 45px;
-      };                     
+      };                           
 `
 const MyName = styled.span`
       font-size:32px;      
