@@ -31,21 +31,22 @@ const h = window.innerHeight;
 export default function BioHome() {
     return (          
             <Div>     
-                <Affix offsetTop={68} style={{width:'100%',marginTop:40}}>                    
-                        <Breadcrumb className="breadCrumb" style={{padding:"8px 10px",justifyContent:'center',display:'flex',
-                                                    background:'linear-gradient(to right,#fcfcfc,#f3fff3,#bfe2bf,#f3fff3,#fcfcfc)',
-                                                    }}>
-                            <Breadcrumb.Item href="#about">
+                <Affix offsetTop={h*.11} style={{width:'95%',marginTop:40, display:'flex',
+                       justifyContent:'center',alignSelf:'center'}}>
+                        <Breadcrumb className="breadCrumb" style={{padding:"8px 10px",justifyContent:'center',
+                                    display:'flex',width:"100%", alignSelf:'center',
+                                    background:'linear-gradient(to right,#fcfcfc,#f3fff3,#bfe2bf,#f3fff3,#fcfcfc)'}}>
+                            <Breadcrumb.Item href="#breadcrumb-about">
                                 <Icon type="user" />
                                 <span>ABOUT ME</span>
                             </Breadcrumb.Item>
 
-                            <Breadcrumb.Item href="#timeline">
+                            <Breadcrumb.Item href="#breadcrumb-timeline">
                                 <Icon type="clock-circle" />
                                 <span>TIMELINE</span>
                             </Breadcrumb.Item>
 
-                            <Breadcrumb.Item href="#photos">
+                            <Breadcrumb.Item href="#breadcrumb-photos">
                                 <Icon type="picture" />
                                 <span>PHOTOS</span>
                             </Breadcrumb.Item>

@@ -12,6 +12,7 @@
     "@fortawesome/react-fontawesome": "^0.1.7",
     "antd": "^3.24.2",
     "bootstrap": "^4.4.0",
+    "moment": "^2.24.0",
     "react": "^16.10.2",
     "react-burger-menu": "^2.6.12",
     "react-dom": "^16.10.2",

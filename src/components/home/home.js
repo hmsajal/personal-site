@@ -16,7 +16,7 @@ const Div = styled.div`
 `      
 const InfoDiv = styled.div`
       height:60%;     
-      padding-bottom:40px;
+      padding-bottom:20px;
       display:flex;
       justify-content:center;
       align-items:center;

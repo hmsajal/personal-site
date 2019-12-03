@@ -18,16 +18,14 @@ const NavItemsGroup = styled.nav`
       height:100%;                                    
 `
 const StyledNavLink = styled(NavLink)`
-      color:#e2ee82;      
+      color:#e2eeb0;      
       font-size:22px;  
-      font-family:lato;                        
+      font-family:roboto Slab, sans-serif;                        
           :hover{
               color:#e2ee6c;
               opacity:.6;
-
-          };
-      font-family:Libre Baskervville,serif;              
-      font-weight:700;
+          };                
+      font-weight:400;
 `
 
 

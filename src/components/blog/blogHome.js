@@ -7,8 +7,7 @@ export default function BlogHome(props){
      
         return(
             <div style={{display:'flex',flexDirection:'column'}}>                                         
-                <BlogContent/>                                               
-                <Footer/>         
+                <BlogContent/>                                                                       
             </div>
         )    
 }
