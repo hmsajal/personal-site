@@ -12,7 +12,14 @@ const Div = styled.div`
      display:flex;       
      flex-direction:column;        
      align-items:center;             
-     width:100%;                                           
+     width:100%;   
+     .breadcrumb{
+        color:#444;
+     }       
+     .breadcrumb :hover{
+         font-weight:bold;
+         color:#444;
+     }                                 
 `
 const StyledDiv = styled.div`
        display:flex;
@@ -31,24 +38,24 @@ const h = window.innerHeight;
 export default function BioHome() {
     return (          
             <Div>     
-                <Affix offsetTop={h*.11} style={{width:'95%',marginTop:40, display:'flex',
+                <Affix offsetTop={h*.11} style={{width:'100%',marginTop:40, display:'flex',
                        justifyContent:'center',alignSelf:'center'}}>
-                        <Breadcrumb className="breadCrumb" style={{padding:"8px 10px",justifyContent:'center',
-                                    display:'flex',width:"100%", alignSelf:'center',
-                                    background:'linear-gradient(to right,#fcfcfc,#f3fff3,#bfe2bf,#f3fff3,#fcfcfc)'}}>
-                            <Breadcrumb.Item href="#breadcrumb-about">
-                                <Icon type="user" />
-                                <span>ABOUT ME</span>
+                        <Breadcrumb separator="|" style={{padding:"8px",justifyContent:'center',
+                                    display:'flex',alignSelf:'center',color:'#333',
+                                    background:'linear-gradient(to right,#d0f0c0,#50c888,#d0f0c0)'}}>
+                            <Breadcrumb.Item href="#about" className="breadcrumb" style={{margin:'0px 5px'}}>
+                                <Icon type="user" />                                
+                                <span> ABOUT ME</span>                                
                             </Breadcrumb.Item>
 
-                            <Breadcrumb.Item href="#breadcrumb-timeline">
+                            <Breadcrumb.Item href="#timeline" className="breadcrumb" style={{margin:'0px 5px'}}>                                
                                 <Icon type="clock-circle" />
-                                <span>TIMELINE</span>
+                                <span> TIMELINE</span>                                
                             </Breadcrumb.Item>
 
-                            <Breadcrumb.Item href="#breadcrumb-photos">
+                            <Breadcrumb.Item href="#photos" className="breadcrumb" style={{margin:'0px 5px'}}>                                
                                 <Icon type="picture" />
-                                <span>PHOTOS</span>
+                                <span> PHOTOS</span>
                             </Breadcrumb.Item>
                         </Breadcrumb>                                  
                 </Affix>       

@@ -26,13 +26,12 @@ const MyName = styled.span`
       display:flex;
       align-items:center;
       color:#222;              
-      font-size:30px;
-      font-weight:bold;
-      font-family: 'Special elite', cursive;
-      letter-spacing:1.5px;                         
+      font-size:16px;      
+      font-family:space comics;          
+      font-weight:normal;           
       @media screen and (max-width:640px){   
-        font-size: 26px;
-        letter-spacing:1px;
+        width:225px;
+        font-size:13px;
       };                  
 `
 

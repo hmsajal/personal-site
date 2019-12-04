@@ -19,11 +19,11 @@ const NavItemsGroup = styled.nav`
 `
 const StyledNavLink = styled(NavLink)`
       color:#e2eeb0;      
-      font-size:22px;  
+      font-size:21px;  
       font-family:roboto Slab, sans-serif;                        
           :hover{
               color:#e2ee6c;
-              opacity:.6;
+              opacity:.5;
           };                
       font-weight:400;
 `

@@ -21,7 +21,7 @@ const h = window.innerHeight;
 export default function bioTimeline() {
     return (
         <Div>            
-            <HeadingDiv id="breadcrumb-timeline">
+            <HeadingDiv id="timeline">
                 <h3 style={{color:'#333',fontSize:16}}>My life timeline so far</h3>                                   
             </HeadingDiv>
 

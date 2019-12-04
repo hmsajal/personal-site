@@ -13,8 +13,8 @@ const PhotoDiv = styled.div`
 
 export default function BioPhotos() {
     return (
-        <PhotoDiv id="breadcrumb-photos" style={{height:h}}>
-            <h3 style={{color:'#333',fontSize:16}}>Photos of me.</h3>
+        <PhotoDiv style={{height:h}}>
+            <h3 id="photos" style={{color:'#333',fontSize:16}}>Photos of me.</h3>
             <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="no photos yet" 
                           style={{background:'#f2f2f2',height:'70%',width:'70%',display:'flex',
                                   justifyContent:'center',alignItems:'center'}}

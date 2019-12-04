@@ -5,7 +5,8 @@ import styled from 'styled-components'
 
 const Div = styled.div`
       display:flex;
-      flex-direction:column;      
+      flex-direction:column;   
+      padding:10px;   
       align-items:center;      
       margin-top:30px;
 `

@@ -22,7 +22,7 @@ export default function BioInformation() {
                     <Descriptions.Item label="Name">Hasan Mahmud</Descriptions.Item>
                     <Descriptions.Item label="Mobile">+8801672429529</Descriptions.Item>
                     <Descriptions.Item label="Residence">Dhaka, Bangladesh</Descriptions.Item>
-                    <Descriptions.Item label="Age" span={2}>
+                    <Descriptions.Item label="Age">
                      28 years                     
                     </Descriptions.Item>                                             
             </Descriptions>                   

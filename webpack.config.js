@@ -3,7 +3,10 @@ var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {            
-    entry: "./src/index.js",
+    entry: { 
+        main:"./src/index.js",        
+    },
+            
     output: {
         path: __dirname + '/build',
         filename: 'bundle.js',        
@@ -44,12 +47,25 @@ module.exports = {
                             },
                         ],
                     },
+                    {
+                        test: /\.s(a|c)ss$/,
+                        use: [
+                          "style-loader",                          
+                          "css-loader",         
+                          "node-sass"               
+                        ]
+                    },
 
                     {
-                        test: /\.css$/,
+                        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                         use: [
-                            "style-loader",
-                            "css-loader"
+                          {
+                            loader: 'file-loader',
+                            options: {
+                              name: 'src/assets/fonts/[name].[ext]',
+                              outputPath: 'fonts/'
+                            }
+                          }
                         ]
                     }
         ]

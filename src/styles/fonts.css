@@ -13,3 +13,14 @@
 @import url('https://fonts.googleapis.com/css?family=Baskervville&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alatsi|Merriweather|Oswald|PT+Sans|Roboto+Slab|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+
+@font-face{
+    font-family: Space Comics;
+    src: url(../assets/fonts/spaceComics.ttf);
+}
+@font-face{
+    font-family: Lethal Slime;
+    src: url(../assets/fonts/lethalSlime.ttf);
+}
+
