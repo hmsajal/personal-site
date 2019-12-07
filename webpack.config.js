@@ -47,14 +47,16 @@ module.exports = {
                             },
                         ],
                     },
+
                     {
-                        test: /\.s(a|c)ss$/,
+                        test: /\.css$/,
                         use: [
-                          "style-loader",                          
-                          "css-loader",         
-                          "node-sass"               
+                            "style-loader",
+                            "css-loader"                                                                                                         
                         ]
                     },
+
+                    
 
                     {
                         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -62,7 +64,7 @@ module.exports = {
                           {
                             loader: 'file-loader',
                             options: {
-                              name: 'src/assets/fonts/[name].[ext]',
+                              name: '[name].[ext]',
                               outputPath: 'fonts/'
                             }
                           }

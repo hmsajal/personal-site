@@ -1,6 +1,5 @@
 import React,{useState, useEffect} from 'react'
 import styled from 'styled-components'
-import {Affix} from 'antd'
 
 import {NavMenu,NavBar} from './menuPart'
 
@@ -8,7 +7,8 @@ import {NavMenu,NavBar} from './menuPart'
 const Div = styled.div`
       background:#60a677;      
       display:flex;  
-      align-items:center;
+      flex-direction:row;
+      align-items:center;      
       width:100%;    
       justify-content:space-between;  
       padding-left:70px;
@@ -37,13 +37,11 @@ const MyName = styled.span`
 
 
 export default function Menu() {
-    return (
-        <Affix>   
-            <Div style={{display:'flex',flexDirection:'row',height:window.innerHeight*.11}}>
+    return (         
+            <Div style={{height:window.innerHeight*.11}}>
                 <MyName>HASAN MAHMUD</MyName>
                 <ChoosingNavMenu/>
-            </Div>        
-        </Affix>        
+            </Div>                  
     )
 }
 

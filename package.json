@@ -12,6 +12,7 @@
     "@fortawesome/react-fontawesome": "^0.1.7",
     "antd": "^3.24.2",
     "bootstrap": "^4.4.0",
+    "fibers": "^4.0.2",
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
     "react": "^16.10.2",
