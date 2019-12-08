@@ -18,7 +18,7 @@ const {Countdown} = Statistic;
 export default function BioInformation() {
     return (
         <Div> 
-            <Descriptions title="Basic Information" layout="vertical">
+            <Descriptions title="Basic Info" layout="vertical">
                     <Descriptions.Item label="Name">Hasan Mahmud</Descriptions.Item>
                     <Descriptions.Item label="Mobile">+8801672429529</Descriptions.Item>
                     <Descriptions.Item label="Residence">Dhaka, Bangladesh</Descriptions.Item>

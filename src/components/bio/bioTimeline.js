@@ -7,22 +7,26 @@ const Div = styled.div`
       display:flex;
       flex-direction:column;
       align-items:center;     
-      margin-bottom:50px;   
+      margin-bottom:40px;   
       width:100%; 
 `
 const HeadingDiv = styled.div`
       display:flex;
       justify-content:center;
-      align-items:center;  
-      padding-bottom:20px;           
+      align-items:center;   
+      padding:2px 20px; 
+      margin-bottom:40px;    
+      background:#60a67777;         
+      transform:skew(-15deg);       
 `
-const h = window.innerHeight;
 
 export default function bioTimeline() {
     return (
         <Div>            
             <HeadingDiv id="timeline">
-                <h3 style={{color:'#333',fontSize:16}}>My life timeline so far</h3>                                   
+                <h3 style={{fontFamily:'fira sans',fontWeight:"normal",color:'#333',fontSize:16,transform:'skew(15deg)'}}>
+                    My timeline
+                </h3>      
             </HeadingDiv>
 
             <Timeline mode="alternate" color="#60a677" pending="loading..." style={{width:'50%'}}>            

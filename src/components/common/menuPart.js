@@ -54,7 +54,7 @@ export function NavBar(){
     return(
         <NavButtonDiv>
             <Button className="navigationButton" type="default" onClick={()=>setVisibleState(true)} 
-                    style={{background:'#008081',width:"25px",height:"33px",
+                    style={{background:'#008081',width:"22px",height:"30px",
                             display:'flex',justifyContent:'center'
                            }}
             >
