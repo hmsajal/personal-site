@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import styled from 'styled-components'
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
-import {Affix} from 'antd'
 
 import Menu from '../components/common/menu'
 import BioHome from '../components/bio/bioHome'
@@ -18,7 +17,7 @@ const MenuDiv = styled.div`
 const Div = styled.div`
       position:relative;
 `
-const h = window.innerHeight*.11;
+const h = window.innerHeight*.12;
 
 export default function MenuRoute(){   
      
@@ -47,7 +46,7 @@ export default function MenuRoute(){
                     <Menu/>                                
                 </MenuDiv>            
                 
-                <Div id = "notMenu" style={{top:window.innerHeight*.11}}>
+                <Div id = "notMenu" style={{top:window.innerHeight*.12}}>
                     <Switch>
                         <Route path="/bio">
                             <BioHome/>

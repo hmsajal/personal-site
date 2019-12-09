@@ -6,9 +6,8 @@ import styled from 'styled-components'
 const Div = styled.div`
       display:flex;
       flex-direction:column;   
-      padding:10px;   
-      align-items:center;      
-      margin-top:30px;
+      padding:30px;   
+      align-items:center;            
 `
 export default function CareerHome(props) {
     return (

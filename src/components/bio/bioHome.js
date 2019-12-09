@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {Breadcrumb,Icon,Affix} from 'antd'
+import {Breadcrumb,Icon} from 'antd'
 import styled from 'styled-components'
 import "antd/dist/antd.css"
 
@@ -34,7 +34,7 @@ const StyledDiv = styled.div`
        }
 `
 const h = window.innerHeight;
-var breadcrumbOffset = h*.11;
+var breadcrumbOffset = h*.12;
 
 
 export default function BioHome() {             
@@ -46,7 +46,7 @@ export default function BioHome() {
                         <Breadcrumb separator="|" style={{padding:"5px",justifyContent:'center',display:'flex',
                                     alignSelf:'center',color:'#333',  width:'100%',                              
                                     background:'linear-gradient(to right,#d0f0c0,#50c888,#d0f0c0)'}}>
-                            <Breadcrumb.Item href="#about" className="breadcrumb" style={{margin:'0px 3px'}}>
+                            <Breadcrumb.Item href="#basicInfo" className="breadcrumb" style={{margin:'0px 3px'}}>
                                 <Icon type="user" />                                
                                 <span> ABOUT ME</span>                                
                             </Breadcrumb.Item>

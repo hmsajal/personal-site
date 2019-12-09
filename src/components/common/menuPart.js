@@ -3,47 +3,43 @@ import styled from 'styled-components'
 import {BrowserRouter,NavLink} from 'react-router-dom'
 import {Drawer,Button, Icon} from 'antd'
 
-const NavButtonDiv = styled.div`      
-      .navigationButton{
-          border-color:#333;
-          border-width:2px;
-      };      
-`
 
 const NavItemsGroup = styled.nav`
-      width:50%;                  
-      display:flex;      
-      justify-content:space-between;
+      width:60%;                  
+      display:flex;        
+      justify-content:space-between;    
       align-items:center;  
-      height:100%;                                    
+      height:100%;                                          
 `
 const StyledNavLink = styled(NavLink)`
-      color:#e2eeb0;      
-      font-size:21px;  
-      font-family:roboto Slab, sans-serif;                        
-          :hover{
-              color:#e2ee6c;
-              opacity:.5;
-          };                
+      color:#555;      
+      font-size:18px;        
       font-weight:400;
+      font-family:Roboto Slab;                        
+          :hover{
+              color:#226051;  
+              font-weight:700;            
+          };                      
 `
 
 
 export function NavMenu(){
     return(
-        <NavItemsGroup>            
-            <StyledNavLink to="/bio" >
-                Bio
-            </StyledNavLink>                
+        <div style={{width:'40%'}}>
+            <NavItemsGroup>            
+                <StyledNavLink to="/bio" >
+                    Bio
+                </StyledNavLink>                
 
-            <StyledNavLink to="/career">
-                Career
-            </StyledNavLink>
+                <StyledNavLink to="/career">
+                    Career
+                </StyledNavLink>
 
-            <StyledNavLink to="/blog" >
-                Blog
-            </StyledNavLink>
-        </NavItemsGroup>
+                <StyledNavLink to="/blog" >
+                    Blog
+                </StyledNavLink>
+            </NavItemsGroup>
+        </div>        
     )
 }
 
@@ -52,13 +48,10 @@ export function NavBar(){
     const [visibleState, setVisibleState] = useState(false)
     
     return(
-        <NavButtonDiv>
+        <div>
             <Button className="navigationButton" type="default" onClick={()=>setVisibleState(true)} 
-                    style={{background:'#008081',width:"22px",height:"30px",
-                            display:'flex',justifyContent:'center'
-                           }}
-            >
-                <Icon type="menu" style={{fontSize:18}}/>
+                    style={{border:'0px'}}>
+                <Icon type="menu" style={{fontSize:20}} />
             </Button>
 
             <Drawer                                
@@ -76,7 +69,7 @@ export function NavBar(){
                     </div>                      
                     
             </Drawer>
-        </NavButtonDiv>
+        </div>
     )
 }
 

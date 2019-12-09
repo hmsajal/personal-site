@@ -44,7 +44,7 @@ const ParaDiv = styled.div`
 
 export default function BioBasicInfo(props){    
     return (                                    
-                <Div>
+                <Div id="basicInfo">
                     <ImgParaDiv>
                         <ImgDiv>
                             <MyImage/>
