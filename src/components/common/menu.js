@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 import {NavMenu,NavBar} from './menuPart'
@@ -34,17 +34,17 @@ const MyName = styled.span`
       };                        
 `
 
+export default function Menu(props) {    
 
-export default function Menu() {
-    return (         
-            <Div style={{height:window.innerHeight*.12}}>
+    return (           
+            <Div style={{height:window.innerHeight*.12}} id="menu">
                 <MyName>HASAN MAHMUD</MyName>
                 <ChoosingNavMenu/>
             </Div>                  
     )
 }
 
-export function ChoosingNavMenu(){     
+export function ChoosingNavMenu(props){                
     const widthMatching = window.matchMedia("(max-width:1024px)")
     return widthMatching.matches ? <NavBar/> : <NavMenu/>     
 }

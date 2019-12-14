@@ -12,10 +12,11 @@ export default function Routing() {
                 <Route path="/" exact>
                     <Home/>
                 </Route>
-                <Route path="/:path">
+                <Route path="/:link">
                     <MenuRoute/>                        
                 </Route>                                                      
             </div>
         </BrowserRouter>
     )
+    
 }

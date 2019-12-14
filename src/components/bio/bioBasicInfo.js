@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Descriptions} from 'antd'
 
 import ProfileLinks from '../common/profileLinks'
 import MyImage from '../common/myImage'
-import BioInfo from './bioInformation'
 
 const h = window.innerHeight;
 
@@ -22,10 +22,10 @@ const Div = styled.div`
 
 const ImgParaDiv = styled.div`
       display:flex;     
-      width:35%;  
+      width:38%;  
       align-items:center;                 
       flex-direction:column;        
-      background:linear-gradient(to bottom,#fcfcfc,#f3f3f3,#e2e2e2,#f3f3f3,#fcfcfc);            
+      background:linear-gradient(to bottom,#fefefe,#f7f7f7,#e2e2e2,#f7f7f7,#fefefe);            
       @media screen and (max-width:1024px){
           width:100%
       }                       
@@ -39,6 +39,17 @@ const ParaDiv = styled.div`
       padding:10px; 
       font-size:15px;  
       color:#444;                                 
+`
+const DescDiv = styled.div`
+      width:60%;      
+      padding-left:10px;
+      @media screen and (max-width:1024px){
+          width:100%;
+          margin-top:20px;
+      };      
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;             
 `
 
 
@@ -56,7 +67,16 @@ export default function BioBasicInfo(props){
                             I hope that you can know a bit about me.                        
                         </ParaDiv>                                
                     </ImgParaDiv>    
-                    <BioInfo/>                                                                                       
+                    <DescDiv> 
+                        <Descriptions title="Basic Info" layout="vertical">
+                                <Descriptions.Item label="Name">Hasan Mahmud</Descriptions.Item>
+                                <Descriptions.Item label="Mobile">+8801672429529</Descriptions.Item>
+                                <Descriptions.Item label="Residence">Dhaka, Bangladesh</Descriptions.Item>
+                                <Descriptions.Item label="Age">
+                                28 years                     
+                                </Descriptions.Item>                                             
+                        </Descriptions>                   
+                    </DescDiv>                                                                                     
                 </Div>                                             
     )        
 }

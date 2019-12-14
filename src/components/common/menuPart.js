@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import {BrowserRouter,NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import {Drawer,Button, Icon} from 'antd'
 
 
@@ -19,23 +19,24 @@ const StyledNavLink = styled(NavLink)`
           :hover{
               color:#226051;  
               font-weight:700;            
-          };                      
+          };                         
 `
 
 
-export function NavMenu(){
+export function NavMenu(props){   
+    
     return(
         <div style={{width:'40%'}}>
             <NavItemsGroup>            
-                <StyledNavLink to="/bio" >
+                <StyledNavLink id="bio" to="/bio" >
                     Bio
                 </StyledNavLink>                
 
-                <StyledNavLink to="/career">
+                <StyledNavLink id="career" to="/career">
                     Career
                 </StyledNavLink>
 
-                <StyledNavLink to="/blog" >
+                <StyledNavLink id="blog" to="/blog" >
                     Blog
                 </StyledNavLink>
             </NavItemsGroup>
@@ -45,12 +46,12 @@ export function NavMenu(){
 
 export function NavBar(){
 
-    const [visibleState, setVisibleState] = useState(false)
+    const [visibleState, setVisibleState] = React.useState(false)
     
     return(
         <div>
             <Button className="navigationButton" type="default" onClick={()=>setVisibleState(true)} 
-                    style={{border:'0px'}}>
+                    style={{border:'none',boxShadow:'none'}}>
                 <Icon type="menu" style={{fontSize:20}} />
             </Button>
 
@@ -66,8 +67,7 @@ export function NavBar(){
                         <NavLink to="/bio">Bio</NavLink>
                         <NavLink to="/career">Career and Skills</NavLink>
                         <NavLink to="/blog">Blog</NavLink>  
-                    </div>                      
-                    
+                    </div>                                          
             </Drawer>
         </div>
     )

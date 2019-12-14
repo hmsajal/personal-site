@@ -25,6 +25,8 @@
     "webpack": "^4.41.2"
   },
   "scripts": {
+    "host":"0.0.0.0",
+    "port":"8080",
     "dev": "webpack-dev-server --mode=development",
     "webpack-dev-server": "webpack-dev-server",
     "prod": "webpack --mode=production"
