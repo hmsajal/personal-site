@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useContext,useEffect} from 'react'
+import {useRouteMatch} from 'react-router-dom'
 import styled from 'styled-components'
 
+import {store} from '../../store.js'
 import CareerNav from './careerNav'
 import CareerContent from './careerContent'
      
@@ -15,6 +17,15 @@ const Div = styled.div`
 `
 
 export default function CareerHome(props) {
+
+    const {path} = useRouteMatch()
+    const globalState = useContext(store)          
+    const {dispatch} = globalState;    
+    
+    useEffect(()=>{                        
+        dispatch({type:'CurrentMenuItemSelection',payload:path})            
+    },[])
+
     return (
         <Div> 
             <CareerNav/>    

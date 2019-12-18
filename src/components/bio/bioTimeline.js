@@ -1,5 +1,5 @@
 import React from 'react'
-import {Timeline,Icon} from 'antd'
+import {Timeline} from 'antd'
 import styled from 'styled-components'
 import 'antd/dist/antd.css'
 

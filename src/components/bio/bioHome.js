@@ -1,8 +1,10 @@
-import React from 'react'
+import React,{useContext,useEffect} from 'react'
+import {useRouteMatch} from 'react-router-dom'
 import {Breadcrumb,Icon} from 'antd'
 import styled from 'styled-components'
 import "antd/dist/antd.css"
 
+import {store} from '../../store.js'
 import BioBasicInfo from './bioBasicInfo'
 import BioPhotos from './bioPhotos'
 import BioTimeline from './bioTimeline'
@@ -38,6 +40,14 @@ var breadcrumbOffset = h*.12;
 
 
 export default function BioHome(props) {                 
+    
+    const {path} = useRouteMatch()
+    const globalState = useContext(store)          
+    const {dispatch} = globalState;    
+    
+    useEffect(()=>{                        
+        dispatch({type:'CurrentMenuItemSelection',payload:path})            
+    },[])      
     
     return (          
             <Div>     
