@@ -33,21 +33,22 @@ const StyledNavLink = styled(NavLink)`
 
 
 export function NavMenu(props){   
+    
     const globalState = useContext(store)
     const {state,dispatch} = globalState
-    console.log(state.menuSelection)
+    
     return(
         <div style={{width:'40%'}}>
             <NavItemsGroup >            
-                <StyledNavLink style={{color:state.menuSelection==="/bio" &&  "green"}} to="/bio" >
+                <StyledNavLink style={{color:state.selectedMenu==="/bio" &&  "green"}} to="/bio" >
                     Bio
                 </StyledNavLink>                
 
-                <StyledNavLink  style={{color:state.menuSelection==="/career" &&  "green"}} to="/career">
+                <StyledNavLink  style={{color:state.selectedMenu==="/career" &&  "green"}} to="/career">
                     Career
                 </StyledNavLink>
 
-                <StyledNavLink style={{color:state.menuSelection==="/blog" &&  "green"}} to="/blog" >
+                <StyledNavLink style={{color:state.selectedMenu==="/blog" &&  "green"}} to="/blog" >
                     Blog
                 </StyledNavLink>
             </NavItemsGroup>

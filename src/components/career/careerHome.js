@@ -23,7 +23,7 @@ export default function CareerHome(props) {
     const {dispatch} = globalState;    
     
     useEffect(()=>{                        
-        dispatch({type:'CurrentMenuItemSelection',payload:path})            
+        dispatch({type:'CurrentMenuItemSelection',selectedMenu:path})            
     },[])
 
     return (
