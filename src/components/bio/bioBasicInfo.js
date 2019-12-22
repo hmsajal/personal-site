@@ -25,7 +25,7 @@ const ImgParaDiv = styled.div`
       width:38%;  
       align-items:center;                 
       flex-direction:column;        
-      background:linear-gradient(to bottom,#fefefe,#f7f7f7,#e2e2e2,#f7f7f7,#fefefe);            
+      background:linear-gradient(to bottom,#fefefe,#fcfcfc,#e8e8e8,#fcfcfc,#fefefe);            
       @media screen and (max-width:1024px){
           width:100%
       }                       

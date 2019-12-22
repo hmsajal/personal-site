@@ -2,7 +2,7 @@ import React from 'react'
 
 const initialState = {
                        selectedMenu:'',
-                       scrollDown:null
+                       scrollDown:0
                     }
 const store =React.createContext(initialState)
 const {Provider} = store;
@@ -13,7 +13,7 @@ function StateProvider({children}) {
            case 'CurrentMenuItemSelection':
                return{
                    selectedMenu:action.selectedMenu,
-                   scrollDown:null
+                   scrollDown:0
                }
            case 'PageScrollDown':
                return{

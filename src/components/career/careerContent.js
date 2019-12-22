@@ -15,7 +15,7 @@ const Div = styled.div`
 export default function CareerContent() {
     return (
        <div>
-           switch routing
+           
        </div>
     )
 }

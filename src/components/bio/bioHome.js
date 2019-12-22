@@ -13,7 +13,8 @@ import BioTimeline from './bioTimeline'
 const Div = styled.div`
      display:flex;       
      flex-direction:column;        
-     align-items:center;             
+     align-items:center;    
+     padding-top:60px;         
      width:100%;   
      .breadcrumb{
         color:#444;
@@ -27,7 +28,7 @@ const StyledDiv = styled.div`
        display:flex;
        flex-direction:column;                 
        width:75%;  
-       margin-top:65px;    
+       padding-top:10px;    
        @media screen and (max-width:640px){
            width:95%;
        };
@@ -35,15 +36,13 @@ const StyledDiv = styled.div`
            width:80%;
        }
 `
-const h = window.innerHeight;
-var breadcrumbOffset = h*.12;
 
 
 export default function BioHome(props) {                 
     
     const {path} = useRouteMatch()
     const globalState = useContext(store)          
-    const {dispatch} = globalState;    
+    const {state,dispatch} = globalState;    
     
     useEffect(()=>{                        
         dispatch({type:'CurrentMenuItemSelection',selectedMenu:path})            
@@ -51,27 +50,30 @@ export default function BioHome(props) {
     
     return (          
             <Div>     
-                <div id="bioBreadcrumb" style={{width:'100%', display:'flex', justifyContent:'center',alignSelf:'center',
-                                        position:'sticky',zIndex:1,top:breadcrumbOffset+'px',transition:'.3s'}}>
-                        <Breadcrumb separator="|" style={{padding:"5px",justifyContent:'center',display:'flex',
-                                    alignSelf:'center',color:'#333',  width:'100%',                              
-                                    background:'linear-gradient(to right,#d0f0c0,#50c888,#d0f0c0)'}}>
-                            <Breadcrumb.Item href="#basicInfo" className="breadcrumb" style={{margin:'0px 3px'}}>
-                                <Icon type="user" />                                
-                                <span> BASIC INFO</span>                                
-                            </Breadcrumb.Item>
+                <Breadcrumb  separator="|" style={{padding:"5px",justifyContent:'center',display:'flex',
+                             alignSelf:'center',color:'#333', zIndex:1,transition:'.3s',position:'fixed',                         
+                             background:'linear-gradient(to right,#d0f0c0,#50c888,#d0f0c0)',
+                             width: state.scrollDown>0 ? '100%' : 310,
+                             top: state.scrollDown>0 ? 0 :
+                              ( window.pageYOffset!==0 ?
+                                window.innerHeight*.12 : 
+                                window.innerHeight*.12+30 )
+                            }}>
+                        <Breadcrumb.Item href="#basicInfo" className="breadcrumb" style={{margin:'0px 3px'}}>
+                            <Icon type="user" />                                
+                            <span> BASIC INFO</span>                                
+                        </Breadcrumb.Item>
 
-                            <Breadcrumb.Item href="#timeline" className="breadcrumb" style={{margin:'0px 3px'}}>                                
-                                <Icon type="clock-circle" />
-                                <span> TIMELINE</span>                                
-                            </Breadcrumb.Item>
+                        <Breadcrumb.Item href="#timeline" className="breadcrumb" style={{margin:'0px 3px'}}>                                
+                            <Icon type="clock-circle" />
+                            <span> TIMELINE</span>                                
+                        </Breadcrumb.Item>
 
-                            <Breadcrumb.Item href="#photos" className="breadcrumb" style={{margin:'0px 3px'}}>                                
-                                <Icon type="picture" />
-                                <span> PHOTOS</span>
-                            </Breadcrumb.Item>
-                        </Breadcrumb>                                  
-                </div>       
+                        <Breadcrumb.Item href="#photos" className="breadcrumb" style={{margin:'0px 3px'}}>                                
+                            <Icon type="picture" />
+                            <span> PHOTOS</span>
+                        </Breadcrumb.Item>
+                </Breadcrumb>                                                     
                 
                 <StyledDiv>
                     <BioBasicInfo/>                    
