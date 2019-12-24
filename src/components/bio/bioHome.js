@@ -53,12 +53,18 @@ export default function BioHome(props) {
                 <Breadcrumb  separator="|" style={{padding:"5px",justifyContent:'center',display:'flex',
                              alignSelf:'center',color:'#333', zIndex:1,transition:'.3s',position:'fixed',                         
                              background:'linear-gradient(to right,#d0f0c0,#50c888,#d0f0c0)',
-                             width: state.scrollDown>0 ? '100%' : 310,
-                             top: state.scrollDown>0 ? 0 :
-                              ( window.pageYOffset!==0 ?
-                                window.innerHeight*.12 : 
-                                window.innerHeight*.12+30 )
-                            }}>
+                             borderColor:'#ab9',borderStyle:'solid',
+                             borderWidth: state.scrollDown>0 ? '0px' : 
+                                         (window.matchMedia("(max-width:480px)").matches ? '0px' : '1px'),
+
+                             width: state.scrollDown>0 ? '100%' : 
+                                   (window.matchMedia("(max-width:480px)").matches ? '100%' : 320),
+                             
+                             top: state.scrollDown>0 ? 0 :                                  
+                                 ( window.pageYOffset!==0 ? window.innerHeight*.12 : 
+                                  (window.matchMedia("(max-width:480px)").matches ? window.innerHeight*.12 :
+                                   window.innerHeight*.12+30))
+                             }}>
                         <Breadcrumb.Item href="#basicInfo" className="breadcrumb" style={{margin:'0px 3px'}}>
                             <Icon type="user" />                                
                             <span> BASIC INFO</span>                                
