@@ -10,7 +10,7 @@ import CareerHome from '../components/career/careerHome'
 
 const MenuDiv = styled.div`
       position:fixed;
-      z-index:1;
+      z-index:5;
       width:100%;
       top:0px;
       transition:top .3s;
@@ -28,7 +28,7 @@ export default function MenuRoute(){
         
         let prevScrollPos = 0
         
-        function handleScroll(){
+        function handleScroll(){                
             const currentScrollPos = window.pageYOffset            
             const scrollState = currentScrollPos - prevScrollPos    
             dispatch({type:'PageScrollDown',scrollDown:scrollState})                  
@@ -42,7 +42,8 @@ export default function MenuRoute(){
 
         return ()=>window.removeEventListener("scroll",handleScroll)
     },[])
-
+    
+    
     return(
         <Router>            
             <div>                  

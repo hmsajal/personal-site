@@ -7,12 +7,18 @@ import MyImage from '../common/myImage'
 
 const h = window.innerHeight;
 
-const Div = styled.div`                                    
+const Div = styled.div`   
+      background-color:white;                                 
       display: flex;  
       justify-content:space-between;
       align-self:center;   
-      margin-top:10px;           
-      margin-bottom:80px;  
+      margin-top:10px;                 
+      animation-name:fade;
+      animation-duration:0s;      
+      @keyframes fade{
+         from{opacity:0}
+         to{opacity:1}
+      };                            
       @media screen and (max-width:1024px){
           flex-direction:column;
           justify-content:flex-start;
@@ -41,7 +47,7 @@ const ParaDiv = styled.div`
       color:#444;                                 
 `
 const DescDiv = styled.div`
-      width:60%;      
+      width:57%;      
       padding-left:10px;
       @media screen and (max-width:1024px){
           width:100%;
@@ -53,7 +59,8 @@ const DescDiv = styled.div`
 `
 
 
-export default function BioBasicInfo(props){    
+export default function BioBasicInfo(props){        
+     console.log(props.wheelDir)   
     return (                                    
                 <Div id="basicInfo">
                     <ImgParaDiv>

@@ -20,13 +20,14 @@
     "react-dom": "^16.10.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
+    "react-transition-group": "^4.3.0",
     "sass-loader": "^8.0.0",
     "styled-components": "^4.4.0",
     "webpack": "^4.41.2"
   },
   "scripts": {
-    "host":"0.0.0.0",
-    "port":"8080",
+    "host": "0.0.0.0",
+    "port": "8080",
     "dev": "webpack-dev-server --mode=development",
     "webpack-dev-server": "webpack-dev-server",
     "prod": "webpack --mode=production"

@@ -4,18 +4,26 @@ import styled from 'styled-components'
 import 'antd/dist/antd.css'
 
 const Div = styled.div`
-      display:flex;
+      background-color:white;      
       flex-direction:column;
-      align-items:center;            
-      width:100%; 
+      align-items:center;  
+      width:100%;       
+      top:0px;                
+      display:none;    
+      animation-name:fade;
+      animation-duration:2s;
+      @keyframes fade{
+          from{opacity:0}
+          to{opacity:1}
+      };
 `
 
 
 export default function bioTimeline() {
     return (
-        <Div>            
-            <div id="timeline" className="bioHeading">
-                <h3 style={{transform:'skew(15deg)'}}>
+        <Div id="timeline">            
+            <div style={{padding:'20px 0px'}}>
+                <h3>
                     My timeline
                 </h3>      
             </div>
