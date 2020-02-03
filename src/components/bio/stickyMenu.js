@@ -11,18 +11,9 @@ export default function StickyMenu() {
     return (                    
             <Breadcrumb  separator="|" style={{padding:"5px",justifyContent:'center',display:'flex',zIndex:4,
                              alignSelf:'center',color:'#333',transition:'.3s',position:'fixed',                         
-                             background:'linear-gradient(to right,#d0f0c0,#50c888,#d0f0c0)',
-                             borderColor:'#ab9',borderStyle:'solid',
-                             borderWidth: state.scrollDown>0 ? '0px' : 
-                                         (window.matchMedia("(max-width:480px)").matches ? '0px' : '1px'),
-
-                             width: state.scrollDown>0 ? '100%' : 
-                                   (window.matchMedia("(max-width:480px)").matches ? '100%' : 320),
-                             
-                             top: state.scrollDown>0 ? 0 :                                  
-                                 ( window.pageYOffset!==0 ? window.innerHeight*.12 : 
-                                  (window.matchMedia("(max-width:480px)").matches ? window.innerHeight*.12 :
-                                   window.innerHeight*.12+30))
+                             background:'linear-gradient(to right,#d0f0c0,#50c888,#d0f0c0)',                             
+                             width: '100%',                             
+                             top: state.scrollDown>0 ? 0 : window.innerHeight*.12                                                          
                              }}>
                         <Breadcrumb.Item className="breadcrumb" style={{margin:'0px 3px'}}
                                          onClick={()=>{ document.getElementById("basicInfo").style.display="flex"
