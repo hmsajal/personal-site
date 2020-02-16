@@ -24,8 +24,10 @@ module.exports = {
                              })
       ],
     devtool: "source-map",
+
     module: {
-        rules: [
+        rules: [                    
+
                     {
                         test: /\.(js|jsx)$/,
                         exclude: [/node_modules/],                
@@ -52,13 +54,19 @@ module.exports = {
 
                     {
                         test: /\.css$/,
-                        use: [
-                            "style-loader",
-                            "css-loader"                                                                                                         
-                        ]
-                    },
-
-                    
+                        use:
+                            [  
+                             'style-loader',
+                             
+                             {
+                                 loader:'css-loader',
+                                 options:{
+                                     modules:true,                                     
+                                 }
+                             }
+                            ],
+                                                
+                    },                   
 
                     {
                         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,

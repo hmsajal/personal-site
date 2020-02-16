@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import {store} from '../../store.js'
 import CareerNav from './careerNav'
 import CareerContent from './careerContent'
-     
+import CareerAboutme from './careerAboutme'     
 
 const Div = styled.div`
       display:flex;                    
@@ -28,8 +28,11 @@ export default function CareerHome(props) {
 
     return (
         <Div> 
-            <CareerNav/>    
-            <CareerContent/>                              
+            <CareerNav/>   
+            
+            <CareerContent />    
+                    
+            <CareerAboutme/>                          
         </Div>
     )
 }
