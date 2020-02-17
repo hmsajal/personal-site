@@ -1,11 +1,13 @@
 import React from 'react'
-import {Avatar} from 'antd'
 
 import MyPhoto from '../../assets/images/myPhoto.jpg'
+import styles from './myImage.module.css'
 
 
 export default function MyImage(){
-    return(
-        <Avatar src={MyPhoto} size={120} shape={"circle"}/>        
+    return(        
+        <div>
+            <img className={styles.myImage} src={MyPhoto} alt="Hasan Mahmud Sajal" />
+        </div>        
     )
 }

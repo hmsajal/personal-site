@@ -23,7 +23,7 @@ export default function CareerContent() {
 export  function AboutMe(){
     return(
         <Div>
-            <h2 className="check">
+            <h2>
                 About Me
             </h2>
             <div>
