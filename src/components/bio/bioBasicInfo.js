@@ -11,14 +11,7 @@ const Div = styled.div`
       background-color:white;                                 
       display: flex;  
       justify-content:space-between;
-      align-self:center;   
-      margin-top:10px;                 
-      animation-name:fade;
-      animation-duration:0s;      
-      @keyframes fade{
-         from{opacity:0}
-         to{opacity:1}
-      };                            
+      align-self:center;                                           
       @media screen and (max-width:1024px){
           flex-direction:column;
           justify-content:flex-start;
