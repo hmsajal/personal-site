@@ -60,7 +60,7 @@ module.exports = {
                              
                              {
                                  loader:'css-loader',
-                                 options:{
+                                 options:{                                     
                                      modules:true,                                     
                                  }
                              }

@@ -5,10 +5,8 @@ import styled from 'styled-components'
 import "antd/dist/antd.css"
 
 import {store} from '../../store.js'
-import StickyMenu from './stickyMenu'
 import BioBasicInfo from './bioBasicInfo'
 import BioPhotos from './bioPhotos'
-import BioTimeline from './bioTimeline'
 
 
 const Div = styled.div`
@@ -63,11 +61,9 @@ export default function BioHome(props) {
     },[])          
     
     return (          
-            <Div>     
-                <StickyMenu/>                                                                            
+            <Div>                                                                                      
                 <StyledDiv>
-                    <BioBasicInfo wheelDir={wheelDir}/>                    
-                    <BioTimeline wheelDir={wheelDir}/>
+                    <BioBasicInfo wheelDir={wheelDir}/>                                        
                     <BioPhotos wheelDir={wheelDir}/>
                 </StyledDiv>
             </Div>             

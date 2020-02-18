@@ -5,18 +5,11 @@ import styled from 'styled-components'
 const h = window.innerHeight;
 
 const PhotoDiv = styled.div`  
-      background-color:white;          
+      background-color:white;
+      display:flex;             
       flex-direction:column;      
       align-items:center;      
-      width:100%;      
-      top:0px;
-      display:none;   
-      animation-name:fade;
-      animation-duration:2s;
-      @keyframes fade{
-          from{opacity:0}
-          to{opacity:1}
-      };   
+      width:100%;             
 `
 
 export default function BioPhotos() {
