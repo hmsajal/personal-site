@@ -1,16 +1,2 @@
 body{background:#fff}
 
-.bioHeading{
-      display:flex;
-      justify-content:center;
-      align-items:center;   
-      padding:0px 50px; 
-      margin-top:50px;
-      margin-bottom:30px;       
-      background:#50c888aa;         
-      transform:skew(-15deg);        
-      color:'#333';      
-      font-size:15px;
-      border:1px solid #444;
-}
-   
