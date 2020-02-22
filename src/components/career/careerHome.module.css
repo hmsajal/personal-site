@@ -1,0 +1,16 @@
+.career{
+    display:flex;         
+    flex-direction:column;                 
+    margin: 20px;                   
+}
+.outerDiv{
+    display:flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:1025px) {          
+    .career{
+        margin: 50px 170px;   
+        flex-direction: row;
+    }    
+}

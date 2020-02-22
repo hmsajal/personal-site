@@ -1,40 +1,12 @@
 import React,{useContext,useEffect,useState} from 'react'
 import {useRouteMatch} from 'react-router-dom'
 
-import styled from 'styled-components'
-import "antd/dist/antd.css"
+import styles from "./bioHome.module.css"
+import Anchor from "./bioAnchor"
 
 import {store} from '../../store.js'
 import BioBasicInfo from './bioBasicInfo'
-import BioPhotos from './bioPhotos'
-
-
-const Div = styled.div`
-     display:flex;                    
-     align-items:center; 
-     flex-direction:column;   
-     padding-top:60px;         
-     width:100%;        
-     .breadcrumb{
-        color:#444;
-     };   
-     .breadcrumb :hover{
-         font-weight:bold;
-         color:#444;
-     }                                    
-`
-const StyledDiv = styled.div`
-       display:flex;
-       flex-direction:column;                 
-       width:75%;  
-       padding-top:10px;          
-       @media screen and (max-width:640px){
-           width:95%;
-       };
-       @media screen and (min-width:640px) and (max-width:1024){
-           width:80%;
-       }
-`
+//import BioPhotos from './bioPhotos'
 
 
 export default function BioHome(props) {                 
@@ -61,11 +33,14 @@ export default function BioHome(props) {
     },[])          
     
     return (          
-            <Div>                                                                                      
-                <StyledDiv>
+            <div className={styles.main}>  
+                <div className={styles.anchorDiv}>
+                    <Anchor/>
+                </div>                
+                <div className={styles.internalDivs}>
                     <BioBasicInfo wheelDir={wheelDir}/>                                        
-                    <BioPhotos wheelDir={wheelDir}/>
-                </StyledDiv>
-            </Div>             
+                    {/* <BioPhotos wheelDir={wheelDir}/> */}
+                </div>
+            </div>             
     )
 }

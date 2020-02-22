@@ -1,15 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
 
-const Foot = styled.footer`
-      padding:10px 120px; 
-      background-color: #ddd;              
-`
+import styles from './footer.module.css'
+
 
 export default function Footer(props){    
     return(
-            <Foot style={{height:(window.innerHeight*.01*12)}}>
+            <div className={styles.foot}>
                 --- footer is under construction... ---
-            </Foot>
+            </div>
         )
 }

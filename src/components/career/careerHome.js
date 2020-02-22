@@ -1,20 +1,12 @@
 import React,{useContext,useEffect} from 'react'
 import {useRouteMatch} from 'react-router-dom'
-import styled from 'styled-components'
 
 import {store} from '../../store.js'
 import CareerNav from './careerNav'
 import CareerContent from './careerContent'
+import Footer from '../common/footer'
+import styles from './careerHome.module.css'
   
-
-const Div = styled.div`
-      display:flex;                    
-      margin: 30px 100px;                 
-      @media screen and (max-width:1024px) {
-          flex-direction:column;
-          margin: 0px 40px;
-      }
-`
 
 export default function CareerHome(props) {
 
@@ -27,10 +19,14 @@ export default function CareerHome(props) {
     },[])
 
     return (
-        <Div> 
-            <CareerNav/>               
-            <CareerContent />                                                        
-        </Div>
+        <div className={styles.outerDiv}>
+            <div className={styles.career}> 
+                <CareerNav/>               
+                <CareerContent />                                                                 
+            </div>
+            <Footer/>
+        </div>
+        
     )
 }
 

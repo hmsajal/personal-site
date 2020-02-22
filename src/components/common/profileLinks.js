@@ -27,7 +27,7 @@ const StyledList = styled.ul`
    }; 
 `
 const A = styled.a`            
-   color: ${props=>props.colored=="colorful" ? props.iColor : '#494949'};             
+   color: ${props=>props.colored==="colorful" ? props.iColor : '#494949'};             
 `
 
 export default function ProfileLinks(props){         

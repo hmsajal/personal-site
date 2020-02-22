@@ -1,0 +1,13 @@
+.unorderedList{
+    display:flex;    
+    flex-direction:column;      
+    justify-content: space-between;
+    height:170px;         
+    padding:12px 6px;     
+    margin:0px;                    
+    background:linear-gradient(to right,#fafafa,#e2e2e2,#eaeaea,#fafafa);
+    font-size: 17px;    
+}
+.listItem{
+    list-style-type: none;
+}
