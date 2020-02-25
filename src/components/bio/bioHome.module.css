@@ -1,21 +1,32 @@
 .main{
     display:flex;        
-    margin:30px 15px;         
+    margin:30px 10px;         
 }
 .anchorDiv{
-    width:10%;  
-    height:500px;    
+    width:190px;  
+    height:80vh;    
     display:flex;
-    align-items: center;  
+    justify-content: center;
+    align-items: center;          
 }
 .internalDivs{
     display:flex;
-    flex-direction:column;
-    width:90%;    
+    flex-direction:column;            
 }
 
+
+
+@media screen and (min-width:901px) and (max-width: 1024px){
+    .main{        
+        margin:30px 110px;
+    }        
+}
 @media screen and (min-width: 1025px){
     .main{        
-        margin:40px 200px;
+        margin:30px 170px;
     }
 }
+
+
+
+
