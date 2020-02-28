@@ -1,18 +1,30 @@
 .main{
-    display:flex;        
+    display:flex;    
     margin:30px 10px;         
 }
 .anchorDiv{
-    width:190px;  
+    width:320px;  
     height:80vh;    
     display:flex;
     justify-content: center;
-    align-items: center;          
+    align-items: center;                
+}
+.divider{    
+    width:1.5px;
+    height:200px;    
+    background-color: #999;      
+    position:fixed;
+}
+.dividerDiv{
+    display: flex;
+    align-items: center;   
+    height:80vh;     
 }
 .internalDivs{
     display:flex;
-    flex-direction:column;            
+    flex-direction:column;                
 }
+
 
 
 
