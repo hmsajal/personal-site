@@ -3,29 +3,30 @@
     margin:30px 10px;         
 }
 .anchorDiv{
-    width:320px;  
+    width:200px;  
     height:80vh;    
     display:flex;
     justify-content: center;
-    align-items: center;                
-}
-.divider{    
-    width:1.5px;
-    height:200px;    
-    background-color: #999;      
-    position:fixed;
+    align-items: center;                         
 }
 .dividerDiv{
     display: flex;
+    justify-content: center;
     align-items: center;   
-    height:80vh;     
+    width:8px;    
+    height:80vh;             
 }
+.divider{    
+    width:2px;
+    height:180px;    
+    background-color: #999;      
+    position:fixed;
+}
+
 .internalDivs{
     display:flex;
-    flex-direction:column;                
+    flex-direction: column;    
 }
-
-
 
 
 @media screen and (min-width:901px) and (max-width: 1024px){

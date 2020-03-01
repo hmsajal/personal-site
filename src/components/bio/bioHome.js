@@ -6,7 +6,7 @@ import Anchor from "./bioAnchor"
 
 import {store} from '../../store.js'
 import BioBasicInfo from './bioBasicInfo'
-//import BioPhotos from './bioPhotos'
+import BioPhotos from './bioPhotos'
 
 
 export default function BioHome(props) {                 
@@ -39,11 +39,11 @@ export default function BioHome(props) {
                 </div>      
                 <div className={styles.dividerDiv}>
                         <div className={styles.divider}></div>
-                </div>           
-                <div className={styles.internalDivs}>
-                    <BioBasicInfo wheelDir={wheelDir}/>                                        
-                    {/* <BioPhotos wheelDir={wheelDir}/> */}
-                </div>
-            </div>             
+                </div>   
+                <div className={styles.internalDivs}>                    
+                    <BioBasicInfo wheelDir={wheelDir}/>                       
+                    <BioPhotos  wheelDir={wheelDir}/>                                                                  
+                </div>                                  
+            </div>
     )
 }

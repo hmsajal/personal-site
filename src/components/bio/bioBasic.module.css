@@ -37,13 +37,13 @@
     .imgParaDiv{
         flex-direction: row;   
         padding: 50px 0px;
-        padding-right:35px;       
+        padding-right:20px;       
         height:100%;              
     }    
     .myImageDiv{
-        padding: 0px 35px;  
+        padding: 0px 30px;  
         padding-bottom:0px;  
-        align-self: flex-start;          
+        align-self: flex-start;        
     }
     .paraDiv{
         width:auto;    
