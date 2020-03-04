@@ -19,12 +19,16 @@ export default function CareerHome(props) {
     },[])
 
     return (
-        <div className={styles.outerDiv}>
-            <div className={styles.career}> 
-                <CareerNav/>               
-                <CareerContent />                                                                 
+        <div>
+            <div className={styles.careerMain}> 
+                <div className={styles.navDiv}>
+                   <CareerNav/>               
+                </div>
+                <div className={styles.contentDiv}>
+                   <CareerContent/>     
+                </div>                                                                                        
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
         
     )

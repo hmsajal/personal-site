@@ -1,0 +1,24 @@
+.navList{
+    width:60%;                  
+    display:flex;        
+    justify-content:space-between;    
+    align-items:center;  
+    height:100%; 
+}
+.navLink{
+    color:#444;     
+    font-size:19px;        
+    font-weight:400;
+    font-family:Roboto Slab;
+    transition:all .1s;             
+}
+.navLink:hover{                  
+    color:inherit;
+    font-weight:bold;     
+    text-shadow:5px 5px 15px #0002;                          
+} 
+.navLink:active{
+    color:green;
+    font-weight:bold;                    
+    text-shadow:5px 5px 15px #0006;                             
+}

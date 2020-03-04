@@ -1,70 +1,37 @@
 import React from 'react'
-import styled from 'styled-components'
 
-
-const Div =  styled.div`
-      display:flex;
-      flex-direction:column;
-      width:320px;                  
-      padding:18px 16px 100px 16px;
-      margin-right:40px;
-      background:#d0f0c0;  
-      background:linear-gradient(to bottom,#60a677,#a5d6a7,#d0f0c0);
-      border-radius:6px 6px 0px 0px;            
-      @media screen and (max-width:1024px) {
-          width:100%;
-      }
-`
-
-const StyledNavLink = styled.a`      
-      display:flex;
-      align-items:center;
-      font-size:22px;      
-      font-family:squada one;      
-      background:#ceb;
-      color:#557;
-      height:38px;
-      margin:5px 0px;      
-      padding:4px 12px;  
-      border-radius:1px;  
-      transition:all .2s;
-      
-      :hover{
-          color:#333;                    
-          transform: scale(1.012,1.1)
-      }
-`
+import styles from './careerNav.module.css'
 
 export default function CareerNav() {
     return (
-        <Div>    
-            <StyledNavLink href="#career-about-me">
+        <div className={styles.mainDiv}>    
+            <a className={styles.navLink} href="#career-about-me">
                 About Me
-            </StyledNavLink>  
+            </a>  
 
-            <StyledNavLink href="#career-skills">
+            <a className={styles.navLink} href="#career-skills">
                 Skills                  
-            </StyledNavLink>                                 
+            </a>                                 
             
-            <StyledNavLink href="#career-projects">
+            <a className={styles.navLink} href="#career-projects">
                 Projects                               
-            </StyledNavLink>  
+            </a>  
             
-            <StyledNavLink href="#career-education">
+            <a className={styles.navLink} href="#career-education">
                 Education               
-            </StyledNavLink> 
+            </a> 
 
-            <StyledNavLink href="#career-certifications">
+            <a className={styles.navLink} href="#career-certifications">
                 Certifications              
-            </StyledNavLink>   
+            </a>   
             
-            <StyledNavLink href="#career-experiences">
+            <a className={styles.navLink} href="#career-experiences">
                 Experiences                 
-            </StyledNavLink>      
+            </a>      
 
-            <StyledNavLink href="#career-others">
+            <a className={styles.navLink} href="#career-others">
                 Others                
-            </StyledNavLink>                                         
-        </Div>
+            </a>                                         
+        </div>
     )
 }

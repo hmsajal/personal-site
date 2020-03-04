@@ -1,0 +1,43 @@
+.mainDiv{
+    display:flex;
+    width:100%;
+    flex-direction:column;                 
+    padding:18px 16px 80px 16px;    
+    background:#d0f0c0;  
+    background:linear-gradient(to bottom,#60a677,#a5d6a7,#d0f0c0);
+    border-radius:6px 6px 0px 0px;                
+}
+.navLink{
+    display:flex;
+    align-items:center;
+    font-size:18px;      
+    font-family:squada one;      
+    background:#ceb;
+    color:#557;
+    height:38px;
+    margin:5px 0px;      
+    padding:4px 12px;  
+    border-radius:1px;  
+    transition:all .2s;   
+}
+.navLink:hover{
+    color:#333;                    
+    transform: scale(1.012,1.1)
+}
+
+@media screen and (min-width:769px){
+    .mainDiv{
+        width:240px;
+    }
+    .navLink{
+        font-size:19px;
+    }
+}
+@media screen and (min-width:1025px){
+    .mainDiv{
+        width:280px;
+    }
+    .navLink{
+        font-size:21px;
+    }
+}

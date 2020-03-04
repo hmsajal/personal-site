@@ -2,3 +2,42 @@ body{
     background:#fff
 }
 
+
+.flexrcc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexccc{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flexrcs{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.flexrsc{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.flexccs{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.flexcsc{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+

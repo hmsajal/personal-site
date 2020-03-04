@@ -1,29 +1,23 @@
 import React from 'react'
 import {Empty} from 'antd'
-import styled from 'styled-components'
 
-const h = window.innerHeight;
+import styles from './bioPhotos.module.css'
 
-const PhotoDiv = styled.div`  
-      background-color:white;
-      display:flex;             
-      flex-direction:column;      
-      align-items:center;      
-      width:100%;             
-`
 
 export default function BioPhotos() {
     return (
-        <PhotoDiv style={{height:h}} id="photos">
-            <div style={{paddingTop:20}}>
+        <div id="bioPhotos" className={styles.main}>
+            <div>
                 <h3>
                     My Photos
                 </h3>
             </div>
-            <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="no photos yet" 
-                          style={{background:'#f2f2f2',height:'70%',width:'70%',display:'flex',
-                                  justifyContent:'center',alignItems:'center'}}
-            />
-        </PhotoDiv>
+            <div className={styles.empty}>
+                <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description="no photos yet" 
+                            style={{background:'#f2f2f2',height:'70%',width:'70%',display:'flex',
+                                    justifyContent:'center',alignItems:'center'}}
+                />
+            </div>
+        </div>
     )
 }

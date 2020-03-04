@@ -1,57 +1,32 @@
-import React, { useContext } from 'react'
-import styled from 'styled-components'
+import React, { useContext} from 'react'
 import {NavLink} from 'react-router-dom'
 import {Drawer,Button, Icon} from 'antd'
 
-import {store} from '../../store.js'
+import styles from './menuPart.module.css'
 
-const NavItemsGroup = styled.nav`
-      width:60%;                  
-      display:flex;        
-      justify-content:space-between;    
-      align-items:center;  
-      height:100%;    
-                                                    
-`
-const StyledNavLink = styled(NavLink)`
-      color:#444;     
-      font-size:19px;        
-      font-weight:400;
-      font-family:Roboto Slab;
-      transition:all .1s;
-      :hover{                  
-          color:inherit;
-          font-weight:bold;     
-          text-shadow:3px 3px 3px #ccc;           
-      }    
-      :active{
-          color:green;
-          font-weight:bold;                    
-          text-shadow:3px 3px 4px #888;                              
-      }
-`
+import {store} from '../../store.js'
 
 
 export function NavMenu(props){   
-    
+        
     const globalState = useContext(store)
     const {state,dispatch} = globalState
     
     return(
         <div style={{width:'40%'}}>
-            <NavItemsGroup >            
-                <StyledNavLink style={{color:state.selectedMenu==="/bio" &&  "green"}} to="/bio" >
+            <nav className={styles.navList}>            
+                <NavLink className={styles.navLink} style={{color:state.selectedMenu==="/bio" &&  "green"}} to="/bio" >
                     Bio
-                </StyledNavLink>                
+                </NavLink>                
 
-                <StyledNavLink  style={{color:state.selectedMenu==="/career" &&  "green"}} to="/career">
+                <NavLink className={styles.navLink} style={{color:state.selectedMenu==="/career" &&  "green"}} to="/career">
                     Career
-                </StyledNavLink>
+                </NavLink>
 
-                <StyledNavLink style={{color:state.selectedMenu==="/blog" &&  "green"}} to="/blog" >
+                <NavLink className={styles.navLink} style={{color:state.selectedMenu==="/blog" &&  "green"}} to="/blog" >
                     Blog
-                </StyledNavLink>
-            </NavItemsGroup>
+                </NavLink>
+            </nav>
         </div>        
     )
 }

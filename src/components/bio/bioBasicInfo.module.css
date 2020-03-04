@@ -1,7 +1,13 @@
-.mainDiv{                                   
+.outerDiv{                                   
       display: flex;                  
-      width:100%;                                                      
+      width:100%;    
+      height:75vh;                                                              
 }
+.main{
+    composes:outerDiv;
+    visibility: visible;
+}
+
 .imgParaDiv{          
       padding:30px 15px;                
       display:flex;      
