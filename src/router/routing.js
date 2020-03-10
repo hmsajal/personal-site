@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter, Route} from 'react-router-dom'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 import Home from '../components/home/home'
 import MenuRoute from './menuRoute'
@@ -8,14 +8,14 @@ export default function Routing() {
     
     return (
         <BrowserRouter>
-            <div>
+            <Switch>
                 <Route path="/" exact>
                     <Home/>
                 </Route>
-                <Route path="/:link">
+                <Route path='/:link'>
                     <MenuRoute/>                        
                 </Route>                                                      
-            </div>
+            </Switch>
         </BrowserRouter>
     )
     

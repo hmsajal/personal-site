@@ -13,7 +13,7 @@ export function NavMenu(props){
     const {state,dispatch} = globalState
     
     return(
-        <div style={{width:'40%'}}>
+        <div className={styles.navMenuMain}>
             <nav className={styles.navList}>            
                 <NavLink className={styles.navLink} style={{color:state.selectedMenu==="/bio" &&  "green"}} to="/bio" >
                     Bio

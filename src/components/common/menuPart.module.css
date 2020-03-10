@@ -1,9 +1,15 @@
-.navList{
-    width:60%;                  
-    display:flex;        
-    justify-content:space-between;    
+.navMenuMain{                    
+    display:flex;              
     align-items:center;  
-    height:100%; 
+    height:100%;        
+    width: 24vw;
+    margin-left:150px;    
+}
+.navList{    
+    width:100%;
+    display:flex;
+    justify-content: space-between;    
+    align-items: center;
 }
 .navLink{
     color:#444;     

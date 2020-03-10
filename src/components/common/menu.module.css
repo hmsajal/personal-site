@@ -4,35 +4,42 @@
       flex-direction:row;
       align-items:center;      
       width:100%;    
-      height:11vh;
-      justify-content:space-between;  
+      height:11vh;      
       padding-left:25px;
       padding-right:25px;        
       box-shadow:0px 0px 1px #777;     
 }
-.myName{
-    height:100%;      
+.myNameDiv{
+      height:100%;      
       display:flex;
-      align-items:center;
-      width:225px;
-      font-size:13px;
-      color:#60a677;                        
-      font-family:space comics;          
-      font-weight:normal;                   
+      align-items:center;      
+      width:225px;                                         
 }
-
-
-@media screen and (min-width:1025px){   
-    .outerDiv{
-        padding-right: 70px;
-        padding-left:70px;
-    }
+.myName{
+      font-size:13px;
+      color:#529468;                        
+      font-family:space comics;          
+      font-weight:normal;        
+}
+.myName:hover{
+    color:#327047;
 }
 
 @media screen and (min-width:641px){   
-    .myName{        
-      width:320px; 
-      font-size:16px;  
+    .myNameDiv{
+        width:300px; 
     }
-    
-}; 
+    .myName{              
+      font-size:14px;  
+    }        
+}
+
+@media screen and (min-width:1025px){   
+    .outerDiv{
+        padding-left:70px;  
+        padding-right:70px;           
+    }
+    .myName{
+        font-size:15px;
+    }
+}

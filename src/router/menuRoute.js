@@ -2,6 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
 
 import {store}  from '../store'
+import Home from '../components/home/home'
 import Menu from '../components/common/menu'
 import BioHome from '../components/bio/bioHome'
 import BlogHome from '../components/blog/blogHome'
@@ -35,25 +36,32 @@ export default function MenuRoute(){
     
     
     return(
-        <Router>            
-            <div>                  
-                <div id="menu" className={styles.menu}>                                                
-                    <Menu/>                                
-                </div>                            
-                <div className={styles.routes}>
-                    <Switch>
-                        <Route path="/bio">
-                            <BioHome/>
-                        </Route>
-                        <Route path="/blog">
-                            <BlogHome/>
-                        </Route> 
-                        <Route path="/career">
-                            <CareerHome/>
-                        </Route>                  
-                    </Switch>
-                </div>                
-            </div>
+        <Router>  
+            <Switch>                
+                <Route path="/:link">
+                  <div>                  
+                    <div id="menu" className={styles.menu}>                                                
+                        <Menu/>                                
+                    </div>                            
+                    <div className={styles.routes}>
+                        <Switch>
+                            <Route path="/bio">
+                                <BioHome/>
+                            </Route>
+                            <Route path="/blog">
+                                <BlogHome/>
+                            </Route> 
+                            <Route path="/career">
+                                <CareerHome/>
+                            </Route>                  
+                        </Switch>
+                    </div>                
+                  </div>                
+                </Route>    
+                <Route path="/">
+                    <Home/>
+                </Route>        
+            </Switch>                      
         </Router>        
     )
 }
