@@ -38,6 +38,10 @@
     display:flex;
     align-items:center;    
 }
+.main:target{            
+    padding-top: 100px;
+    margin-top:-100px;          
+}
 
 @media screen and (min-width: 901px) {     
     .imgParaDiv{

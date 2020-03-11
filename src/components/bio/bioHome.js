@@ -41,10 +41,10 @@ export default function BioHome(props) {
                 <div className={styles.dividerDiv}>
                         <div className={styles.divider}></div>
                 </div>   
-                <div className={styles.internalDivs}>                    
-                    <BioBasicInfo wheelDir={wheelDir}/>                       
-                    <BioPhotos  wheelDir={wheelDir}/>                
-                    <BioContact wheelDir={wheelDir}/>                                                  
+                <div className={styles.internalDivs}>                                     
+                    <BioBasicInfo wheelDir={wheelDir}/>                                                    
+                    <BioPhotos  wheelDir={wheelDir}/>                                           
+                    <BioContact wheelDir={wheelDir}/>                              
                 </div>                                  
             </div>
     )

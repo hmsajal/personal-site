@@ -6,8 +6,8 @@ import MyImage from '../common/myImage'
 
 
 export default function BioBasicInfo(props){             
-    return (                                    
-                <div id="bioBasicInfo" className={styles.main}>                    
+    return (                      
+                    <div className={styles.main} id="bioBasicInfo">                                       
                         <div className={styles.imgParaDiv}>                                                        
                             <div className={styles.myImageDiv}>
                                <MyImage imgWidth="120px"/>            
@@ -19,7 +19,7 @@ export default function BioBasicInfo(props){
                         </div>       
                         <div className={styles.profileDiv}>
                               <ProfileLinks/>
-                        </div>                                   
-                </div>                                             
+                        </div>                                                                                
+                    </div>                
     )        
 }

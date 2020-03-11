@@ -22,12 +22,7 @@ export default function MenuRoute(){
         function handleScroll(){                
             const currentScrollPos = window.pageYOffset            
             const scrollState = currentScrollPos - prevScrollPos    
-            dispatch({type:'PageScrollDown',scrollDown:scrollState})                  
-            if(scrollState>0){
-                document.getElementsById("menu").style.top =  '-11vh'                 
-            }
-            else document.getElementsById("menu").style.top = '0px';
-             
+            dispatch({type:'PageScrollDown',scrollDown:scrollState})                                      
             prevScrollPos = currentScrollPos                
         }            
 
