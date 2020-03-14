@@ -1,0 +1,11 @@
+.piledSegment{
+    composes: ui piled segment from global;
+    width:100%;
+    height:100%;
+}
+.skillsList{
+    line-height: 25px;
+}
+.header{
+    composes: ui header from global;
+}

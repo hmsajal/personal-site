@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styles from './careerNav.module.css'
+import {store} from '../../store'
 
 export default function CareerNav() {
     return (

@@ -1,11 +1,15 @@
 .mainDiv{
-    display:flex;
-    width:100%;
-    flex-direction:column;                 
+    display:flex;    
+    flex-direction:column;   
+    top:16vh;     
+    left:20px;
+    right:20px;    
     padding:18px 16px 80px 16px;    
     background:#d0f0c0;  
     background:linear-gradient(to bottom,#60a677,#a5d6a7,#d0f0c0);
-    border-radius:6px 6px 0px 0px;                
+    border-radius:6px 6px 0px 0px;    
+    position:fixed;    
+    z-index:4;         
 }
 .navLink{
     display:flex;
@@ -27,6 +31,8 @@
 
 @media screen and (min-width:769px){
     .mainDiv{
+        top:19vh;
+        left:50px;
         width:240px;
     }
     .navLink{
@@ -35,6 +41,8 @@
 }
 @media screen and (min-width:1025px){
     .mainDiv{
+        top:21vh;
+        left:110px;
         width:280px;
     }
     .navLink{

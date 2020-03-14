@@ -1,37 +1,22 @@
-.careerMain{
-    display:flex;         
-    flex-direction:column;              
-    margin: 20px;                       
-}
-.outerDiv{
-    display:flex;
-    flex-direction: column;
-}
-.navDiv{
-    margin-bottom: 30px;          
-}
-.contentDiv{
-    width:100%;               
+.contentDiv{            
+    position:absolute;   
+    top: 500px;
+    left:20px;
+    right:20px;    
 }
 
-@media screen and (min-width:769px){
-    .careerMain{        
-        margin:50px;
-        flex-direction: row;     
-        align-items: flex-start;           
-    }   
-    .navDiv{
-        margin-right:40px;        
-    }     
+
+@media screen and (min-width:769px){           
     .contentDiv{
-        width:100%;        
-    }
+        top:9vh;
+        left:320px;   
+        right:50px;     
+    }       
 }
 @media screen and (min-width:1025px) {          
-    .careerMain{
-        margin: 80px 110px;                  
-    }   
-    .navDiv{
-        margin-right:50px;        
-    }      
+    .contentDiv{
+        top:11vh;
+        left:430px;
+        right:110px;        
+    }            
 }

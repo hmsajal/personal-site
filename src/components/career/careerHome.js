@@ -3,10 +3,10 @@ import {useRouteMatch} from 'react-router-dom'
 
 import {store} from '../../store.js'
 import CareerNav from './careerNav'
-import CareerContent from './careerContent'
+import CareerContents from './careerContents'
 import Footer from '../common/footer'
 import styles from './careerHome.module.css'
-  
+
 
 export default function CareerHome(props) {
 
@@ -20,12 +20,10 @@ export default function CareerHome(props) {
 
     return (
         <div>
-            <div className={styles.careerMain}> 
-                <div className={styles.navDiv}>
-                   <CareerNav/>               
-                </div>
+            <div>                   
+                <CareerNav/>                                                                                      
                 <div className={styles.contentDiv}>
-                   <CareerContent/>     
+                   <CareerContents/>     
                 </div>                                                                                        
             </div>
             {/* <Footer/> */}

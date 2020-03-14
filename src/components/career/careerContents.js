@@ -1,8 +1,10 @@
 import React from 'react'
 
-import styles from './careerDistinctContents.module.css'
+import styles from './careerContents.module.css'
 
-export  function AboutMe(){
+export default Skills;
+
+function AboutMe(){
     return(
         <div class={styles.piledSegment}>
             <h4 class={styles.header}>About Me</h4>
@@ -11,24 +13,26 @@ export  function AboutMe(){
     )
 }
 
-export  function Skills(){
+function Skills(){
     return(
-        <div>
-            <h2>
-                Skills
-            </h2>
-            <div>
-
-            </div>
-        </div>        
+        <div class={styles.piledSegment}>
+            <h4 class={styles.header}>Skills</h4>
+            <ul className={styles.skillsList}>
+                <li> JavaScript, CSS, SASS</li>
+                <li> ReactJS, React Native, React Hooks</li>
+                <li> React-router-dom, Material-design, Styled Components</li>
+                <li> Webpack, Babel</li>
+                <li> Git, Linux, MySql</li>
+            </ul>
+        </div>     
     )
 }
 
-export  function Projects(){
+function Projects(){
     return(
         <div>
             <h2>
-                My Projects
+                All my Projects will be shown here.
             </h2>
             <div>
                 
@@ -37,7 +41,7 @@ export  function Projects(){
     )
 }
 
-export  function Education(){
+function Education(){
     return(
         <div>
             <h2>
@@ -50,7 +54,7 @@ export  function Education(){
     )
 }
 
-export  function Certifications(){
+function Certifications(){
     return(
         <div>
             <h2>
@@ -63,7 +67,7 @@ export  function Certifications(){
     )
 }
 
-export  function Experiences(){
+function Experiences(){
     return(
         <div>
             <h2>
@@ -76,7 +80,7 @@ export  function Experiences(){
     )
 }
 
-export  function Others(){
+function Others(){
     return(
         <div>
             <h2>

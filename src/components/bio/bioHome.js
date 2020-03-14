@@ -39,7 +39,7 @@ export default function BioHome(props) {
                     <Anchor/>                    
                 </div>      
                 <div className={styles.dividerDiv}>
-                        <div className={styles.divider}></div>
+                    <div className={styles.divider}></div>
                 </div>   
                 <div className={styles.internalDivs}>                                     
                     <BioBasicInfo wheelDir={wheelDir}/>                                                    
