@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import styled from 'styled-components'
-import {BrowserRouter,NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {Drawer,Button, Icon} from 'antd'
 
 const NavButtonDiv = styled.div`      
@@ -17,7 +17,7 @@ const NavItemsGroup = styled.nav`
       align-items:center;  
       height:100%;                            
 `
-const StyledNavLink = styled(NavLink)`
+const StyledLink = styled(Link)`
       color:#214;      
       font-size:22px;  
       font-family:lato;    
@@ -31,17 +31,17 @@ const StyledNavLink = styled(NavLink)`
 export function NavMenu(){
     return(
         <NavItemsGroup>            
-            <StyledNavLink to="/bio" >
+            <StyledLink to="/bio" >
                 Bio
-            </StyledNavLink>                
+            </StyledLink>                
 
-            <StyledNavLink to="/career">
+            <StyledLink to="/career">
                 Career
-            </StyledNavLink>
+            </StyledLink>
 
-            <StyledNavLink to="/blog" >
+            <StyledLink to="/blog" >
                 Blog
-            </StyledNavLink>
+            </StyledLink>
         </NavItemsGroup>
     )
 }
@@ -69,9 +69,9 @@ export function NavBar(){
             >
                 <div style={{display:'flex',flexDirection:'column',alignItems:'flex-start',justifyContent:'space-evenly',
                      color:'black',height:100}}>
-                        <NavLink to="/bio">Bio</NavLink>
-                        <NavLink to="/career">Career and Skills</NavLink>
-                        <NavLink to="/blog">Blog</NavLink>  
+                        <Link to="/bio">Bio</Link>
+                        <Link to="/career">Career and Skills</Link>
+                        <Link to="/blog">Blog</Link>  
                 </div>                    
             </Drawer>
         </NavButtonDiv>

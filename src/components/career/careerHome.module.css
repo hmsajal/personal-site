@@ -1,22 +1,41 @@
+.navDiv{
+    position:fixed;
+    z-index:4;   
+    top:16vh;     
+    left:20px;
+    right:20px; 
+}
 .contentDiv{            
     position:absolute;   
     top: 500px;
     left:20px;
     right:20px;    
 }
+.footerDiv{
 
+}
 
 @media screen and (min-width:769px){           
+    .navDiv{
+        top:19vh;
+        left:50px;
+        width:240px;
+    } 
     .contentDiv{
         top:9vh;
         left:320px;   
         right:50px;     
-    }       
+    }              
 }
 @media screen and (min-width:1025px) {          
+    .navDiv{
+        top:21vh;
+        left:110px;
+        width:280px;
+    } 
     .contentDiv{
         top:11vh;
         left:430px;
         right:110px;        
-    }            
+    }               
 }

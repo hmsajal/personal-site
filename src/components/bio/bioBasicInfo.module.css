@@ -1,15 +1,12 @@
-.outerDiv{                                   
-      display: flex;                  
-      width:100%;    
-      height:75vh;                                                              
-}
 .main{
-    composes:outerDiv;
-    visibility: visible;
+    display: flex;                  
+    width:100%;     
+    padding-top:40px;     
+    padding-right:30px;   
 }
 
 .imgParaDiv{          
-      padding:30px 15px;                
+      padding: 0px 30px 10px 30px;                
       display:flex;      
       flex-direction: column;       
       align-items: center;         
@@ -20,39 +17,42 @@
       justify-content: center;
       align-items: center;   
       align-self:center;      
-      padding-bottom:15px;               
+      padding-bottom:28px;               
 }
 .paraDiv{      
       display:flex;  
       align-self: center;        
       width:100%;                   
-      font-size:16px;  
-      padding:10px 15px;             
+      font-size:16px;                   
       color:#444;       
       text-align: justify;
       text-justify: auto;
       line-height: 25px;                              
 }
-.profileDiv{
-    height:80vh;
-    display:flex;
-    align-items:center;    
+.profileLinksDiv{
+      display:flex;
+      align-items: center;      
+      position:fixed;
+      top: 11vh;      
+      bottom:0vh;
+      right:10px;
 }
 .main:target{            
     padding-top: 100px;
     margin-top:-100px;          
 }
 
-@media screen and (min-width: 901px) {     
+@media screen and (min-width: 901px) {   
+    .main{
+        padding-top:65px;
+    }  
     .imgParaDiv{
-        flex-direction: row;   
-        padding: 50px 0px;
-        padding-right:20px;       
+        flex-direction: row;     
+        padding-bottom:0px;          
         height:100%;              
     }    
     .myImageDiv{
-        padding: 0px 30px;  
-        padding-bottom:0px;  
+        padding: 0px 30px 0px 0px;          
         align-self: flex-start;        
     }
     .paraDiv{
@@ -60,4 +60,13 @@
         align-self:flex-start;
         padding:5px;            
     }   
+    .profileLinksDiv{
+        right:110px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .profileLinksDiv{
+        right:170px;
+    }
 }

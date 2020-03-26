@@ -1,10 +1,10 @@
-.outerDiv{
+.ul{
     display:flex;    
     flex-direction:column;      
-    justify-content:space-evenly; 
-    height:110px;
-    align-items: center;                     
-    position:fixed;        
+    justify-content:space-evenly;     
+    align-items: center;                         
+    height:18vh;     
+    width:100%;     
 }
 
 .anchor{
@@ -13,17 +13,18 @@
     color: #222;
     transition: font-size, .1s;
 }
+.activeStyle{
+    color:rgb(11, 228, 109)
+}
 
-@media screen and (min-width:391px) and (max-width: 800px){
+@media screen and (min-width:391px){
     .anchor{
-        font-size: 14px;
-        font-weight: bold;
+        font-size: 14px;        
     }
 }
 @media screen and (min-width:800px){
     .anchor{
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 16px;        
     }
 }
 

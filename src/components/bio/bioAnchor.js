@@ -1,28 +1,23 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 import styles from './bioAnchor.module.css'
 
 
-let showItem = function(vis1,vis2,vis3){
-   document.getElementById("bioBasicInfo").style.visibility = vis1
-   document.getElementById("bioPhotos").style.visibility = vis2
-   document.getElementById("bioContact").style.visibility = vis3
-}
-
 function BioAnchor() {
     return(        
-        <div className={styles.outerDiv}>              
-               <a className={styles.anchor} href="#bioBasicInfo" onClick={()=>showItem('visible','hidden','hidden')}>
+        <div className={styles.ul}>              
+               <NavLink className={styles.anchor} to="/bio/info" activeStyle={{color:'green'}}>
                   intro
-               </a>                                                       
+               </NavLink>                                                       
 
-               <a className={styles.anchor} href="#bioPhotos" onClick={()=>showItem('hidden','visible','hidden')}>
+               <NavLink className={styles.anchor} to="/bio/photos" activeStyle={{color:'green'}}>
                   photos                  
-               </a>                                                                  
+               </NavLink>                                                                  
                
-               <a className={styles.anchor} href="#bioContact" onClick={()=>showItem('hidden','hidden','visible')}>
+               <NavLink className={styles.anchor} to="/bio/contact" activeStyle={{color:'green'}}>
                   contact
-               </a>                                                                                                                                   
+               </NavLink>                                                                                                                                   
         </div>  
     )
 }

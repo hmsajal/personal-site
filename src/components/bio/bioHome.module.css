@@ -1,44 +1,71 @@
-.main{
-    display:flex;    
-    margin:30px 10px;         
-}
 .anchorDiv{
-    width:200px;  
-    height:80vh;    
-    display:flex;
+    left:10px;
+    width:80px;        
+    position:fixed;  
+    top:11vh;
+    bottom:0vh;
+    display:flex;    
+    align-items: center;    
     justify-content: center;
-    align-items: center;                         
+                 
 }
-.dividerDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    width:8px;    
-    height:80vh;             
-}
-.divider{    
-    width:1px;
-    height:150px;    
+
+.dividerRight{     
+    width:1px;       
     background-color: #999;      
     position:fixed;
+    left:90px;  
+    top:44vh;
+    bottom:32vh;  
 }
+
 
 .internalDivs{
     display:flex;
-    flex-direction: column;    
+    flex-direction: column;        
+    position:absolute;   
+    left: 90px; 
+    right:10px;
 }
 
-@media screen and (min-width:901px) and (max-width: 1024px){
-    .main{        
-        margin:30px 110px;
-    }        
-}
-@media screen and (min-width: 1025px){
-    .main{        
-        margin:30px 170px;
+
+@media screen and (min-width:901px){        
+    .anchorDiv{
+        left:110px;
+        width:100px;
+    }
+    .internalDivs{
+        left: 210px;
+        right: 110px;
+    }
+    .dividerLeft{
+        width:1px;       
+        background-color: #999;      
+        position:fixed;
+        left:207px;  
+        top:49vh;
+        bottom:37vh;  
+    }
+    .dividerRight{
+        left:212px;
     }
 }
-
+@media screen and (min-width: 1025px){
+    .anchorDiv{
+        left:170px;
+        width:100px;
+    }
+    .internalDivs{
+        left: 270px;
+        right:170px;
+    }
+    .dividerLeft{
+        left:267px;                
+    }
+    .dividerRight{
+        left:272px;                
+    }
+}
 
 
 

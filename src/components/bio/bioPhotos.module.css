@@ -1,13 +1,8 @@
-.outerDiv{    
+.main{
     display:flex;             
     flex-direction:column;      
     align-items:center;      
-    width:100%;   
-    height:75vh;    
-}
-.main{
-    composes:outerDiv;
-    visibility: hidden;
+    width:100%;     
 }
 .empty{
     display: flex;

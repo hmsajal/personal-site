@@ -2,9 +2,8 @@ import React from 'react'
 
 import styles from './careerContents.module.css'
 
-export default Skills;
 
-function AboutMe(){
+export function AboutMe(){
     return(
         <div class={styles.piledSegment}>
             <h4 class={styles.header}>About Me</h4>
@@ -13,7 +12,7 @@ function AboutMe(){
     )
 }
 
-function Skills(){
+export function Skills(){
     return(
         <div class={styles.piledSegment}>
             <h4 class={styles.header}>Skills</h4>
@@ -28,7 +27,7 @@ function Skills(){
     )
 }
 
-function Projects(){
+export function Projects(){
     return(
         <div>
             <h2>
@@ -41,7 +40,7 @@ function Projects(){
     )
 }
 
-function Education(){
+export function Education(){
     return(
         <div>
             <h2>
@@ -54,7 +53,7 @@ function Education(){
     )
 }
 
-function Certifications(){
+export function Certifications(){
     return(
         <div>
             <h2>
@@ -67,7 +66,7 @@ function Certifications(){
     )
 }
 
-function Experiences(){
+export function Experiences(){
     return(
         <div>
             <h2>
@@ -80,7 +79,7 @@ function Experiences(){
     )
 }
 
-function Others(){
+export function Others(){
     return(
         <div>
             <h2>

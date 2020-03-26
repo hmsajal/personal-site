@@ -1,12 +1,12 @@
 import React from 'react';
-import Routing from './router/routing'
 
+import Routing from './components/router/routing'
 import {StateProvider} from './store.js'
 
 function App() {
   return (    
     <StateProvider>
-           <Routing/>
+       <Routing/>
     </StateProvider>
   );
 }

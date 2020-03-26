@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {BrowserRouter,Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const Div = styled.div`
     color:#f6e2b9;        

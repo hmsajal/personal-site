@@ -1,38 +1,40 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import styles from './careerNav.module.css'
-import {store} from '../../store'
+
 
 export default function CareerNav() {
+
     return (
         <div className={styles.mainDiv}>    
-            <a className={styles.navLink} href="#career-about-me">
-                About Me
-            </a>  
+            <Link className={styles.navLink} to="career/about-me">
+                About Me                
+            </Link>  
 
-            <a className={styles.navLink} href="#career-skills">
+            <Link className={styles.navLink} to="career/skills">
                 Skills                  
-            </a>                                 
+            </Link>                                 
             
-            <a className={styles.navLink} href="#career-projects">
+            <Link className={styles.navLink}>
                 Projects                               
-            </a>  
+            </Link>  
             
-            <a className={styles.navLink} href="#career-education">
+            <Link className={styles.navLink}>
                 Education               
-            </a> 
+            </Link> 
 
-            <a className={styles.navLink} href="#career-certifications">
+            <Link className={styles.navLink}>
                 Certifications              
-            </a>   
+            </Link>   
             
-            <a className={styles.navLink} href="#career-experiences">
+            <Link className={styles.navLink}>
                 Experiences                 
-            </a>      
+            </Link>      
 
-            <a className={styles.navLink} href="#career-others">
+            <Link className={styles.navLink}>
                 Others                
-            </a>                                         
+            </Link>                                         
         </div>
     )
 }

@@ -1,29 +1,24 @@
-import React, { useContext} from 'react'
+import React from 'react'
 import {NavLink} from 'react-router-dom'
 import {Drawer,Button, Icon} from 'antd'
 
 import styles from './menuPart.module.css'
 
-import {store} from '../../store.js'
-
 
 export function NavMenu(props){   
-        
-    const globalState = useContext(store)
-    const {state,dispatch} = globalState
-    
+
     return(
         <div className={styles.navMenuMain}>
             <nav className={styles.navList}>            
-                <NavLink className={styles.navLink} style={{color:state.selectedMenu==="/bio" &&  "green"}} to="/bio" >
+                <NavLink className={styles.navLink} activeStyle={{color:'green'}} to="/bio" >
                     Bio
                 </NavLink>                
 
-                <NavLink className={styles.navLink} style={{color:state.selectedMenu==="/career" &&  "green"}} to="/career">
+                <NavLink className={styles.navLink} activeStyle={{color:'green'}} to="/career">
                     Career
                 </NavLink>
 
-                <NavLink className={styles.navLink} style={{color:state.selectedMenu==="/blog" &&  "green"}} to="/blog" >
+                <NavLink className={styles.navLink} activeStyle={{color:'green'}} to="/blog" >
                     Blog
                 </NavLink>
             </nav>

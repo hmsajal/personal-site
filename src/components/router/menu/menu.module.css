@@ -7,7 +7,18 @@
       height:11vh;      
       padding-left:25px;
       padding-right:25px;        
-      box-shadow:0px 0px 1px #777;     
+      box-shadow:0px 0px 1px #777;           
+}
+.menuFixed{
+    position:fixed;
+    z-index:5;            
+    top:0px;
+    left:0px;
+    transition:top .3s;
+}
+.mainDiv{
+    composes: menuFixed;
+    composes: outerDiv;
 }
 .myNameDiv{
       height:100%;      
