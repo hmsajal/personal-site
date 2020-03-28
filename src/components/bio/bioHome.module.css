@@ -25,45 +25,45 @@
     flex-direction: column;        
     position:absolute;   
     left: 90px; 
-    right:10px;
+    right:10px;    
 }
 
 
 @media screen and (min-width:901px){        
     .anchorDiv{
         left:110px;
-        width:100px;
+        width:120px;
     }
     .internalDivs{
-        left: 210px;
+        left: 230px;
         right: 110px;
     }
     .dividerLeft{
         width:1px;       
         background-color: #999;      
         position:fixed;
-        left:207px;  
+        left:227px;  
         top:49vh;
         bottom:37vh;  
     }
     .dividerRight{
-        left:212px;
+        left:232px;
     }
 }
 @media screen and (min-width: 1025px){
     .anchorDiv{
         left:170px;
-        width:100px;
+        width:130px;
     }
     .internalDivs{
-        left: 270px;
+        left: 300px;
         right:170px;
     }
     .dividerLeft{
-        left:267px;                
+        left:297px;                
     }
     .dividerRight{
-        left:272px;                
+        left:302px;                
     }
 }
 
