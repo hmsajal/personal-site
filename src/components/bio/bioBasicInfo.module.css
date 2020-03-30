@@ -2,7 +2,7 @@
     display: flex;  
     flex-direction: column;                
     width:100%;     
-    padding:40px 40px 0px 30px;           
+    padding-top:40px;           
 }
 
 .imgParaDiv{                             
@@ -29,7 +29,7 @@
       composes: ui horizontal section divider from global;                 
 }
 .interests{
-      composes: ui item from global;      
+      padding:10px 0px;
 }
 .profileLinksDiv{
       display:flex;
@@ -46,7 +46,7 @@
 
 @media screen and (min-width: 901px) {   
     .main{
-        padding:70px 50px 0px 35px;
+        padding-top:70px;
     }  
     .imgParaDiv{
         flex-direction: row;                
@@ -57,15 +57,14 @@
         padding-bottom:0px;            
     }
     .paraDiv{
-        width:auto;                             
+        width:auto;              
     }   
     .profileLinksDiv{
-        right:110px;
+        right:50px;
     }
 }
-
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1101px) {
     .profileLinksDiv{
-        right:170px;
+        right:110px;
     }
 }

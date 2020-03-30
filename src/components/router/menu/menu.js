@@ -1,8 +1,8 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link,NavLink} from 'react-router-dom'
 
-import {NavMenu,NavBar} from './menuPart'
 import styles from './menu.module.css'
+import navStyles from './navMenu.module.css'
 
 
 export default function Menu(props) {    
@@ -14,12 +14,34 @@ export default function Menu(props) {
                        HASAN MAHMUD
                     </Link>
                 </div>
-                <ChoosingNavMenu/>
+                <div className={styles.balancer}></div>
+                <div className={styles.navDiv}>
+                    <ChooseNavMenu/>
+                </div>                
             </div>                  
     )
 }
 
-export function ChoosingNavMenu(props){                
+function ChooseNavMenu(props){                
     const widthMatching = window.matchMedia("(min-width:1025px)")
-    return widthMatching.matches ? <NavMenu/> : <NavBar/>     
+    return widthMatching.matches ? <NavMenu/> : <NavMenu/>    
+}
+
+
+function NavMenu(){
+    return(        
+        <nav className={navStyles.navList}>            
+            <NavLink className={navStyles.link} to="/bio" >
+                Bio
+            </NavLink>                
+
+            <NavLink className={navStyles.link} to="/career">
+                Career
+            </NavLink>
+
+            <NavLink className={navStyles.link} to="/blog" >
+                Blog
+            </NavLink>
+        </nav>           
+    )
 }

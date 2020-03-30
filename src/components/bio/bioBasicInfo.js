@@ -18,32 +18,28 @@ export default function BioBasicInfo(props){
                         <Init/>                   
                     </div>                    
                 </div>                  
-
-                <Decl/>                                  
+                <Decl/> 
                 <h4 className={styles.uiDivider}>Interests</h4>
-                
-                <div className={styles.interests}>                    
+                <div className={styles.interests}>                                        
                     <Interests heading="Favourite Topics" icon="book" item1="Philosophy" item2="Science"
-                               item3="Human Nature"
+                            item3="Human Nature"
                     >
                         <div className="item list">Technology</div>
-                    </Interests>                    
-                </div>                          
-                <div className={styles.interests}>                    
+                    </Interests>                                                              
+                                    
                     <Interests heading="Movies or Series" icon="film" item1="Fight Club"
-                               item3="Interstellar" item2="Pulp Fiction"
+                            item3="Interstellar" item2="Pulp Fiction"
                     >
                         <div className="item list">Breaking Bad</div>
                         <div className="item list">Game of Thrones</div>
-                    </Interests>                    
-                </div>    
-                <div className={styles.interests}>                    
-                    <Interests heading="People I envy" icon="users" item1="Rabindranath Tagore"
-                               item2="Steve Jobs" item3="Christopher Nolan"
+                    </Interests>                                        
+                                    
+                    <Interests heading="People I Envy" icon="users" item1="Rabindranath Tagore"
+                            item2="Steve Jobs" item3="Christopher Nolan"
                     >
                         <div className="item list">Mahmudul Hasan Sohag</div>                        
-                    </Interests>                    
-                </div>                                                                                                                                                                                                     
+                    </Interests>                                        
+                </div>                                                                                                                                                                                                                                                  
             </div>  
 
 
@@ -70,7 +66,7 @@ const Init = () => {
 
 const Decl = () => {
     return(
-        <div style={{padding:'40px 0px 30px 0px',fontSize:'15px',textAlign:'justify',textJustify:'auto'}}>
+        <div style={{padding:'40px 0px',fontSize:'15px',textAlign:'justify',textJustify:'auto'}}>
             This page is sort of the ABOUT ME section of any social networking site profile. 
             So it's intended for only those who are interested about me as a person. Are you? 
             Then go through the following facts and other information about me.

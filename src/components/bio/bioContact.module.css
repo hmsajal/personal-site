@@ -1,6 +1,5 @@
 .main{
-    composes:ui segment green from global;
-    align-self: center;        
+    composes:ui segment green from global;      
 }
 
 

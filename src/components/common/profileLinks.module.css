@@ -1,0 +1,31 @@
+.list{
+    display:flex;          
+    justify-content:space-between;             
+    padding:3px 40px;                               
+}
+
+:local(a){
+    color:#444;
+}
+
+
+:local(a[href*="linkedin"]):hover{
+    color:#226088;
+}
+
+:local(a[href*="mailto"]):hover{
+    color:#883121;
+}
+
+:local(a[href*="github"]):hover{
+    color:#000
+}
+
+:local(a[href*="facebook"]):hover{
+    color:#294488;
+}
+
+:local(a[href*="angel"]):hover{
+    color:#1d1d1d;
+}
+

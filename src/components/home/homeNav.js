@@ -1,52 +1,37 @@
-import React,{useState, useEffect} from 'react'
-import styled from 'styled-components'
+import React from 'react'
+import {NavLink} from 'react-router-dom'
 
-import {NavMenu,NavBar} from './navigationAlternatives'
-
-
-const Div = styled.div`      
-      display:flex;      
-      align-items:center;
-      height:20%;
-      width:100%;    
-      justify-content:space-between;  
-      padding:0px 60px;       
-      @media screen and (max-width:640px){   
-        padding:0px 20px;
-      };
-      @media screen and (min-width:641px) and (max-width:1024px){
-        padding:0px 45px;
-      };                           
-`
-const MyName = styled.span`
-      font-size:32px;      
-      letter-spacing:1px;
-      font-family:fira sans,sans-serif;
-      color:#002040;  
-      
-      @media screen and (max-width:640px){   
-        font-size: 26px;
-        letter-spacing:0px;
-      };
-      @media screen and (min-width:641px) and (max-width:1024px){
-        font-size:30px;
-        letter-spacing:.5px;
-      }
-`
+import styles from './homeNav.module.css'
 
 
-function HomeNav() {
+export default function HomeNav() {
     return (
-        <Div>           
-            <MyName>HASAN MAHMUD</MyName>
-            <ChoosingNavMenu/>
-        </Div>        
+        <div className={styles.navMain}>           
+            <div className={styles.myName}>HASAN MAHMUD</div>
+            <ChooseNavMenu/>
+        </div>        
     )
 }
 
-export function ChoosingNavMenu(){     
+function ChooseNavMenu(){     
     const widthMatching = window.matchMedia("(max-width:790px)")
-    return widthMatching.matches ? <NavBar/> : <NavMenu/>     
+    return widthMatching.matches ? <NavMenu/> : <NavMenu/>     
 }
 
-export default HomeNav;
+function NavMenu(){
+    return(
+        <nav className={styles.navGroup}>            
+            <NavLink className={styles.link} to="/bio" >
+                Bio
+            </NavLink>                
+
+            <NavLink className={styles.link} to="/career">
+                Career
+            </NavLink>
+
+            <NavLink className={styles.link} to="/blog" >
+                Blog
+            </NavLink>
+        </nav>
+    )
+}

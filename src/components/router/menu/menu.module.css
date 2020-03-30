@@ -1,24 +1,26 @@
-.outerDiv{
-      background:#fff;      
-      display:flex;  
-      justify-content: space-between;      
-      align-items:center;      
-      width:100%;    
-      height:11vh;      
-      padding-left:25px;
-      padding-right:25px;        
-      box-shadow:0px 0px 1px #777;           
-}
-.menuFixed{
+.mainDiv{
     position:fixed;
     z-index:5;            
     top:0px;
     left:0px;
     transition:top .3s;
+
+    background:#fff;      
+    display:flex;  
+    justify-content: space-between;      
+    align-items:center;    
+    padding-left:30px;
+    padding-right:30px;  
+    width:100%;    
+    height:11vh;      
+    box-shadow:0px 0px 1px #777;           
 }
-.mainDiv{
-    composes: menuFixed;
-    composes: outerDiv;
+
+.navDiv{
+    display:flex;              
+    align-items:center;  
+    height:100%;            
+    width: 24vw;
 }
 .myNameDiv{
       height:100%;      
@@ -36,7 +38,7 @@
     color:#327047;
 }
 
-@media screen and (min-width:641px){   
+@media screen and (min-width:640px){      
     .myNameDiv{
         width:300px; 
     }
@@ -45,11 +47,14 @@
     }        
 }
 
-@media screen and (min-width:1025px){   
-    .outerDiv{
-        padding-left:70px;  
-        padding-right:70px;       
-        justify-content: flex-start;    
+@media screen and (min-width:901px){    
+    .mainDiv{
+        justify-content: space-around;
+        padding-left: 0px;
+        padding-right:0px;
+    }   
+    .balancer{
+        width: 1px;
     }
     .myName{
         font-size:15px;

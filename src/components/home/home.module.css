@@ -1,0 +1,28 @@
+.homeDiv{
+    display:flex;       
+    width:100%;     
+    height:100%; 
+    flex-direction:column;               
+    align-items:center;         
+    background-color:#60a677;
+    background:linear-gradient(to bottom,#60a677,#226051,#226051,#60a677);
+}
+.infoDiv{
+    height:60%;     
+    padding-bottom:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:45%;       
+}
+
+@media screen and (max-width:640px) {
+    .infoDiv{
+        width:75%;
+    }
+};
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .infoDiv{
+        width:65%;
+    }    
+};

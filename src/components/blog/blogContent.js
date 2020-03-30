@@ -1,20 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
+import styles from './blogContent.module.css'
 
-const Div = styled.div`
-      padding: 30px 70px;
-      display:flex;
-      justify-content:flex-start;
-      align-items:flex-start;      
-      font-size:18px;
-      font-weight:bold;
-`
 
 function BlogContent() {
     return (
-        <Div>            
+        <div className={styles.main}>            
             Blog is coming soon...
-        </Div>
+        </div>
     )
 }
 export default BlogContent
