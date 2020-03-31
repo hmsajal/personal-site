@@ -6,6 +6,7 @@ import Menu from './menu/menu'
 import BioHome from '../bio/bioHome'
 import BlogHome from '../blog/blogHome'
 import CareerHome from '../career/careerHome'
+import styles from './routing.module.css'
 
 
 export default function Routing() {    
@@ -16,7 +17,7 @@ export default function Routing() {
                 <Route exact path="/"><Home/></Route>               
                 <Route path="/:slug">
                     <Menu/>                                                      
-                    <div style={{position:'relative',top:'11vh'}}>                          
+                    <div className={styles.routeDiv}>                          
                         <Route path="/blog" component={BlogHome}/>
                         <Route path="/career" component={CareerHome}/>  
                         <Route path="/bio" component={BioHome}/>                             
