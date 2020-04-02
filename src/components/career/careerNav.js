@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 import styles from './careerNav.module.css'
 
@@ -8,33 +8,33 @@ export default function CareerNav() {
 
     return (
         <div className={styles.mainDiv}>    
-            <Link className={styles.navLink} to="career/about-me">
+            <NavLink className={styles.navLink} to="/about-me">
                 About Me                
-            </Link>  
+            </NavLink>  
 
-            <Link className={styles.navLink} to="career/skills">
+            <NavLink className={styles.navLink} to="/skills">
                 Skills                  
-            </Link>                                 
+            </NavLink>                                 
             
-            <Link className={styles.navLink}>
+            <NavLink className={styles.navLink} to="/projects">
                 Projects                               
-            </Link>  
+            </NavLink>  
             
-            <Link className={styles.navLink}>
+            <NavLink className={styles.navLink} to="/education">
                 Education               
-            </Link> 
+            </NavLink> 
 
-            <Link className={styles.navLink}>
+            <NavLink className={styles.navLink} to="/certifications">
                 Certifications              
-            </Link>   
+            </NavLink>   
             
-            <Link className={styles.navLink}>
+            <NavLink className={styles.navLink} to="/experiences">
                 Experiences                 
-            </Link>      
+            </NavLink>      
 
-            <Link className={styles.navLink}>
+            <NavLink className={styles.navLink} to="/others">
                 Others                
-            </Link>                                         
+            </NavLink>                                         
         </div>
     )
 }

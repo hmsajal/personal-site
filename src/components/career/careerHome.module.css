@@ -12,7 +12,9 @@
     right:20px;    
 }
 .footerDiv{
-
+    position:fixed;
+    bottom:-10vh;
+    transition:all;    
 }
 
 @media screen and (min-width:769px){           
@@ -22,7 +24,7 @@
         width:240px;
     } 
     .contentDiv{
-        top:9vh;
+        top:8vh;
         left:320px;   
         right:50px;     
     }              
@@ -34,7 +36,7 @@
         width:280px;
     } 
     .contentDiv{
-        top:11vh;
+        top:10vh;
         left:430px;
         right:110px;        
     }               

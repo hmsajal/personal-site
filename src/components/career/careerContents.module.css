@@ -1,11 +1,37 @@
-.piledSegment{
-    composes: ui piled segment from global;
-    width:100%;
-    height:100%;
-}
-.skillsList{
-    line-height: 25px;
+.projectHead{
+    composes:ui header from global;    
+    min-width: 160px;  
+    display:flex;
+    align-items: center;   
 }
 .header{
-    composes: ui header from global;
+    composes:ui center aligned large header from global;
+    padding-bottom: 15px !important;
+}
+.aboutMeContent{
+    composes:ui content from global;   
+    font-size:15px;    
+    line-height:25px;    
+}
+.projectContent{
+    composes:ui content from global;       
+}
+.projectContent>p{
+    font-size:15px;    
+    line-height:25px;
+}
+.projectContent>p>a{
+    color:green; 
+    font-weight:bold;   
+}
+.projectContent span{
+    color:teal;
+    font-weight:bold;
+}
+.skillsContent{
+    composes:ui ordered content list from global;    
+}
+.skillsContent>div{
+    font-size:15px;
+    line-height: 30px !important;
 }
