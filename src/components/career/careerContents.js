@@ -43,32 +43,28 @@ export function Projects(){
             <div className={styles.header}>            
                Projects               
             </div>                   
-            <div className="ui items">                
-                <div className="ui item">
-                    <div className={styles.projectHead}>Labaid Lifeplus</div> 
-                    <div className={styles.projectContent}>                                                                   
-                        <p>For Durbin Labs I built the UIs of Lifeplus, Labaid’s healthcare app.
-                          <br/><a href="https://www.durbinlabs.com/project-details.php?id=9">Project Info</a>  
-                        </p>                      
+            <div className="ui items content">                
+                <div className={styles.proItem}>
+                    <div>Labaid Lifeplus</div> 
+                    <div>                                                                   
+                        For Durbin Labs I built the UIs of Lifeplus, Labaid’s healthcare app.
+                        <br/><a href="https://www.durbinlabs.com/project-details.php?id=9">Project Info</a>                        
                     </div>                    
                 </div>                  
-                <div className="ui item">
-                    <div className={styles.projectHead}>Playstore App</div> 
-                    <div className={styles.projectContent}> 
-                        <p>I built an android application with React Native framework and uploaded it in google playstore.
+                <div className={styles.proItem}>
+                    <div>Playstore App</div> 
+                    <div> 
+                          I built an android application with React Native framework and uploaded it in google playstore.
                           It's a simple but useful personal assistant app for help with breathing exercise.
-                          <br/><a href="https://play.google.com/store/apps/details?id=com.happybreathing">Playstore App Link</a>
-                        </p>
+                          <br/><a href="https://play.google.com/store/apps/details?id=com.happybreathing">Playstore App Link</a>                        
                     </div>
                 </div> 
-                <div className="ui item">
-                    <div className={styles.projectHead}>Portfolio Site</div> 
-                    <div className={styles.projectContent}> 
-                        <p>
-                           And I cannot but mention this portfolio website which you are browsing now. It was built all by myself with ReactJS of course. 
-                           I used <span>React-router-dom</span>,<span> semantic-ui</span>,<span> css-modules</span> and more libraries, <span> React Hooks</span> for state management and 
-                           <span> webpack</span> for bundling. It was deployed in <span>github pages</span> what you might have noticed already.
-                        </p>
+                <div className={styles.proItem}>
+                    <div>Portfolio Site</div> 
+                    <div>                         
+                        And I cannot but mention this portfolio website which you are browsing now. It was built all by myself with ReactJS of course. 
+                        I used <span>React-router-dom</span>,<span> semantic-ui</span>,<span> css-modules</span> and more libraries, <span> React Hooks</span> for state management and 
+                        <span> webpack</span> for bundling. It was deployed in <span>github pages</span> what you might have noticed already.                        
                     </div>
                 </div>                
             </div>
@@ -78,27 +74,87 @@ export function Projects(){
 
 export function Education(){
     return(
-        <div>
-            <h2>
-                Education
-            </h2>
-            <div>
-
+        <div className="ui">                        
+            <div className={styles.header}>            
+               Education              
+            </div>                   
+            <div className="ui content items">                
+                <div className={styles.proItem}>
+                    <div>Graduate</div> 
+                    <div>     
+                         MSC in Informatin Technology
+                         <br/>Jahangirnagar University, Dhaka  
+                         <br/>2016-'17                                                                                                    
+                    </div>                    
+                </div>                  
+                <div className={styles.proItem}>
+                    <div>Undergraduate</div> 
+                    <div>     
+                         BSC in Informatin Technology
+                         <br/>Jahangirnagar University, Dhaka  
+                         <br/>2011-'15                                                                                                    
+                    </div>    
+                </div> 
+                <div className={styles.proItem}>
+                    <div>HSC</div> 
+                    <div>  
+                         Dhaka College
+                         <br/>Science --- 2010                                                                                                             
+                    </div>  
+                </div>           
+                <div className={styles.proItem}>
+                    <div>SSC</div> 
+                    <div>  
+                         Idal Schoold and College
+                         <br/>Science --- 2008                                                                                                             
+                    </div>  
+                </div>      
             </div>
-        </div>        
+        </div>         
     )
 }
 
 export function Certifications(){
     return(
-        <div>
-            <h2>
-                Certifications
-            </h2>
-            <div>
+        <div className="ui">                        
+            <div className={styles.header}>            
+            Certifications            
+            </div>   
 
+            <div className="ui content list">     
+               <div className={styles.certItem}>                                      
+                   <div className="ui">
+                       <i className="tiny circle icon middle aligned"></i> 
+                       <a className="content middle aligned" href="https://www.freecodecamp.org/certification/hmsajal/javascript-algorithmsand-data-structures">                          
+                         FreeCodeCamp JavaScript Algorithms and Data structures 300 hours coursework.
+                       </a>
+                   </div>
+               </div>
             </div>
-        </div>        
+
+            <div className="ui content list">     
+               <div className={styles.certItem}>                                      
+                   <div className="ui">
+                       <i className="tiny circle icon middle aligned"></i> 
+                       <a className="content middle aligned" href="">                          
+                         
+                       </a>
+                   </div>
+               </div>
+            </div>
+
+            <div className="ui content list">     
+               <div className={styles.certItem}>                                      
+                   <div className="ui">
+                       <i className="tiny circle icon middle aligned"></i> 
+                       <a className="content middle aligned" href="">                          
+                         
+                       </a>
+                   </div>
+               </div>
+            </div>
+
+        </div>     
     )
 }
 

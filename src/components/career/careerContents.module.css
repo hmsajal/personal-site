@@ -1,30 +1,33 @@
-.projectHead{
-    composes:ui header from global;    
-    min-width: 160px;  
-    display:flex;
-    align-items: center;   
-}
 .header{
     composes:ui center aligned large header from global;
     padding-bottom: 15px !important;
 }
 .aboutMeContent{
     composes:ui content from global;   
-    font-size:15px;    
+    font-size:16px;
+    font-family: tahoma;
+    color:#445;    
+    font-weight:medium;
     line-height:25px;    
 }
-.projectContent{
-    composes:ui content from global;       
+.proItem{
+    composes:ui item from global;    
+    align-items:center;     
 }
-.projectContent>p{
+.proItem>div:nth-child(1){    
+    min-width: 160px;   
+    font-size:17px;
+    font-weight:bold;
+}
+.proItem>div:nth-child(2){
     font-size:15px;    
     line-height:25px;
 }
-.projectContent>p>a{
+.proItem>div:nth-child(2)>a{
     color:green; 
     font-weight:bold;   
 }
-.projectContent span{
+.proItem>div:nth-child(2)>span{
     color:teal;
     font-weight:bold;
 }
@@ -34,4 +37,17 @@
 .skillsContent>div{
     font-size:15px;
     line-height: 30px !important;
+}
+.certItem{
+    composes:ui item from global;    
+}
+.certItem a{
+    font-size:15px;
+    font-weight:bold;
+    line-height: 25px;  
+    color:teal;
+    padding-left:5px;
+}
+.certItem a:hover{
+    color: skyblue;
 }
