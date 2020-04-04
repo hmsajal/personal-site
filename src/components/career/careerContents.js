@@ -48,7 +48,7 @@ export function Projects(){
                     <div>Labaid Lifeplus</div> 
                     <div>                                                                   
                         For Durbin Labs I built the UIs of Lifeplus, Labaid’s healthcare app.
-                        <br/><a href="https://www.durbinlabs.com/project-details.php?id=9">Project Info</a>                        
+                        <br/><a target="_blank" href="https://www.durbinlabs.com/project-details.php?id=9">Project Info</a>                        
                     </div>                    
                 </div>                  
                 <div className={styles.proItem}>
@@ -56,7 +56,7 @@ export function Projects(){
                     <div> 
                           I built an android application with React Native framework and uploaded it in google playstore.
                           It's a simple but useful personal assistant app for help with breathing exercise.
-                          <br/><a href="https://play.google.com/store/apps/details?id=com.happybreathing">Playstore App Link</a>                        
+                          <br/><a target="_blank" href="https://play.google.com/store/apps/details?id=com.happybreathing">Playstore App Link</a>                        
                     </div>
                 </div> 
                 <div className={styles.proItem}>
@@ -99,14 +99,14 @@ export function Education(){
                     <div>HSC</div> 
                     <div>  
                          Dhaka College
-                         <br/>Science --- 2010                                                                                                             
+                         <br/>Science - 2010                                                                                                             
                     </div>  
                 </div>           
                 <div className={styles.proItem}>
                     <div>SSC</div> 
                     <div>  
                          Idal Schoold and College
-                         <br/>Science --- 2008                                                                                                             
+                         <br/>Science - 2008                                                                                                             
                     </div>  
                 </div>      
             </div>
@@ -124,8 +124,8 @@ export function Certifications(){
             <div className="ui content list">     
                <div className={styles.certItem}>                                      
                    <div className="ui">
-                       <i className="tiny circle icon middle aligned"></i> 
-                       <a className="content middle aligned" href="https://www.freecodecamp.org/certification/hmsajal/javascript-algorithms-and-data-structures">                          
+                       <i className="tiny circle icon middle aligned black"></i> 
+                       <a className="content middle aligned" target="_blank" href="https://www.freecodecamp.org/certification/hmsajal/javascript-algorithms-and-data-structures">                          
                          FreeCodeCamp JavaScript Algorithms and Data structures 300 hours coursework.
                        </a>
                    </div>
@@ -135,9 +135,9 @@ export function Certifications(){
             <div className="ui content list">     
                <div className={styles.certItem}>                                      
                    <div className="ui">
-                       <i className="tiny circle icon middle aligned"></i> 
-                       <a className="content middle aligned" href="">                          
-                         
+                       <i className="tiny circle icon middle aligned black"></i> 
+                       <a className="content middle aligned" target="_blank" href="https://www.coursera.org/account/accomplishments/verify/H2PBEAA5Q57P">                          
+                          Introduction to CSS3 in Coursera.
                        </a>
                    </div>
                </div>
@@ -146,9 +146,20 @@ export function Certifications(){
             <div className="ui content list">     
                <div className={styles.certItem}>                                      
                    <div className="ui">
-                       <i className="tiny circle icon middle aligned"></i> 
-                       <a className="content middle aligned" href="">                          
-                         
+                       <i className="tiny circle icon middle aligned black"></i> 
+                       <a className="content middle aligned" target="_blank" href="https://www.coursera.org/account/accomplishments/verify/9BVM6PRHN3RA">                          
+                          Network Protocols and Architecture by CISCO in Coursera.
+                       </a>
+                   </div>
+               </div>
+            </div>
+
+            <div className="ui content list">     
+               <div className={styles.certItem}>                                      
+                   <div className="ui">
+                       <i className="tiny circle icon middle aligned black"></i> 
+                       <a className="content middle aligned" target="_blank" href="https://app.pluralsight.com/library/courses/javascript-objects-prototypes/table-of-contents">                          
+                          JavaScript Objects and Prototypes in Pluralsight.
                        </a>
                    </div>
                </div>
@@ -160,26 +171,45 @@ export function Certifications(){
 
 export function Experiences(){
     return(
-        <div>
-            <h2>
-                Experiences
-            </h2>
-            <div>
+        <div className="ui">                        
+            <div className={styles.header}>            
+               Experiences             
+            </div>                   
+            <div className="ui items content">                
+                <div className={styles.expItem}>
+                    <div className={styles.expItemHeader}>
+                         <div className="item">Durbin Labs Limited</div>
+                         <div className="item">Software Engineer</div>
+                         <div className="item">Dec '18 – May '19</div>
+                    </div> 
+                    <div className={styles.expItemContent}>                                                                   
+                          <div className="item">Built responsive and interactive app UIs with React Native.</div>                     
+                          <div className="item">Maintained Scrum methodology for project management.</div>
+                          <div className="item">Used git for version cortrol system.</div>   
+                    </div>                    
+                </div>  
 
+                <div className={styles.expItem}>
+                    <div className={styles.expItemHeader}>
+                         <div className="item">Flux IT Limited</div>
+                         <div className="item">Junior Software Engineer</div>
+                         <div className="item">Jun '18 – Nov '18</div>
+                    </div> 
+                    <div className={styles.expItemContent}>                                                                   
+                          <div className="item">Built Android application UIs with React Native</div>
+                          <div className="item">Developing Application with JavaScript and JavaScript framewoks </div>             
+                    </div>                    
+                </div> 
             </div>
-        </div>        
+        </div>
     )
 }
 
 export function Others(){
     return(
-        <div>
-            <h2>
-                Others
-            </h2>
-            <div>
-
-            </div>
+        <div className="ui">
+            <div className="ui center aligned large header">Others</div>
+            <div className="ui content"></div>
         </div>        
     )
 }

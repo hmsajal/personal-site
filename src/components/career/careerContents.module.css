@@ -12,12 +12,13 @@
 }
 .proItem{
     composes:ui item from global;    
-    align-items:center;     
+    padding-bottom: 10px !important;  
 }
 .proItem>div:nth-child(1){    
-    min-width: 160px;   
+    min-width: 180px;   
     font-size:17px;
     font-weight:bold;
+    line-height:25px;
 }
 .proItem>div:nth-child(2){
     font-size:15px;    
@@ -50,4 +51,32 @@
 }
 .certItem a:hover{
     color: skyblue;
+}
+.expItem{
+    composes: ui item from global;      
+    padding-bottom:10px !important;      
+}
+.expItemHeader{
+    composes: ui list from global;    
+    min-width: 220px;         
+}
+.expItemHeader>div:nth-child(1){
+    font-weight:bold;
+    font-size:16px;
+    line-height: 22px !important;
+}
+.expItemHeader>div:nth-child(2){
+    font-size:15px;    
+}
+.expItemHeader>div:nth-child(3){
+    font-size:14px;
+    color:#555;
+}
+.expItemContent{    
+    composes: ui unordered bulleted list from global;   
+    margin-top:0px !important;
+    font-size:15px !important;     
+}
+.expItemContent>div{
+    line-height:25px !important;
 }

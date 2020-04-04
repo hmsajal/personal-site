@@ -70,7 +70,10 @@ const Decl = () => {
             This page is sort of the ABOUT ME section of any social networking site profile. 
             So it's intended for only those who are interested about me as a person. Are you? 
             Then go through the following facts and other information about me.
-            <p style={{paddingTop:"20px",fontSize:"15px",color:'#666'}}>If you want to know about my career interest, please visit the <NavLink to="/career">Career</NavLink> page</p>
+            <p style={{paddingTop:"20px",fontSize:"15px",color:'#666'}}>
+                If you want to know about my career interest, please visit the
+                <NavLink style={{color:'green'}} to="/career"> CAREER</NavLink> page.
+            </p>
         </div>
     )
 }
