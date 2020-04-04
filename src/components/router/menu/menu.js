@@ -8,7 +8,7 @@ import navStyles from './navMenu.module.css'
 export default function Menu(props) {    
 
     return (           
-            <div className={styles.mainDiv}>
+            <div className={styles.mainDiv} id="menu">
                 <div className={styles.myNameDiv}>
                     <Link className={styles.myName} to="/">
                        HASAN MAHMUD

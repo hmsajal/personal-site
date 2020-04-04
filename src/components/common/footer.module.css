@@ -1,5 +1,8 @@
 .foot{
-    padding:10px 120px; 
-    background-color: #ddd;  
-    height:10vh;    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#496e66;  
+    height:14vh;    
+    width:100vw;
 }

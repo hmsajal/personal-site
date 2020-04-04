@@ -125,7 +125,7 @@ export function Certifications(){
                <div className={styles.certItem}>                                      
                    <div className="ui">
                        <i className="tiny circle icon middle aligned"></i> 
-                       <a className="content middle aligned" href="https://www.freecodecamp.org/certification/hmsajal/javascript-algorithmsand-data-structures">                          
+                       <a className="content middle aligned" href="https://www.freecodecamp.org/certification/hmsajal/javascript-algorithms-and-data-structures">                          
                          FreeCodeCamp JavaScript Algorithms and Data structures 300 hours coursework.
                        </a>
                    </div>

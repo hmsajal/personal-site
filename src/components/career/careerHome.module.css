@@ -1,7 +1,7 @@
 .navDiv{
-    position:fixed;
+    position:absolute;
     z-index:4;   
-    top:16vh;     
+    top:5vh;     
     left:20px;
     right:20px; 
 }
@@ -12,14 +12,15 @@
     right:20px;    
 }
 .footerDiv{
+    display:none;
     position:fixed;
-    bottom:-10vh;
-    transition:all;    
+    bottom:-14vh;
+    transition:all;      
 }
 
 @media screen and (min-width:769px){           
     .navDiv{
-        top:19vh;
+        top:8vh;
         left:50px;
         width:240px;
     } 
@@ -27,11 +28,14 @@
         top:8vh;
         left:320px;   
         right:50px;     
-    }              
+    }  
+    .footerDiv{
+          display:flex;
+    }            
 }
 @media screen and (min-width:1025px) {          
     .navDiv{
-        top:21vh;
+        top:10vh;
         left:110px;
         width:280px;
     } 

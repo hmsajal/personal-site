@@ -7,7 +7,13 @@ import Footer from '../common/footer'
 import styles from './careerHome.module.css'
 
 
-export default function CareerHome(props) {
+export default function CareerHome(props) {      
+
+    React.useEffect(()=>{
+        document.getElementById("menu").style.top = (props.direction>0 ? '-11vh' :'0vh')
+        document.getElementById("main").style.top = (props.direction>0 ? '0vh' :'11vh')
+        document.getElementById("careerFooter").style.bottom = (props.direction>0 ? '0vh' :'-14vh')                
+    },[props.direction])                   
 
     return (
         <HashRouter hashType="noslash">
@@ -27,7 +33,7 @@ export default function CareerHome(props) {
                        <Route path="/others" component={CC.Others}/>                       
                     </Switch>                
                 </div>  
-                <div className={styles.footerDiv}>
+                <div className={styles.footerDiv} id="careerFooter">
                     <Footer/>
                 </div>            
             </div>

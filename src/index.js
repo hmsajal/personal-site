@@ -8,11 +8,7 @@ import './styles/index.css'
 import './styles/fonts.css'
 
 
-ReactDOM.render(
-            <Router>
-                <App/>
-            </Router>,            
-    document.getElementById('root')
+ReactDOM.render(<App/>,document.getElementById('root')
 );
 
 serviceWorker.unregister();

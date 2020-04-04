@@ -9,19 +9,30 @@ import CareerHome from '../career/careerHome'
 import styles from './routing.module.css'
 
 
-export default function Routing() {    
-    
+export default function Routing() {           
+
+    let [state,setState] = React.useState(0)
+
+    function handleScroll (val){                      
+        val>0 ? setState(1) : setState(-1)                    
+    }        
+
     return (        
-        <div>
+        <div onWheel={(event)=>{handleScroll(event.deltaY)}}>
             <Router> 
-                <Route exact path="/"><Home/></Route>               
+                <Route exact path="/">
+                    <Home/>
+                </Route>       
+
                 <Route path="/:slug">
+                  <div>
                     <Menu/>                                                      
-                    <div className={styles.routeDiv}>                          
+                    <div className={styles.routeDiv} id="main">                          
                         <Route path="/blog" component={BlogHome}/>
-                        <Route path="/career" component={CareerHome}/>  
+                        <Route path="/career"><CareerHome direction={state}/></Route>  
                         <Route path="/bio" component={BioHome}/>                             
                     </div>                                                    
+                  </div>
                 </Route>
             </Router>            
         </div>

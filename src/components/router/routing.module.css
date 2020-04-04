@@ -3,13 +3,13 @@
     top:11vh;
 }
 
-@media screen and(max-width:480px){
+@media screen and(max-height:455px){
     .routeDiv{
-        top:48px;
+        top:50px;
     }
 }
-@media screen and(min-width:901px){
+@media screen and(min-height:909px){
     .routeDiv{
-        top:95px;
+        top:100px;
     }
 }
