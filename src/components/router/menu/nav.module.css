@@ -3,6 +3,8 @@
     display:flex;
     justify-content: space-between;    
     align-items: center;
+    width: 24vw;      
+    display:none;
 }
 .link{
     color:#444;     
@@ -21,4 +23,13 @@
     color:green;
     font-weight:bold;                    
     text-shadow:5px 5px 15px #0006;   
+}
+
+@media screen and (min-width:1025px){
+    .navList{
+        display:flex;
+    }
+    :global .navbutton{
+        display:none !important;
+    }   
 }
