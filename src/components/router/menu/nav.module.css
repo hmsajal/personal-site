@@ -6,6 +6,7 @@
     width: 24vw;      
     display:none;
 }
+
 .link{
     color:#444;     
     font-size:19px;        
@@ -13,7 +14,6 @@
     font-family:Roboto Slab;
     transition:all .1s; 
 }
-
 .link:hover{
     color:inherit;
     font-weight:bold;     
@@ -29,7 +29,7 @@
     .navList{
         display:flex;
     }
-    :global .navbutton{
+    .navbutton{
         display:none !important;
     }   
 }
