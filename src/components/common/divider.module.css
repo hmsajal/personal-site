@@ -1,0 +1,36 @@
+.dividerRight{     
+    width:1px;       
+    background-color: #999;      
+    position:fixed;
+    left:90px;  
+    top:44vh;
+    bottom:32vh;  
+}
+
+@media screen and (min-width:901px){ 
+    .dividerLeft{
+        width:1px;       
+        background-color: #999;      
+        position:fixed;
+        left:137px;  
+        top:49vh;
+        bottom:37vh;  
+    }
+    .dividerRight{
+        left:142px;
+    }
+}
+
+@media screen and (min-width:1101px){
+    .dividerLeft{
+        width:1px;       
+        background-color: #999;      
+        position:fixed;
+        left:217px;  
+        top:49vh;
+        bottom:37vh;  
+    }
+    .dividerRight{
+        left:222px;
+    }
+}

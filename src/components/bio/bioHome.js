@@ -1,5 +1,5 @@
-import React from 'react'
-import {Route, Switch}  from 'react-router-dom'
+import React, { Fragment } from 'react'
+import {Route, Switch,useRouteMatch}  from 'react-router-dom'
 
 import styles from "./bioHome.module.css"
 
@@ -11,23 +11,25 @@ import BioAnchor from './bioAnchor'
 
 export default function BioHome(props) {             
     
+    let {path} = useRouteMatch()    
+
     return (          
-            <div className={styles.main}>  
+            <Fragment>  
                 <div className={styles.anchorDiv}>
                     <BioAnchor/>  
                 </div> 
 
-                <div className={styles.dividerLeft}></div>  
-                <div className={styles.dividerRight}></div>                  
+                {/* <div className={dividerStyles.dividerLeft}></div>  
+                <div className={dividerStyles.dividerRight}></div>                   */}
 
                 <div className={styles.internalDivs}>       
                     <Switch>                                                     
-                        <Route exact path="/bio"><BioBasicInfo/></Route>
-                        <Route exact path="/bio/info"><BioBasicInfo/></Route>
-                        <Route exact path="/bio/photos"><BioPhotos/></Route> 
-                        <Route exact path="/bio/contact"><BioContact/></Route>                                                  
+                        <Route exact path={path}><BioBasicInfo/></Route>
+                        <Route exact path={`${path}/info`}><BioBasicInfo/></Route>
+                        <Route exact path={`${path}/photos`}><BioPhotos/></Route> 
+                        <Route exact path={`${path}/contact`}><BioContact/></Route>                                                  
                     </Switch>                  
                 </div>                                  
-            </div>             
+            </Fragment>             
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 
 import Home from '../home/home'
 import Menu from './menu/menu'
@@ -9,33 +9,34 @@ import CareerHome from '../career/careerHome'
 import styles from './routing.module.css'
 
 
-export default function Routing() {           
+export default function Routing() {                      
 
-    let [state,setState] = React.useState(0)
-
-    function handleScroll (val){                      
-        val>0 ? setState(1) : setState(-1)                    
-    }        
-
-    return (        
-        <div onWheel={(event)=>{handleScroll(event.deltaY)}}>
+    return (                
             <Router> 
-                <Route exact path="/">
-                    <Home/>
-                </Route>       
+                <Switch>
+                    <Route exact path="/">
+                        <Home/>
+                    </Route>  
+                    <Route>                                  
+                        <Menu/>                                                      
+                        <div className={styles.routeDiv} id="main">                          
+                            <Switch>
+                                <Route path="/blog" component={BlogHome}/>
+                                <Route path="/career"><CareerHome/></Route>  
+                                <Route path="/bio" component={BioHome}/>                                  
+                                <Route> <NotFound/> </Route>
+                            </Switch>
+                        </div>                                                                                    
+                    </Route> 
+                </Switch>               
+            </Router>                    
+    )    
+}
 
-                <Route path="/:slug">
-                  <div>
-                    <Menu/>                                                      
-                    <div className={styles.routeDiv} id="main">                          
-                        <Route path="/blog" component={BlogHome}/>
-                        <Route path="/career"><CareerHome direction={state}/></Route>  
-                        <Route path="/bio" component={BioHome}/>                             
-                    </div>                                                    
-                  </div>
-                </Route>
-            </Router>            
-        </div>
-    )
-    
+const NotFound = (props)=>{            
+    return (
+        <div className={styles.notFound}>
+            <div style={{fontSize:70,fontWeight:'bold'}}>404</div>
+            <p style={{marginTop:20}}>page not found</p>
+        </div>)
 }

@@ -1,14 +1,12 @@
-import React,{Fragment} from 'react'
+import React from 'react'
 import {NavLink} from 'react-router-dom'
 
 import styles from './bioBasicInfo.module.css'
-import ProfileLinks from './bioProfileLinks'
 import MyImage from '../common/myImage'
 
 
 export default function BioBasicInfo(props){             
-    return (
-        <>                        
+    return (                           
             <div className={styles.main} id="bioBasicInfo">                                                               
                 <div className={styles.imgParaDiv}>
                     <div className={styles.myImageDiv}>
@@ -18,35 +16,26 @@ export default function BioBasicInfo(props){
                         <Init/>                   
                     </div>                    
                 </div>                  
-                <Decl/> 
-                <h4 className={styles.uiDivider}>Interests</h4>
-                <div className={styles.interests}>                                        
-                    <Interests heading="Favourite Topics" icon="book" item1="Philosophy" item2="Science"
-                            item3="Human Nature"
+                <Decl/>                 
+                <div className="ui item">                                        
+                    <Interest heading="Favourite Topics" icon="book" item1="Philosophy" item2="Science"
+                            item3="Human Nature" item4='Technology'
                     >
-                        <div className="item list">Technology</div>
-                    </Interests>                                                              
+                        
+                    </Interest>                                                              
                                     
-                    <Interests heading="Movies or Series" icon="film" item1="Fight Club"
-                            item3="Interstellar" item2="Pulp Fiction"
-                    >
-                        <div className="item list">Breaking Bad</div>
+                    <Interest heading="Movies or Series" icon="film" item1="Fight Club"
+                               item2="Pulp Fiction" item3="Interstellar" item4="Breaking Bad"
+                    >                        
                         <div className="item list">Game of Thrones</div>
-                    </Interests>                                        
+                    </Interest>                                        
                                     
-                    <Interests heading="People I Envy" icon="users" item1="Rabindranath Tagore"
-                            item2="Steve Jobs" item3="Christopher Nolan"
-                    >
-                        <div className="item list">Mahmudul Hasan Sohag</div>                        
-                    </Interests>                                        
+                    <Interest heading="People I Envy" icon="users" item1="Rabindranath Tagore"
+                            item2="Steve Jobs" item3="Christopher Nolan" item4="Bill Gates"
+                    >                         
+                    </Interest>                                        
                 </div>                                                                                                                                                                                                                                                  
-            </div>  
-
-
-            <div className={styles.profileLinksDiv}>
-               <ProfileLinks/>
-            </div>
-        </>               
+            </div>                 
     )        
 }
 
@@ -66,7 +55,7 @@ const Init = () => {
 
 const Decl = () => {
     return(
-        <div style={{padding:'40px 0px',fontSize:'15px',textAlign:'justify',textJustify:'auto'}}>
+        <div style={{padding:'40px 0px 70px 0px',fontSize:'15px',textAlign:'justify',textJustify:'auto'}}>
             This page is sort of the ABOUT ME section of any social networking site profile. 
             So it's intended for only those who are interested about me as a person. Are you? 
             Then go through the following facts and other information about me.
@@ -78,21 +67,22 @@ const Decl = () => {
     )
 }
 
-const Interests = (props) => {
+const Interest = (props) => {
     return(
-        <div className="ui item" style={{marginBottom:"30px"}}>
-            <h3 className="ui header">
+        <div className="ui item" style={{marginBottom:40}}>
+            <h3 className="ui top attached header">
                 <i className={`ui ${props.icon} icon`}></i>
                 <div className="content">
                     {props.heading}
                 </div>                
             </h3> 
-            <div className="ui content bulleted list">                    
+            <div className="ui segment attached padded bulleted list">                    
                 <div className="item list">{props.item1}</div> 
                 <div className="item list">{props.item2}</div> 
                 <div className="item list">{props.item3}</div>
+                <div className="item list">{props.item4}</div>
                 {props.children}                             
-            </div>                   
+            </div>                               
         </div>
     )
 }            

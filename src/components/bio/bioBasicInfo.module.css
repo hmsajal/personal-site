@@ -1,8 +1,9 @@
 .main{
     display: flex;  
     flex-direction: column;                
-    width:100%;     
-    padding-top:40px;           
+    width:100%;                  
+    padding-top:40px;
+    padding-right:10px;    
 }
 
 .imgParaDiv{                             
@@ -25,20 +26,6 @@
       text-align: justify;
       text-justify: auto;                              
 }
-.uiDivider{
-      composes: ui horizontal section divider from global;                 
-}
-.interests{
-      padding:10px 0px;
-}
-.profileLinksDiv{
-      display:flex;
-      align-items: center;      
-      position:fixed;
-      top: 11vh;      
-      bottom:0vh;
-      right:0px;
-}
 .main:target{            
     padding-top: 100px;
     margin-top:-100px;          
@@ -58,13 +45,5 @@
     }
     .paraDiv{
         width:auto;              
-    }   
-    .profileLinksDiv{
-        right:50px;
-    }
-}
-@media screen and (min-width: 1101px) {
-    .profileLinksDiv{
-        right:110px;
-    }
+    }       
 }

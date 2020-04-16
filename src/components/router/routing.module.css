@@ -2,6 +2,15 @@
     position:relative;
     top:11vh;
 }
+.notFound{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height:70vh;    
+    width:100vw;
+    font-size:30px;        
+}
 
 @media screen and(max-height:455px){
     .routeDiv{

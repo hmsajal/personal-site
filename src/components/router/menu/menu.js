@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import {faUser} from '@fortawesome/free-regular-svg-icons'
-import {faCode,faRss,faBars} from '@fortawesome/free-solid-svg-icons'
+import {faCode,faRss} from '@fortawesome/free-solid-svg-icons'
 
 import styles from './menu.module.css'
 import navStyles from './nav.module.css'
@@ -25,11 +25,6 @@ export default function Menu(props) {
             </div>                  
     )
 }
-
-// function ChooseNav(props){                
-//     const widthMatching = window.matchMedia("(min-width:1025px)")
-//     return widthMatching.matches ? <NavMenu/> : <NavBar/>    
-// }
 
 
 function NavMenu(){
@@ -60,9 +55,7 @@ function NavBar(){
             <ButtonBase onClick={()=>setState(true)} className={navStyles.navbutton}>
                 <MenuIcon style={{fontSize:28}}/>
             </ButtonBase>
-            <Drawer open={drawerState} anchor="top" onClose={()=>setState(false)}
-                    ModalProps={{onClose:()=>setState(false)}}
-            >    
+            <Drawer open={drawerState} anchor="top" onClose={()=>setState(false)}>
                 <DrawerChild toggleDrawer={()=>setState(false)}/> 
             </Drawer>
         </React.Fragment>
@@ -72,8 +65,8 @@ function NavBar(){
 
 const DrawerChild = (props) => (
     <div className={drawerStyles.child}> 
-        <ButtonBase style={{marginTop:'80px'}} onClick={()=>props.toggleDrawer()}>
-             <CloseIcon style={{fontSize:36}}/>
+        <ButtonBase style={{margin:'50px 0px'}} onClick={()=>props.toggleDrawer()}>
+             <CloseIcon style={{fontSize:34}}/>
         </ButtonBase>            
         <List className={drawerStyles.list}>
             {['Bio','Career','Blog'].map((text,index)=>(                

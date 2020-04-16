@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {            
@@ -44,28 +45,30 @@ module.exports = {
 
                     {
                         test: /\.(gif|png|jpe?g|svg)$/i,
-                        use: [
-                            'file-loader',
-                            {
-                            loader: 'image-webpack-loader',      
-                            },
+                        use: [                            
+                                {
+                                    loader:'file-loader',
+                                    options:{
+                                         outputPath:'images',                                    
+                                    },
+                                },
+                                {
+                                    loader: 'image-webpack-loader',                                        
+                                },                            
                         ],
                     },
 
                     {
                         test: /\.css$/,
-                        use:
-                            [  
-                             'style-loader',
-                             
-                             {
-                                 loader:'css-loader',
-                                 options:{                                     
-                                     modules:true,                                     
-                                 }
-                             }
-                            ],
-                                                
+                        use: [  
+                                'style-loader',                             
+                                {
+                                    loader:'css-loader',
+                                    options:{                                     
+                                        modules:true,                                                                                
+                                    }
+                                },                                
+                        ]                                            
                     },                   
 
                     {
@@ -75,7 +78,7 @@ module.exports = {
                             loader: 'file-loader',
                             options: {
                               name: '[name].[ext]',
-                              outputPath: 'fonts/'
+                              outputPath: 'fonts'
                             }
                           }
                         ]

@@ -1,75 +1,42 @@
-.anchorDiv{
-    left:10px;
-    width:80px;        
+.anchorDiv{    
+    left:10px;  
+    min-width:80px;         
     position:fixed;  
     top:11vh;
     bottom:0vh;
     display:flex;    
     align-items: center;    
-    justify-content: center;
-                 
+    justify-content: center;                  
 }
-
-.dividerRight{     
-    width:1px;       
-    background-color: #999;      
-    position:fixed;
-    left:90px;  
-    top:44vh;
-    bottom:32vh;  
-}
-
 
 .internalDivs{
     display:flex;
     flex-direction: column;        
     position:absolute;   
-    left: 110px; 
-    right:45px;    
+    left: 110px;     
+    right:10px;
 }
 
-@media screen and (min-width:901px){        
-    .anchorDiv{
-        left:50px;
-        width:90px;
+@media screen and (min-width:901px){          
+    .anchorDiv{        
+        left:70px;     
+        width:100px;   
     }
     .internalDivs{
-        left: 170px;
-        right: 100px;
-    }
-    .dividerLeft{
-        width:1px;       
-        background-color: #999;      
-        position:fixed;
-        left:137px;  
-        top:49vh;
-        bottom:37vh;  
-    }
-    .dividerRight{
-        left:142px;
-    }
+        left: 210px;    
+        right:70px;    
+    }    
 }
 
-@media screen and (min-width:1101px){        
-    .anchorDiv{
-        left:110px;
-        width:110px;
+@media screen and (min-width:1101px){     
+    .anchorDiv{        
+        left:120px;    
+        width:120px;         
     }
     .internalDivs{
-        left: 260px;
-        right: 170px;
-    }
-    .dividerLeft{
-        width:1px;       
-        background-color: #999;      
-        position:fixed;
-        left:217px;  
-        top:49vh;
-        bottom:37vh;  
-    }
-    .dividerRight{
-        left:222px;
-    }
+        left: 290px;   
+        right:120px;     
+    }    
 }
 
 

@@ -11,14 +11,9 @@
     left:20px;
     right:20px;    
 }
-.footerDiv{
-    display:none;
-    position:fixed;
-    bottom:-14vh;
-    transition:all;      
-}
 
-@media screen and (min-width:769px){           
+
+@media screen and (min-width:770px){           
     .navDiv{
         top:8vh;
         left:50px;
@@ -28,10 +23,7 @@
         top:8vh;
         left:320px;   
         right:50px;     
-    }  
-    .footerDiv{
-          display:flex;
-    }            
+    }                
 }
 @media screen and (min-width:1025px) {          
     .navDiv{
