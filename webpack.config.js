@@ -1,16 +1,15 @@
-var path = require('path');
-var webpack = require('webpack');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {            
+
     entry: { 
         main:"./src/index.js",        
     },
             
-    output: {
-        path: __dirname + '/build',
+    output: {        
         filename: 'bundle.js',        
+        path: __dirname + '/build',    
+        publicPath:'/'    
     },
     devServer: {
         historyApiFallback: true,

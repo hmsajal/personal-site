@@ -74,7 +74,7 @@ const DrawerChild = (props) => (
                         <div className={drawerStyles.iconText}>
                             <span>
                                 <FontAwesomeIcon icon={index===0?faUser:(index===1?faCode:faRss)}
-                                                style={{fontSize:'22px',color:'#c42'}}
+                                                 style={{fontSize:'22px',color:'#c42'}}
                                 /> 
                             </span>                                                                                                   
                             <span>
