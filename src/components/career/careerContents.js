@@ -79,35 +79,35 @@ export function Education(){
                Education              
             </div>                   
             <div className="ui content items">                
-                <div className={styles.proItem}>
+                <div className={styles.eduItem}>
                     <div>Graduate</div> 
                     <div>     
-                         MSC in Informatin Technology
-                         <br/>Jahangirnagar University, Dhaka  
-                         <br/>2016-'17                                                                                                    
+                         <div>MSC in Information Technology</div>
+                         <div>Jahangirnagar University, Dhaka</div>
+                         <div>2016-'17</div>                                                                                                                       
                     </div>                    
                 </div>                  
-                <div className={styles.proItem}>
+                <div className={styles.eduItem}>
                     <div>Undergraduate</div> 
                     <div>     
-                         BSC in Informatin Technology
-                         <br/>Jahangirnagar University, Dhaka  
-                         <br/>2011-'15                                                                                                    
+                         <div>BSC in Information Technology</div>
+                         <div>Jahangirnagar University, Dhaka </div>
+                         <div>2011-'15</div>                                                                                                                          
                     </div>    
                 </div> 
-                <div className={styles.proItem}>
+                <div className={styles.eduItem}>
                     <div>HSC</div> 
                     <div>  
-                         Dhaka College
-                         <br/>Science - 2010                                                                                                             
+                         <div>Dhaka College</div>
+                         <div>Science - 2010</div>                                                                                                             
                     </div>  
                 </div>           
-                <div className={styles.proItem}>
+                <div className={styles.eduItem}>
                     <div>SSC</div> 
-                    <div>  
-                         Idal Schoold and College
-                         <br/>Science - 2008                                                                                                             
-                    </div>  
+                    <div>
+                        <div>Ideal Schoold and College</div>  
+                        <div>Science - 2008</div>                    
+                    </div>                    
                 </div>      
             </div>
         </div>         

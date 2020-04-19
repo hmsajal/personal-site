@@ -1,7 +1,7 @@
 .navDiv{
-    position:absolute;
+    position:fixed;
     z-index:4;   
-    top:5vh;     
+    top:16vh;     
     left:20px;
     right:20px; 
 }
@@ -13,27 +13,27 @@
 }
 
 
-@media screen and (min-width:770px){           
+@media screen and (min-width:771px){           
     .navDiv{
-        top:8vh;
+        top:19vh;
         left:50px;
         width:240px;
     } 
     .contentDiv{
         top:8vh;
-        left:320px;   
+        left:330px;   
         right:50px;     
     }                
 }
 @media screen and (min-width:1025px) {          
     .navDiv{
-        top:10vh;
-        left:110px;
+        top:21vh;
+        left:100px;
         width:280px;
     } 
     .contentDiv{
         top:10vh;
         left:430px;
-        right:110px;        
+        right:80px;        
     }               
 }

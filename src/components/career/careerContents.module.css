@@ -9,6 +9,7 @@
     color:#445;    
     font-weight:medium;
     line-height:25px;    
+    text-align: justify;
 }
 .proItem{
     composes:ui item from global;    
@@ -33,11 +34,17 @@
     font-weight:bold;
 }
 .skillsContent{
-    composes:ui ordered content list from global;    
+    composes:ui content bulleted list from global;        
 }
 .skillsContent>div{
-    font-size:15px;
-    line-height: 30px !important;
+    font-size:17px;
+    line-height: 30px !important;    
+}
+.eduItem{
+    composes: proItem;       
+}
+.eduItem>div{
+    text-align: center;    
 }
 .certItem{
     composes:ui item from global;    
@@ -79,4 +86,22 @@
 }
 .expItemContent>div{
     line-height:25px !important;
+}
+
+@media screen and (min-width:771px){
+    .eduItem>div{
+        text-align: start;        
+    } 
+    .eduItem>div:nth-child(1){        
+        margin-left:40px;
+    }  
+       
+}
+@media screen and (min-width:1025px){
+    .eduItem>div:nth-child(1){        
+        margin-left:80px;
+    }  
+    .eduItem>div:nth-child(2){        
+        margin-left:30px;
+    }  
 }
