@@ -20,8 +20,7 @@ export default function BioBasicInfo(props){
                 <div className="ui item">                                        
                     <Interest heading="Favourite Topics" icon="book" item1="Philosophy" item2="Science"
                             item3="Human Nature" item4='Technology'
-                    >
-                        
+                    >                        
                     </Interest>                                                              
                                     
                     <Interest heading="Movies or Series" icon="film" item1="Fight Club"

@@ -1,16 +1,17 @@
 import React from 'react'
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Switch,useLocation, useHistory} from 'react-router-dom'
 
 import Home from '../home/home'
-import Menu from './menu/menu'
+import Menu from '../menu/menu'
 import BioHome from '../bio/bioHome'
 import BlogHome from '../blog/blogHome'
 import CareerHome from '../career/careerHome'
+import NotFound from './notFound'
 import styles from './routing.module.css'
 
 
-export default function Routing() {                      
-
+export default function Routing() {                          
+    
     return (                
             <Router> 
                 <Switch>
@@ -18,25 +19,34 @@ export default function Routing() {
                         <Home/>
                     </Route>  
                     <Route>                                  
-                        <Menu/>                                                      
-                        <div className={styles.routeDiv} id="main">                          
-                            <Switch>
-                                <Route path="/blog" component={BlogHome}/>
-                                <Route path="/career"><CareerHome/></Route>  
-                                <Route path="/bio" component={BioHome}/>                                  
-                                <Route> <NotFound/> </Route>
-                            </Switch>
-                        </div>                                                                                    
+                        <Menu/>                         
+                        <DoRoute/>                                                                                   
                     </Route> 
                 </Switch>               
             </Router>                    
     )    
 }
 
-const NotFound = (props)=>{            
-    return (
-        <div className={styles.notFound}>
-            <div style={{fontSize:70,fontWeight:'bold'}}>404</div>
-            <p style={{marginTop:20}}>page not found</p>
-        </div>)
+
+const DoRoute = ()=>{
+    
+    let history =useHistory()
+    
+    React.useEffect(()=>{
+        if(history.action==="PUSH"){
+            window.scrollTo(0,0)
+        }
+    },[history.location.key])
+
+
+    return(
+        <div className={styles.routeDiv} id="main">                          
+            <Switch>                                                                
+                <Route path="/bio" component={BioHome}></Route>   
+                <Route path="/career" component={CareerHome}></Route> 
+                <Route path="/blog" component={BlogHome}></Route>                                                                
+                <Route> <NotFound/> </Route>
+            </Switch>
+        </div> 
+    )
 }
