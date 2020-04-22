@@ -1,0 +1,15 @@
+.navGroup{
+    width:280px;                  
+    display:flex;      
+    justify-content:space-between;
+    align-items:center;  
+    height:100%;  
+}
+.link{
+    color:#214;      
+    font-size:22px;  
+    font-family:lato;                    
+}
+.link:hover{    
+    color:#ccc;    
+}
