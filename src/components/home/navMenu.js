@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{Fragment} from 'react'
 import {NavLink} from 'react-router-dom'
 
 import styles from './navMenu.module.css'
@@ -6,7 +6,7 @@ import styles from './navMenu.module.css'
 
 export default function NavMenu(){
     return(
-        <nav className={styles.navGroup}>            
+        <>    
             <NavLink className={styles.link} to="/bio" >
                 Bio
             </NavLink>                
@@ -18,6 +18,6 @@ export default function NavMenu(){
             <NavLink className={styles.link} to="/blog" >
                 Blog
             </NavLink>
-        </nav>
+        </>
     )
 }

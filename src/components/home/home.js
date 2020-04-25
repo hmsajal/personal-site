@@ -12,7 +12,7 @@ function Home(){
         <div className={styles.homeDiv}>               
             <div className={styles.navDiv}>                           
                 <NavMenu/>
-            </div>                     
+            </div>                                
             <div className={styles.infoDiv}>
                 <HomeInfo/>
             </div>

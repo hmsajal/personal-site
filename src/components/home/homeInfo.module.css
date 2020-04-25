@@ -2,7 +2,19 @@
     color:#f6e2b9;        
     font-family:dosis,sans-serif;     
     font-weight:400; 
-    font-size:24px;        
+    font-size:24px;  
+    text-align:justify;    
+}
+.link{
+    color:#215;
+    font-weight:500;
+}
+
+
+@media screen and (min-width:481px){
+    .main{
+        font-size:25px;
+    }
 }
 
 @media screen and (min-width:641px){

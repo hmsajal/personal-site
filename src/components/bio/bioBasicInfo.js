@@ -44,7 +44,7 @@ const Init = () => {
     return(
         <p>                              
           I am Hasan Mahmud Sajal and this is my portfolio site. As you're already surfing my site the probability 
-          is high that you know me. By the way, in this section I am supposed to introduce myself. But the irony
+          is high that you know me. In this section I am supposed to introduce myself. But the irony
           is, it's not possible to know someone from a couple of words which are told by the person himself/herself. 
           <br/>But I can tell you my personality type. I think it is much information in a very short form and 
           my personality type is INFP.          
@@ -55,9 +55,8 @@ const Init = () => {
 const Decl = () => {
     return(
         <div style={{padding:'40px 0px 70px 0px',fontSize:'15px',textAlign:'justify',textJustify:'auto'}}>
-            This page is sort of the ABOUT ME section of any social networking site profile. 
-            So it's intended for only those who are interested about me as a person. Are you? 
-            Then go through the following facts and other information about me.
+            And if you are a bit more interested here are some random information and facts
+            about me that you might go through.
             <p style={{paddingTop:"20px",fontSize:"15px",color:'#666'}}>
                 If you want to know about my career interest, please visit the
                 <NavLink style={{color:'green'}} to="/career"> CAREER</NavLink> page.
