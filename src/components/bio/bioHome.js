@@ -7,6 +7,7 @@ import BioBasicInfo from './bioBasicInfo'
 import BioPhotos from './bioPhotos'
 import BioContact from './bioContact'
 import BioAnchor from './bioAnchor'
+import Divider from '../common/divider'
 
 
 export default function BioHome(props) {             
@@ -16,10 +17,7 @@ export default function BioHome(props) {
                 <div className={styles.anchorDiv}>
                     <BioAnchor/>  
                 </div> 
-
-                {/* <div className={dividerStyles.dividerLeft}></div>  
-                <div className={dividerStyles.dividerRight}></div>                   */}
-
+                {/* <Divider/> */}
                 <div className={styles.internalDivs}>       
                     <Switch>                          
                         <Redirect exact from={`/bio`} to="/bio/info"/>                                                                                                   

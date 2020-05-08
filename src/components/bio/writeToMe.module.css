@@ -1,5 +1,23 @@
-.main{
-    composes:ui segment green from global;      
+.main{    
+    max-width:420px;    
+    align-content: center;
+    display:grid;
+    grid-template-rows: 1fr 1fr 12fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+.header{
+    grid-row:1/2;
+    grid-column:1/-1;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:1.125rem;
+    font-weight:bold;
+}
+.contactForm{   
+    composes:ui form from global;        
+    grid-row:3/4;
+    grid-column: 2/3;        
 }
 
 

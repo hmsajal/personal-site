@@ -1,10 +1,12 @@
-.ul{
-    display:flex;    
-    flex-direction:column;      
-    justify-content:space-evenly;     
-    align-items: center;                         
-    height:130px;     
-    width:100%;     
+.ul{                                     
+    width:100%;       
+}
+.linkDiv{    
+    height:50px;    
+    display:flex;
+    justify-content: center;
+    align-items: center;        
+    border:1px solid black;
 }
 
 .anchor{
@@ -12,6 +14,10 @@
     font-weight: bold;
     color: #222;
     transition: font-size, .1s;
+}
+.anchor:hover{
+    font-size:18px;
+    color:black;    
 }
 .activeStyle{
     color:rgb(11, 228, 109)
@@ -27,8 +33,8 @@
         font-size: 16px;        
     }
 }
-
-.anchor:hover{
-        font-size:18px;
-        color: 29e;
+@media screen and (min-width:1101px){
+    .linkDiv{
+        margin:0px 5px;
+    }
 }

@@ -12,12 +12,12 @@
         width:1px;       
         background-color: #999;      
         position:fixed;
-        left:137px;  
+        left:167px;  
         top:49vh;
         bottom:37vh;  
     }
     .dividerRight{
-        left:142px;
+        left:172px;
     }
 }
 
@@ -26,11 +26,11 @@
         width:1px;       
         background-color: #999;      
         position:fixed;
-        left:217px;  
+        left:237px;  
         top:49vh;
         bottom:37vh;  
     }
     .dividerRight{
-        left:222px;
+        left:242px;
     }
 }

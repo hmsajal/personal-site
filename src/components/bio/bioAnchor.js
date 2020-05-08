@@ -9,18 +9,22 @@ function BioAnchor() {
    let {url}=useRouteMatch()   
 
     return(        
-        <div className={styles.ul}>              
+        <div className={styles.ul}>   
+            <div className={styles.linkDiv}>
                <NavLink className={styles.anchor} to={`${url}/info`} activeStyle={{color:'green'}}>
                   intro
-               </NavLink>                                                       
-
+               </NavLink> 
+            </div>
+            <div className={styles.linkDiv}>
                <NavLink className={styles.anchor} to={`${url}/photos`} activeStyle={{color:'green'}}>
                   photos                  
-               </NavLink>                                                                  
-               
+               </NavLink>  
+            </div>
+            <div className={styles.linkDiv}>
                <NavLink className={styles.anchor} to={`${url}/contact`} activeStyle={{color:'green'}}>
                   contact
-               </NavLink>                                                                                                                                   
+               </NavLink>   
+            </div>                                                                                                                                              
         </div>  
     )
 }
