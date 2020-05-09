@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{Fragment} from 'react'
 import {NavLink} from 'react-router-dom'
 
 import styles from './bioBasicInfo.module.css'
@@ -15,7 +15,8 @@ export default function BioBasicInfo(props){
                     <div className={styles.paraDiv}>                        
                         <Init/>                   
                     </div>                    
-                </div>                  
+                </div>    
+                <ShortInfo/>              
                 <Decl/>                 
                 <div className="ui item">                                        
                     <Interest heading="Favourite Topics" icon="book" item1="Philosophy" item2="Science"
@@ -42,25 +43,48 @@ export default function BioBasicInfo(props){
 
 const Init = () => {
     return(
-        <p>                              
-          I am Hasan Mahmud Sajal and this is my portfolio site. As you're already surfing my site the probability 
-          is high that you know me. In this section I am supposed to introduce myself. But the irony
-          is, it's not possible to know someone from a couple of words which are told by the person himself/herself. 
-          <br/>But I can tell you my personality type. I think it is much information in a very short form and 
-          my personality type is INFP.          
-        </p>
+        <Fragment>
+            <p>                              
+            I am Hasan Mahmud Sajal and this is my portfolio site. In this section I am supposed to introduce myself.
+            But the irony is I don't believe in 'intro', that's a facebook thing. 
+            Rather I am just sharing some short info about me. And it's my pleasure that you've reading so far.                   
+            </p>
+            <p style={{fontSize:"14px",color:'#666'}}>
+                If you want to know about my career interest, please visit the
+                <NavLink style={{color:'green'}} to="/career"> CAREER</NavLink> page.
+            </p>
+        </Fragment>
+    )
+}
+
+const ShortInfo = ()=>{
+    return(
+        <div className={styles.shortInfo}>
+            <div>
+               <h4 style={{display:'inline-block'}}>Personality Type: </h4>
+               <pre style={{display:'inline-block'}}>  INFP</pre>
+            </div>
+            <div>
+               <h4 style={{display:'inline-block'}}>Tech: </h4> 
+               <pre style={{display:'inline-block'}}>  JavaScript</pre>
+            </div>
+            <div>
+               <h4 style={{display:'inline-block'}}>BG: </h4> 
+               <pre style={{display:'inline-block'}}>  A+</pre>
+            </div>
+            <div>
+               <h4 style={{display:'inline-block'}}>Covid-19 Status: </h4> 
+               <pre style={{display:'inline-block'}}>  Not tested</pre>            
+            </div>
+        </div>
     )
 }
 
 const Decl = () => {
     return(
-        <div style={{padding:'40px 0px 70px 0px',fontSize:'15px',textAlign:'justify',textJustify:'auto'}}>
-            And if you are a bit more interested here are some random information and facts
-            about me that you might go through.
-            <p style={{paddingTop:"20px",fontSize:"15px",color:'#666'}}>
-                If you want to know about my career interest, please visit the
-                <NavLink style={{color:'green'}} to="/career"> CAREER</NavLink> page.
-            </p>
+        <div style={{padding:'30px 0px',fontSize:'15px',textAlign:'justify',textJustify:'auto'}}>
+            And if you are a bit more interested here are some random but organized information and facts
+            about me that you might go through-           
         </div>
     )
 }

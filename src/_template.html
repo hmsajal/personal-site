@@ -8,6 +8,30 @@
     <title>Hasan Mahmud</title>
   </head>
   <body>
-      <div id="root"></div>
+    <div id="root"></div>
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+      <script>
+        // App's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCQdyILi7Hu1sgvrign1oYAX35o33Wieyo",
+          authDomain: "portfolio-site-2f81f.firebaseapp.com",
+          databaseURL: "https://portfolio-site-2f81f.firebaseio.com",
+          projectId: "portfolio-site-2f81f",
+          storageBucket: "portfolio-site-2f81f.appspot.com",
+          messagingSenderId: "417524320640",
+          appId: "1:417524320640:web:298f34c6acfd4a59d55965",
+          measurementId: "G-C217Y1HNM8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
   </body>
 </html>

@@ -2,6 +2,12 @@
     max-width: 100%;
     display: block;
     height: auto;
-    width:120px;
-    border-radius: 80px;    
+    width:120px;      
+    border:1px solid #bbb;  
+  }
+    
+  @media screen and (max-width: 900px){
+    .myImage{
+      border-radius: 80px;      
+    }
   }

@@ -12,23 +12,21 @@
       align-items: center;            
 }
 
-.myImageDiv{            
-      display:flex;      
-      justify-content: center;
-      align-items: center;           
-      padding-bottom:28px;               
+.myImageDiv{                           
+      padding-bottom:28px;                     
 }
 .paraDiv{      
-      display:flex;           
+      display:flex;   
+      flex-direction: column; 
+      justify-content: space-between;             
       width:100%;                   
       font-size:16px;                   
       color:#444;       
       text-align: justify;
-      text-justify: auto;                              
+      text-justify: auto;                         
 }
-.main:target{            
-    padding-top: 100px;
-    margin-top:-100px;          
+.shortInfo{
+    padding:30px 0px;
 }
 
 @media screen and (min-width: 901px) {   
@@ -36,14 +34,15 @@
         padding-top:70px;
     }  
     .imgParaDiv{
-        flex-direction: row;                
-        height:100%;              
+        flex-direction: row; 
+        align-items: flex-start;                                  
     }    
     .myImageDiv{
         padding-right: 30px;
         padding-bottom:0px;            
     }
     .paraDiv{
-        width:auto;              
+        width:auto;  
+        height:100%;            
     }       
 }

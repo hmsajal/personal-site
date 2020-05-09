@@ -1,0 +1,13 @@
+.imgStyle{
+    height:480px;
+    width:640px;
+    max-width:100%;
+}
+.header{
+    display:flex;             
+    justify-content: center;          
+    align-items:center;    
+    height:15vh;      
+}
+
+
