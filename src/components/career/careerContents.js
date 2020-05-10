@@ -13,8 +13,9 @@ export function AboutMe(){
                  I am a front-end app developer. 
                  I develop web and mobile applications with React JS and React Native. 
                  I believe in evolving through learning. 
-                 I want to see myself as one of the top developers of the country in the coming years and 
-                 I believe that taking responsibilities of what I do as a developer  is the best way to achieve that.               
+                 I want to see myself as one of the top developers of the country 
+                 in the coming years and I believe that taking responsibilities of 
+                 what I do as a developer  is the best way to achieve that.               
             </div>            
         </div>        
     )
@@ -47,15 +48,16 @@ export function Projects(){
                 <div className={styles.proItem}>
                     <div>Labaid Lifeplus</div> 
                     <div>                                                                   
-                        For Durbin Labs I built the UIs of Lifeplus, Labaid’s healthcare app.
+                        While working in Durbin Labs I worked in the development of 'Lifeplus',
+                        Labaid's all-inclusive healthcare app.
                         <br/><a target="_blank" href="https://www.durbinlabs.com/project-details.php?id=9">Project Info</a>                        
                     </div>                    
                 </div>                  
                 <div className={styles.proItem}>
                     <div>Playstore App</div> 
                     <div> 
-                          I built an android application with React Native framework and uploaded it in google playstore.
-                          It's a simple but useful personal assistant app for help with breathing exercise.
+                          I have an app uploaded in Google Playstore which I developed with React Native.
+                          It's a useful personal assistant app for helping people with breathing exercise.
                           <br/><a target="_blank" href="https://play.google.com/store/apps/details?id=com.happybreathing">Playstore App Link</a>                        
                     </div>
                 </div> 
@@ -208,8 +210,15 @@ export function Experiences(){
 export function Others(){
     return(
         <div className="ui">
-            <div className="ui center aligned large header">Others</div>
-            <div className="ui content"></div>
+            <div className="ui center aligned large header">Resume</div>
+            <div className="ui content" style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
+                <p className={styles.resumePara}>And if you are a recruiter and want to see my information in the format of a resume,
+                 here is the link of the .pdf file. 
+                </p>
+                <a target="_blank" href="https://drive.google.com/open?id=1v3dIDjUZJU71NKE9pJN4nKz9ALqAC7_A" style={{fontSize:24,color:'#46b'}}>
+                    Hasan-Mahmud-Resume
+                </a>
+            </div>
         </div>        
     )
 }

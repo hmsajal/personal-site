@@ -33,7 +33,7 @@ export default function CareerNav() {
             </NavLink>      
 
             <NavLink className={styles.navLink} to="/others">
-                Others                
+                Resume                
             </NavLink>                                         
         </div>
     )

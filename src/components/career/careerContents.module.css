@@ -87,6 +87,11 @@
 .expItemContent>div{
     line-height:25px !important;
 }
+.resumePara{
+    padding:20px 80px;
+    text-align: center;
+    font-size:18px;    
+}
 
 @media screen and (min-width:771px){
     .eduItem>div{
