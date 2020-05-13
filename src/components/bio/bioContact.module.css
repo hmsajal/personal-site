@@ -1,3 +1,4 @@
+/* trash
 .head{          
     font-size:22px;
     font-weight:bold;
@@ -7,110 +8,16 @@
     align-items: center;          
     height:14vh;
     margin-bottom:20px;
-}
-.main{
+} */
+
+.main{   
+   margin-top:6vh;
    display:grid;      
-   grid-template-rows: 70vh;
-   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));                          
-}
-.writeToMe{
-   max-height:480px;   
-}
-.details{      
-   max-height: 480px;
-   display:grid;       
-   grid-template-rows: 1fr 1fr 11fr 1fr 1fr;
-   grid-template-columns: 2fr 9fr 1fr;    
-   grid-template-areas:
-        ". head ."
-        ".   .  ."
-        ". info ."
-        ". icon ." 
-        ".   .  ." ;       
+   grid-template-rows: 79vh;   
+   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));      
+   background-image: linear-gradient(to left, rgb(182, 244, 146), rgb(51, 139, 147));   
 }
 
-.contactInfoHeader{
-   grid-area:head;
-   display:flex;   
-   align-items:center;
-   font-weight: bold;
-   font-size:1.125rem;
-}
-.contactIcons{
-   grid-area:icon;
-}
-.mainInfo{
-   grid-area:info;
-   display:grid;
-   grid-template-rows: repeat(5,1fr);
-   grid-template-columns: repeat(5,1fr);
-   grid-template-areas: 
-            "pn pv pv pv pv"
-            "an av av av av"
-            "mn mv mv mv mv"
-            "en ev ev ev ev"
-            "sn sv sv sv sv";
-}
 
-.phnName{
-   grid-area:pn;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
-}
-.phone{
-   grid-area:pv;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
-}
-.addrName{
-   grid-area:an;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
-}
-.addr{
-   grid-area:av;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
-}
-.msgName{
-   grid-area:mn;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
-}
-.msg{
-   grid-area:mv;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
-}
-.emailName{
-   grid-area:en;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
-}
-.email{
-   grid-area:ev;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
 
-}
-.socialName{
-   grid-area:sn;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
-}
-.social{
-   grid-area:sv;
-   display:flex;
-   justify-content: flex-start;
-   align-items:center;
-}
 

@@ -1,9 +1,8 @@
-.main{    
-    max-width:420px;    
-    align-content: center;
+.main{       
+    max-height:500px;     
     display:grid;
-    grid-template-rows: 1fr 1fr 12fr 1fr;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 5fr 18fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;         
 }
 .header{
     grid-row:1/2;
@@ -12,12 +11,23 @@
     justify-content: center;
     align-items:center;
     font-size:1.125rem;
-    font-weight:bold;
+    font-weight:bold;       
+}
+.brdr{
+    grid-template-rows:1/-1;
+    grid-template-columns: 1/2;
+    border-left:1px solid #555; 
 }
 .contactForm{   
     composes:ui form from global;        
-    grid-row:3/4;
-    grid-column: 2/3;        
+    grid-row:2/3;
+    grid-column: 2/3;               
+}
+
+@media screen and (max-width:715px){
+    .brdr{
+        border-left:none;
+    } 
 }
 
 

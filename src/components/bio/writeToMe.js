@@ -6,8 +6,9 @@ function WriteToMe(props) {
     return (   
         <div className={styles.main}>
             <div className={styles.header}>
-                Write to me
+                <div style={{borderBottom:'2px solid black'}}>Write to me</div>
             </div>
+            <div className={styles.brdr}></div>
             <div className={styles.contactForm}>                                                                                                                                  
                 <div className="field required">
                     <label>Name</label>                        
