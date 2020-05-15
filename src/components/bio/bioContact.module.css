@@ -14,8 +14,7 @@
    margin-top:6vh;
    display:grid;      
    grid-template-rows: 79vh;   
-   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));      
-   background-image: linear-gradient(to left, rgb(182, 244, 146), rgb(51, 139, 147));   
+   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));         
 }
 
 

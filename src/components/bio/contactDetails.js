@@ -6,7 +6,7 @@ export default function ContactDetails() {
     return (
         <div className={styles.detailsMain}>
             <div className={styles.contactInfoHeader}>
-                <div style={{borderBottom:'2px solid black'}}>My contact Information</div>
+                <div>My contact Information</div>
             </div>  
 
             <div className={styles.mainInfo}>
@@ -42,9 +42,8 @@ export default function ContactDetails() {
             </div> 
 
             <div className={styles.contactIcons}>
-                icons here
-            </div>
-            <div className={styles.brdr}/>
+                
+            </div>            
         </div>   
     )
 }

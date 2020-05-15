@@ -28,11 +28,30 @@ export function Skills(){
                Skills
             </div>
             <div className={styles.skillsContent}>
-                <div className="item"> JavaScript, CSS, SASS</div>
-                <div className="item"> ReactJS, React Native, React Hooks</div>
-                <div className="item"> React-router-dom, Material-design, Styled Components</div>
-                <div className="item"> Webpack, Babel</div>
-                <div className="item"> Git, Linux, MySql</div>
+                <div className="item" style={{padding:'10px 0px'}}> 
+                       <span style={{fontWeight:'bold',color:'teal',marginRight:10}}>Primary Languages and Frameworks: </span>
+                       JavaScript, ReactJS, React Native
+                </div>
+                <div className="item" style={{padding:'10px 0px'}}>
+                     <span style={{fontWeight:'bold',color:'teal',marginRight:10}}>React Tools and Libraries: </span>
+                     React Hooks, React-router, Material-design 
+                </div>
+                <div className="item" style={{padding:'10px 0px'}}>
+                     <span style={{fontWeight:'bold',color:'teal',marginRight:10}}>CSS Slills: </span>
+                     CSS3, SASS, CSS Modules, CSS in JS, Autoprefixer, Styled Components 
+                </div>
+                <div className="item" style={{padding:'10px 0px'}}>
+                     <span style={{fontWeight:'bold',color:'teal',marginRight:10}}>Bundling and Environment: </span>
+                     Webpack, Babel
+                </div>
+                <div className="item" style={{padding:'10px 0px'}}>
+                    <span style={{fontWeight:'bold',color:'teal',marginRight:10}}>Data and Security: </span>
+                     Rest API, MySql, Firebase, Auth0
+                </div>
+                <div className="item" style={{padding:'10px 0px'}}>
+                    <span style={{fontWeight:'bold',color:'teal',marginRight:10}}>VCS and others </span>
+                     Git, Linux, OOP
+                </div>
             </div>
         </div>     
     )

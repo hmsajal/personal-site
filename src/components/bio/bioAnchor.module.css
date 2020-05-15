@@ -5,32 +5,32 @@
     height:50px;    
     display:flex;
     justify-content: center;
-    align-items: center;        
-    border:1px solid black;
+    align-items: center;   
+    transition: transform .2s;
+}
+.linkDiv:hover{
+    transform: scale(1.04)
 }
 
 .anchor{
-    font-size: 13px;
-    font-weight: bold;
-    color: #222;
-    transition: font-size, .1s;
+    font-size: 14px;        
+    color: #125;
+    transition: font-size, .1s;    
 }
-.anchor:hover{
-    font-size:18px;
-    color:black;    
+.anchor:hover{         
+    color:#125;        
+    border-bottom: 1px solid #125;
 }
-.activeStyle{
-    color:rgb(11, 228, 109)
-}
+
 
 @media screen and (min-width:391px){
     .anchor{
-        font-size: 14px;        
+        font-size: 16px;        
     }
 }
 @media screen and (min-width:800px){
     .anchor{
-        font-size: 16px;        
+        font-size: 18px;        
     }
 }
 @media screen and (min-width:1101px){

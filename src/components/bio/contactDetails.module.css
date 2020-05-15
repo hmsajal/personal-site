@@ -1,4 +1,5 @@
 .detailsMain{   
+    background:#143859;
     max-height:500px;         
     display:grid;       
     grid-template-rows: 5fr 13fr 3fr 3fr;
@@ -7,7 +8,7 @@
          ". head ."        
          ". info ."
          ". icon ." 
-         ". brdr  ." ;           
+         ".  .   ." ;           
  }
  .contactInfoHeader{
     grid-area:head;
@@ -15,6 +16,7 @@
     align-items:center;
     font-weight: bold;
     font-size:1.125rem;   
+    color:#f4b418;
  }
  .contactIcons{
     grid-area:icon;
@@ -31,12 +33,9 @@
              "an av av av av"
              "mn mv mv mv mv"
              "en ev ev ev ev"
-             "sn sv sv sv sv";             
+             "sn sv sv sv sv";   
+    color:#ffe7aa;          
  }
- .brdr{
-    grid-area:brdr;
-    border-bottom:1px solid #555;
-}
  
  .phnName{
     grid-area:pn;
@@ -97,10 +96,4 @@
     display:flex;
     justify-content: flex-start;
     align-items:center;
- }
-
- @media screen and (min-width:715px){
-    .brdr{
-      border-bottom:none;
-    }
- }
+ } 
