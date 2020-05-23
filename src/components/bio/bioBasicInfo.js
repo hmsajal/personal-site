@@ -46,8 +46,8 @@ const Init = () => {
         <Fragment>
             <p>                              
             I am Hasan Mahmud Sajal and this is my portfolio site. In this section I am supposed to introduce myself.
-            But the irony is I don't believe in 'intro', that's a facebook thing. 
-            Rather I am just sharing some short info about me. And it's my pleasure that you've reading so far.                   
+            But the irony is I don't believe in 'intro'. That's a facebook thing, I think.
+            Rather I am just sharing some short info about me. And it's my pleasure that you've been reading so far.                   
             </p>
             <p style={{fontSize:"14px",color:'#666'}}>
                 If you want to know about my career interest, please visit the

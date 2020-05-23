@@ -24,7 +24,7 @@
     transform: scale(1.012,1.1)
 }
 
-@media screen and (min-width:769px){   
+@media screen and (min-width:771px){   
     .navLink{
         font-size:19px;
     }

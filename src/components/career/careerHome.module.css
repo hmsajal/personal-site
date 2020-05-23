@@ -1,15 +1,22 @@
 .navDiv{
     position:fixed;
     z-index:4;   
-    top:16vh;     
-    left:20px;
-    right:20px; 
+    top:11vh;     
+    left:0;
+    right:0;   
+    padding-top:5vh;
+    padding-left:20px;
+    padding-right:20px; 
+    background:#fff;              
 }
 .contentDiv{            
     position:absolute;   
-    top: 500px;
-    left:20px;
-    right:20px;    
+    top: 160px;
+    left:22px;
+    right:22px;        
+}
+.displaybp{
+    display:none;
 }
 
 
@@ -22,8 +29,11 @@
     .contentDiv{
         top:8vh;
         left:330px;   
-        right:50px;     
+        right:50px;             
     }                
+    .displaybp{
+        display:inline-block;        
+    }
 }
 @media screen and (min-width:1025px) {          
     .navDiv{

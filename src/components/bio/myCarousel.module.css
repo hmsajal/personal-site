@@ -3,6 +3,11 @@
     width:640px;
     max-width:100%;
 }
+.imgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header{
     display:flex;             
     justify-content: center;          
