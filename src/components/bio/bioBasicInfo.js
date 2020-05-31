@@ -10,7 +10,7 @@ export default function BioBasicInfo(props){
             <div className={styles.main} id="bioBasicInfo">                                                               
                 <div className={styles.imgParaDiv}>
                     <div className={styles.myImageDiv}>
-                       <MyImage imgWidth="120px"/>            
+                       <MyImage imgWidth="250px"/>            
                     </div>        
                     <div className={styles.paraDiv}>                        
                         <Init/>                   
