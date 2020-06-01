@@ -10,23 +10,23 @@ function BioAnchor() {
 
     return(        
         <div className={styles.ul}>   
-            <div className={styles.linkDiv} style={{background:'#d5e0fe'}}>
+            <div className={styles.linkDiv} style={{background:'#c2d299'}}>
                <NavLink className={styles.anchor} to={`${url}/info`} 
-                        activeStyle={{color:'#66a80f',fontWeight:'bold',borderBottom:'none'}}
+                        activeStyle={{color:'#125',fontWeight:'bold',borderBottom:'none'}}
                >
                   intro
                </NavLink> 
             </div>
-            <div className={styles.linkDiv} style={{background:'#656371'}}>
+            <div className={styles.linkDiv} style={{background:'#4c6c8d'}}>
                <NavLink className={styles.anchor} to={`${url}/photos`} 
-                        activeStyle={{color:'#66a80f',fontWeight:'bold',borderBottom:'none'}}
+                        activeStyle={{color:'#125',fontWeight:'bold',borderBottom:'none'}}
                >
                   photos                  
                </NavLink>  
             </div>
-            <div className={styles.linkDiv} style={{background:'#ff7369'}}>
+            <div className={styles.linkDiv} style={{background:'#cacdd9'}}>
                <NavLink className={styles.anchor} to={`${url}/contact`} 
-                        activeStyle={{color:'#66a80f',fontWeight:'bold',borderBottom:'none'}}
+                        activeStyle={{color:'#125',fontWeight:'bold',borderBottom:'none'}}
                >
                   contact
                </NavLink>   

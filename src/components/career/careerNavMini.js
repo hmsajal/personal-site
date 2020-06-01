@@ -7,7 +7,7 @@ export default function CareerNavMini(props){
     return(
         <div className={styles.mainDiv}>    
             <NavLink className={styles.navLink} to="/">
-                CAREER MENU
+                MENU
             </NavLink> 
         </div> 
     )
