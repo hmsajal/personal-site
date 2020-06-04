@@ -14,12 +14,12 @@
 
 .anchor{
     font-size: 14px;        
-    color: #2b5;
+    color: #fff;
     transition: font-size, .1s;    
 }
 .anchor:hover{         
-    color:#125;        
-    border-bottom: 1px solid #125;
+    color:#fff;        
+    border-bottom: 1px solid #fff;
 }
 
 

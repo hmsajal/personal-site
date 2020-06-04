@@ -1,15 +1,17 @@
 import React,{Fragment} from 'react'
 import {NavLink} from 'react-router-dom'
 
+import styles from './info.module.css'
+
 export const Init = () => {
     return(
         <Fragment>
-            <p style={{color:'#556b2f'}}>                              
+            <p className={styles.intro}>                              
             I am Hasan Mahmud Sajal and this is my portfolio site. In this section I am supposed to introduce myself.
             But the irony is I don't believe in 'intro'. That's a facebook thing, I think.
             Rather I am just sharing some short info about me. And it's my pleasure that you've been reading so far.                   
             </p>
-            <p style={{fontSize:"15px",color:'#666'}}>
+            <p className={styles.careerLink}>
                 If you want to know about my career interest, please visit the
                 <NavLink style={{color:'green'}} to="/career"> CAREER</NavLink> page.
             </p>
@@ -48,6 +50,29 @@ export const Decl = () => {
         </div>
     )
 }
+
+export const MyInterests = ()=>{
+    return(
+        <div className="ui item">                                        
+                    <Interest heading="Favourite Topics" icon="book" item1="Philosophy" item2="Science"
+                            item3="Human Nature" item4='Technology'
+                    >                        
+                    </Interest>                                                              
+                                    
+                    <Interest heading="Movies or Series" icon="film" item1="Fight Club"
+                               item2="Pulp Fiction" item3="Interstellar" item4="Breaking Bad"
+                    >                        
+                        <div className="item list">Game of Thrones</div>
+                    </Interest>                                        
+                                    
+                    <Interest heading="People I Envy" icon="users" item1="Rabindranath Tagore"
+                            item2="Steve Jobs" item3="Christopher Nolan" item4="Bill Gates"
+                    >                         
+                    </Interest>                                        
+        </div>
+    )
+}
+
 
 export const Interest = (props) => {
     return(

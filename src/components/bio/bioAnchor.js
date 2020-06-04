@@ -12,21 +12,21 @@ function BioAnchor() {
         <div className={styles.ul}>   
             <div className={styles.linkDiv} style={{background:'#c2d299'}}>
                <NavLink className={styles.anchor} to={`${url}/info`} 
-                        activeStyle={{color:'#125',fontWeight:'bold',borderBottom:'none'}}
+                        activeStyle={{color:'#0d0',fontWeight:'normal',borderBottom:'none'}}
                >
                   intro
                </NavLink> 
             </div>
             <div className={styles.linkDiv} style={{background:'#4c6c8d'}}>
                <NavLink className={styles.anchor} to={`${url}/photos`} 
-                        activeStyle={{color:'#125',fontWeight:'bold',borderBottom:'none'}}
+                        activeStyle={{color:'#0d0',fontWeight:'normal',borderBottom:'none'}}
                >
                   photos                  
                </NavLink>  
             </div>
-            <div className={styles.linkDiv} style={{background:'#cacdd9'}}>
+            <div className={styles.linkDiv} style={{background:'#c6c9d5'}}>
                <NavLink className={styles.anchor} to={`${url}/contact`} 
-                        activeStyle={{color:'#125',fontWeight:'bold',borderBottom:'none'}}
+                        activeStyle={{color:'#0d0',fontWeight:'normal',borderBottom:'none'}}
                >
                   contact
                </NavLink>   
