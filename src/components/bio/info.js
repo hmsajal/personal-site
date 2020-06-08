@@ -21,7 +21,7 @@ export const Init = () => {
 
 export const ShortInfo = ()=>{
     return(
-        <div style={{padding:'30px 0px'}}>
+        <Fragment>
             <div>
                <h4 style={{display:'inline-block'}}>Personality Type: </h4>
                <pre style={{display:'inline-block'}}>  INFP</pre>
@@ -38,7 +38,7 @@ export const ShortInfo = ()=>{
                <h4 style={{display:'inline-block'}}>Covid-19 Status: </h4> 
                <pre style={{display:'inline-block'}}>  Not tested</pre>            
             </div>
-        </div>
+        </Fragment>
     )
 }
 

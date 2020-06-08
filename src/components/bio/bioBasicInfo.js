@@ -7,16 +7,16 @@ import MyImage from '../common/myImage'
 
 export default function BioBasicInfo(props){             
     return (                           
-            <div className={styles.main} id="bioBasicInfo">                                                               
-                <div className={styles.imgParaDiv}>
-                    <div className={styles.myImageDiv}>
-                        <MyImage imgWidth="220px"/>            
-                    </div>        
-                    <div className={styles.paraDiv}>                        
-                        <Info.Init/>                   
-                    </div>                    
-                </div>    
-                <Info.ShortInfo/>                                                                                                                                                                                                                                                                                                         
+            <div className={styles.main} id="bioBasicInfo">                
+                <div className={styles.imgDiv}>
+                    <MyImage imgWidth="100%"/>            
+                </div>        
+                <div className={styles.init}>                        
+                    <Info.Init/>                   
+                </div>                                    
+                <div className={styles.shortInfo}>
+                    <Info.ShortInfo/> 
+                </div>                                                                                                                                                                                                                                                                                                                        
             </div>                 
     )        
 }
