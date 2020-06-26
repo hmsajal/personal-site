@@ -1,0 +1,10 @@
+.main{   
+   margin-top:6vh;
+   display:grid;      
+   grid-template-rows: 79vh;   
+   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));         
+}
+
+
+
+

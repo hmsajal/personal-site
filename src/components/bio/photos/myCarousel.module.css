@@ -1,0 +1,22 @@
+.main{
+    height:85vh;      
+}
+
+.view{
+    display: felx;
+    align-items: center;
+    height:75vh;        
+}
+
+.imgDiv{
+
+}
+.img{
+    display:block;
+    width:100%;    
+}
+
+.leftCntrl,.rightCntrl{
+    width:40px;        
+}
+

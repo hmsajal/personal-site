@@ -3,11 +3,11 @@ import {Route, Switch, Redirect}  from 'react-router-dom'
 
 import styles from "./bioHome.module.css"
 
-import BioBasicInfo from './bioBasicInfo'
-import BioPhotos from './bioPhotos'
-import BioContact from './bioContact'
+import BioBasicInfo from '../basic/bioBasicInfo'
+import BioPhotos from '../photos/bioPhotos'
+import BioContact from '../contact/bioContact'
 import BioAnchor from './bioAnchor'
-import Divider from '../common/divider'
+import Divider from '../../common/divider'
 
 
 export default function BioHome(props) {             
@@ -21,9 +21,9 @@ export default function BioHome(props) {
                 <div className={styles.internalDivs}>       
                     <Switch>                          
                         <Redirect exact from={`/bio`} to="/bio/info"/>                                                                                                   
-                        <Route exact path={`/bio/info`}><BioBasicInfo/></Route>
-                        <Route exact path={`/bio/photos`}><BioPhotos/></Route> 
-                        <Route exact path={`/bio/contact`}><BioContact/></Route>                                                  
+                        <Route path={`/bio/info`}><BioBasicInfo/></Route>
+                        <Route path={`/bio/photos`}><BioPhotos/></Route> 
+                        <Route path={`/bio/contact`}><BioContact/></Route>                                                  
                     </Switch>                  
                 </div>                                  
             </Fragment>             

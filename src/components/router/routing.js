@@ -3,7 +3,7 @@ import {BrowserRouter as Router,Route,Switch,useLocation, useHistory} from 'reac
 
 import Home from '../home/home'
 import Menu from '../menu/menu'
-import BioHome from '../bio/bioHome'
+import BioHome from '../bio/main/bioHome'
 import BlogHome from '../blog/blogHome'
 import CareerHome from '../career/careerHome'
 import NotFound from './notFound'
