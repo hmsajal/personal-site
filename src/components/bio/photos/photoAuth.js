@@ -39,7 +39,7 @@ export default function PhotoAuth(props){
                     My Photos
             </h3>
             <div className={styles.authIntro}>
-                My photos also include my friends and family. So those are not open to all. 
+                Some photos include my friends and family. So those are not open to all. 
                 <br/>Just prove that I've let you go through.
             </div>
             <div className={styles.formDiv}>

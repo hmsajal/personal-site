@@ -2,6 +2,7 @@ import React from 'react'
 import {Link,useRouteMatch} from 'react-router-dom'
 
 import MyCarousel from './myCarousel'
+import styles from './photos.module.css'
 
 
 export default function DefaultPhotos(){    
@@ -9,14 +10,15 @@ export default function DefaultPhotos(){
     let {url} = useRouteMatch()    
 
     return (           
-      <div>        
-        <div>
-          Here I have added not only those photos which feature me but also the photos which got my
-           attention. If you are a close friend or someone from my family and relatives, you can
-           <Link to={`${url}/auth`}> SIGN IN </Link>to see more photos.
-        </div>
-        <div>
-          {/* <MyCarousel/> */}
+      <div className={styles.main}> 
+        <div className={styles.name}>My Photos</div>       
+        <div className={styles.text}>
+            Here, I have addded photos featuring me. Also there are some photos I found interesting.
+             If you are a close friend or someone from my family or relatives, you can
+          <Link to={`${url}/auth`}> SIGN IN </Link>to see more photos.
+        </div >
+        <div className={styles.albums}>
+          
         </div>
       </div>                    
     )
