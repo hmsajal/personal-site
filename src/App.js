@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Routing from './components/router/routing'
+import Routing from "./components/router/routing";
 
 function App() {
-  return (        
-      <Routing/>    
-  );
+  return <Routing />;
 }
 
 export default App;

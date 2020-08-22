@@ -1,31 +1,39 @@
-import React, { Fragment } from 'react'
-import {Route, Switch, Redirect}  from 'react-router-dom'
+import React, { Fragment, useState } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import firebase from "firebase/app";
 
-import styles from "./bioHome.module.css"
+import styles from "./bioHome.module.css";
 
-import BioBasicInfo from '../basic/bioBasicInfo'
-import BioPhotos from '../photos/bioPhotos'
-import BioContact from '../contact/bioContact'
-import BioAnchor from './bioAnchor'
-import Divider from '../../common/divider'
+import BioBasicInfo from "../basic/bioBasicInfo";
+import AllPhotos from "../photos/allPhotos";
+import DefaultPhotos from "../photos/defaultPhotos";
+import Auth from "../photos/auth";
+import BioContact from "../contact/bioContact";
+import BioAnchor from "./bioAnchor";
 
-
-export default function BioHome(props) {             
-
-    return (          
-            <Fragment>  
-                <div className={styles.anchorDiv}>
-                    <BioAnchor/>  
-                </div> 
-                {/* <Divider/> */}
-                <div className={styles.internalDivs}>       
-                    <Switch>                          
-                        <Redirect exact from={`/bio`} to="/bio/info"/>                                                                                                   
-                        <Route path={`/bio/info`}><BioBasicInfo/></Route>
-                        <Route path={`/bio/photos`}><BioPhotos/></Route> 
-                        <Route path={`/bio/contact`}><BioContact/></Route>                                                  
-                    </Switch>                  
-                </div>                                  
-            </Fragment>             
-    )
+export default function BioHome(props) {
+  let [user, setUser] = useState();
+  firebase
+    .auth()
+    .onAuthStateChanged((user) => (user ? setUser(true) : setUser(false)));
+  return (
+    <Fragment>
+      <div className={styles.anchorDiv}>
+        <BioAnchor />
+      </div>
+      <div className={styles.internalDivs}>
+        <Switch>
+          <Redirect exact from={`/bio`} to="/bio/info" />
+          <Route path={`/bio/info`} component={BioBasicInfo} />
+          <Route path={`/bio/photos`}>
+            <Route path={`/bio/photos`} exact>
+              {user ? <AllPhotos /> : <DefaultPhotos />}
+            </Route>
+            <Route path={`/bio/photos/auth`} exact component={Auth} />
+          </Route>
+          <Route path={`/bio/contact`} component={BioContact} />
+        </Switch>
+      </div>
+    </Fragment>
+  );
 }
