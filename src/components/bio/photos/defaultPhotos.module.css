@@ -1,6 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .name {
   display: flex;
@@ -18,6 +19,9 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   height: 10vh;
-  display: flex;
-  align-items: center;
+  text-align: center;
+}
+.text a {
+  color: green;
+  text-decoration: underline;
 }

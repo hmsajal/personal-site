@@ -1,22 +1,5 @@
-.main{
-    height:85vh;      
+.customTag {
+  max-width: 100%;
+  height: 500px;
+  background: black;
 }
-
-.view{
-    display: felx;
-    align-items: center;
-    height:75vh;        
-}
-
-.imgDiv{
-
-}
-.img{
-    display:block;
-    width:100%;    
-}
-
-.leftCntrl,.rightCntrl{
-    width:40px;        
-}
-
