@@ -4,21 +4,10 @@
   align-items: center;
 }
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15vh;
-}
-.authIntro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  text-align: center;
-}
-.alert {
-  height: 50px;
+  height: 90px;
   display: flex;
   align-items: center;
+  margin-top: 12vh;
+  font-size: 16px;
+  font-family: "comic sans ms", sans-serif;
 }

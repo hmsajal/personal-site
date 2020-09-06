@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  height: 30vh;
+  font-weight: bold;
+  text-align: center;
+}
+.button button {
+  padding: 8px;
+  width: 120px;
+  border-radius: 14px;
+  font-size: 18px;
+  border: 2px solid black;
+  font-weight: bold;
+  font-family: calibri, sans-serif;
+  cursor: pointer;
+}

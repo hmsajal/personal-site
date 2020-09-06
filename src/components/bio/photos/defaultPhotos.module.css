@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
 }
 .name {
   display: flex;
@@ -13,15 +14,23 @@
   font-style: italic;
   height: 18vh;
 }
-.text {
+.linkText {
   font-size: 14px;
   font-style: italic;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  height: 10vh;
-  text-align: center;
+  margin: 30px 0px 30px 0px;
+  align-self: flex-start;
 }
-.text a {
+.linkText a {
   color: green;
   text-decoration: underline;
+}
+
+.text {
+  font-size: 17px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
