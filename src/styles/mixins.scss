@@ -1,0 +1,19 @@
+@import "variables.scss";
+
+@mixin mqCommon($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin mqSimple {
+  @media (min-width: $sm) {
+    $val: $sm-padding;
+  }
+  @media (min-width: $md) {
+    $val: $md-padding;
+  }
+  @media (min-width: $lg) {
+    $val: $lg-padding;
+  }
+}

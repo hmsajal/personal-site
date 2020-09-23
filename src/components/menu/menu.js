@@ -1,88 +1,22 @@
-import React from 'react'
-import {Link,NavLink} from 'react-router-dom'
-import {Drawer,List,ButtonBase} from '@material-ui/core'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import MenuIcon from '@material-ui/icons/Menu'
-import CloseIcon from '@material-ui/icons/Close'
-import {faUser} from '@fortawesome/free-regular-svg-icons'
-import {faCode,faRss} from '@fortawesome/free-solid-svg-icons'
+import NavMenu from "./navMenu";
+import NavBar from "./navBar";
+import styles from "./menu.module.scss";
 
-import styles from './menu.module.css'
-import navStyles from './nav.module.css'
-import drawerStyles from './drawer.module.css'
-
-
-export default function Menu(props) {    
-
-    return (           
-            <div className={styles.mainDiv} id="menu">                
-                <Link className={styles.myName} to="/">
-                   HASAN MAHMUD
-                </Link>                                
-                <NavMenu/>
-                <NavBar/>
-            </div>                  
-    )
-}
-
-
-function NavMenu(){
-    return(             
-        <nav className={navStyles.navList}>            
-            <NavLink className={navStyles.link} to="/bio" >
-                Bio
-            </NavLink>                
-
-            <NavLink className={navStyles.link} to="/career">
-                Career
-            </NavLink>
-
-            <NavLink className={navStyles.link} to="/blog" >
-                Blog
-            </NavLink>
-        </nav>                    
-    )
-}
-
-
-function NavBar(){
-
-    let [drawerState, setState] = React.useState(false)
-    
-    return(
-        <React.Fragment>
-            <ButtonBase onClick={()=>setState(true)} className={navStyles.navbutton}>
-                <MenuIcon style={{fontSize:28}}/>
-            </ButtonBase>
-            <Drawer open={drawerState} anchor="top" onClose={()=>setState(false)}>
-                <DrawerChild toggleDrawer={()=>setState(false)}/> 
-            </Drawer>
-        </React.Fragment>
-    )
-}
-
-
-const DrawerChild = (props) => (
-    <div className={drawerStyles.child}> 
-        <ButtonBase style={{margin:'50px 0px'}} onClick={()=>props.toggleDrawer()}>
-             <CloseIcon style={{fontSize:34}}/>
-        </ButtonBase>            
-        <List className={drawerStyles.list}>
-            {['Bio','Career','Blog'].map((text,index)=>(                
-                   <NavLink key={text} to={`/${text}`} onClick={()=>props.toggleDrawer()}>
-                        <div className={drawerStyles.iconText}>
-                            <span>
-                                <FontAwesomeIcon icon={index===0?faUser:(index===1?faCode:faRss)}
-                                                 style={{fontSize:'22px',color:'#c42'}}
-                                /> 
-                            </span>                                                                                                   
-                            <span>
-                                {text}
-                            </span>
-                        </div>
-                    </NavLink>                                                                           
-            ))}
-        </List>
+export default function Menu(props) {
+  return (
+    <div className={styles.mainDiv} id="menu">
+      <Link className={styles.myName} to="/">
+        HASAN MAHMUD
+      </Link>
+      <div className={styles.navMenu}>
+        <NavMenu />
+      </div>
+      <div className={styles.navBar}>
+        <NavBar />
+      </div>
     </div>
-)
+  );
+}

@@ -1,0 +1,25 @@
+@import "../../styles/mixins.scss";
+
+.main {
+  color: #111;
+  font-family: dosis, sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  font-size: 24px;
+  @include mqCommon($sm) {
+    font-size: 25px;
+  }
+  @include mqCommon($md) {
+    font-size: 26px;
+  }
+  @include mqCommon($lg) {
+    font-size: 28px;
+  }
+}
+.link {
+  color: #864551;
+  font-weight: 500;
+  &:hover {
+    color: lighten($color: #864551, $amount: 5);
+  }
+}

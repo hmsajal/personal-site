@@ -1,0 +1,103 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.homeDiv {
+  height: 100vh;
+  background: linear-gradient(to bottom, #60a677, #226051, #226051, #60a677);
+  background-image: url("../../assets/images/blue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #60a677;
+  display: grid;
+  grid-template-rows: 20vh auto 170px 70px auto 20vh;
+  grid-template-columns: 12vw 76vw 12vw;
+  @include mqCommon($lg) {
+    grid-template-columns: 20vw 60vw 20vw;
+  }
+}
+.name {
+  font-family: rancho, sans-serif;
+  font-size: 28px;
+
+  color: #e7e7e7;
+  @include mqCommon($sm) {
+    font-size: 30px;
+  }
+  @include mqCommon($md) {
+    font-size: 34px;
+  }
+  @include mqCommon($lg) {
+    font-size: 38px;
+  }
+}
+.nameNavDiv {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mqCommon($lg) {
+    grid-column: 1/-1;
+    padding: 0px 80px;
+  }
+}
+.infoDiv {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeButton {
+  padding: 12px 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background: complement($color: rgb(86, 168, 153));
+  border: 1px solid #a85665;
+  color: #fff;
+  border-radius: 2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-right: 20px;
+  cursor: pointer;
+  &:hover {
+    background: fade-out($color: #a85665, $amount: 0.2);
+  }
+  @include mqCommon($lg) {
+    padding: 15px 30px;
+  }
+}
+.contactButton {
+  padding: 12px 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background: transparent;
+  border: 1px solid #fbfbfb;
+  color: #fff;
+  border-radius: 2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: all;
+  &:hover {
+    background: fade-out($color: #a85665, $amount: 0.2);
+  }
+  @include mqCommon($lg) {
+    padding: 15px 30px;
+  }
+}
+.prolinkDiv {
+  grid-row: 6/7;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

@@ -6,8 +6,7 @@ import "firebase/auth";
 
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "./styles/index.css";
-import "./styles/fonts.css";
+import "./styles/index.scss";
 
 var firebaseConfig = {
   apiKey: "AIzaSyCARbl3q7L7Dzf02B2a9vQKgnG7w23tU4w",
