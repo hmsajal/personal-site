@@ -1,6 +1,6 @@
 [build]
   publish = "build"
-  command = "npm run webpack --mode=production"
+  command = "npm run prod"
   functions = "lambda"
 [build.environment]
   NODE_VERSION = "12.16.2"
