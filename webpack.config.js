@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const copyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
   entry: {
@@ -21,6 +22,11 @@ module.exports = {
       filename: "index.html",
       template: "./src/_template.html",
     }),
+    new copyPlugin({
+      patterns: [
+        { from: "./_redirects", to: "./" }
+      ]
+    })
   ],
   devtool: "source-map",
 
