@@ -43,14 +43,6 @@ const DoRoute = () => {
       <Switch>
         <Route path="/bio" component={BioHome}></Route>
         <Route path="/career" component={CareerHome}></Route>
-        <Route path="/blog">
-          {
-            () => {
-              window.location.href = "https://blog.hmsajal.com"
-              return null
-            }
-          }
-        </Route>
         <Route>
           {" "}
           <NotFound />{" "}
