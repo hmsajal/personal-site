@@ -26,6 +26,18 @@ export default function NavBar() {
   );
 }
 
+const LinkItem = ({ index, text }) => {
+  return (<div className={styles.iconText}>
+    <span>
+      <FontAwesomeIcon
+        icon={index === 0 ? faUser : index === 1 ? faCode : faRss}
+        style={{ fontSize: "22px", color: "#c42" }}
+      />
+    </span>
+    <span>{text}</span>
+  </div>)
+}
+
 const DrawerChild = (props) => (
   <div className={styles.child}>
     <ButtonBase
@@ -36,21 +48,19 @@ const DrawerChild = (props) => (
     </ButtonBase>
     <List className={styles.list}>
       {["bio", "career", "blog"].map((text, index) => (
-        <NavLink
-          key={index}
-          to={`/${text}`}
-          onClick={() => props.toggleDrawer()}
-        >
-          <div className={styles.iconText}>
-            <span>
-              <FontAwesomeIcon
-                icon={index === 0 ? faUser : index === 1 ? faCode : faRss}
-                style={{ fontSize: "22px", color: "#c42" }}
-              />
-            </span>
-            <span>{text}</span>
-          </div>
-        </NavLink>
+        text === "blog"
+          ?
+          <a href="https://blog.hmsajal.com">
+            <LinkItem index={index} text={text} />
+          </a>
+          :
+          <NavLink
+            key={index}
+            to={`/${text}`}
+            onClick={() => props.toggleDrawer()}
+          >
+            <LinkItem index={index} text={text} />
+          </NavLink>
       ))}
     </List>
   </div>
