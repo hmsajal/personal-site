@@ -3,14 +3,12 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  useLocation,
   useHistory,
 } from "react-router-dom";
 
 import Home from "../home/home";
 import Menu from "../menu/menu";
 import BioHome from "../bio/main/bioHome";
-import BlogHome from "../blog/blogHome";
 import CareerHome from "../career/careerHome";
 import NotFound from "./notFound";
 import styles from "./routing.module.css";
@@ -45,7 +43,14 @@ const DoRoute = () => {
       <Switch>
         <Route path="/bio" component={BioHome}></Route>
         <Route path="/career" component={CareerHome}></Route>
-        <Route path="/blog" component={BlogHome}></Route>
+        <Route path="/blog">
+          {
+            () => {
+              window.location.href = "https://blog.hmsajal.com"
+              return null
+            }
+          }
+        </Route>
         <Route>
           {" "}
           <NotFound />{" "}

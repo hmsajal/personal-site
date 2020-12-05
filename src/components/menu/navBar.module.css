@@ -16,6 +16,7 @@
 .iconText {
   display: flex;
   justify-content: flex-start;
+  text-transform: capitalize;
 }
 .iconText:hover {
   opacity: 0.6;
