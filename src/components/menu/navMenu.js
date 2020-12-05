@@ -13,10 +13,9 @@ export default function NavMenu() {
       <NavLink className={styles.link} to="/career">
         Career
       </NavLink>
-
-      <NavLink className={styles.link} to="/blog">
+      <a className={styles.link} href="https://blog.hmsajal.com">
         Blog
-      </NavLink>
+      </a>
     </nav>
   );
 }

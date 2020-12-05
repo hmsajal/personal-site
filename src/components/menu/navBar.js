@@ -35,10 +35,10 @@ const DrawerChild = (props) => (
       <CloseIcon style={{ fontSize: 34 }} />
     </ButtonBase>
     <List className={styles.list}>
-      {["Bio", "Career", "Blog"].map((text, index) => (
+      {["Bio", "Career"].map((text, index) => (
         <NavLink
-          key={text}
-          to={`/${text}`}
+          key={index}
+          to={`${text}`}
           onClick={() => props.toggleDrawer()}
         >
           <div className={styles.iconText}>
@@ -52,6 +52,17 @@ const DrawerChild = (props) => (
           </div>
         </NavLink>
       ))}
+      <a href="https://blog.hmsajal.com" >
+        <div className={styles.iconText}>
+          <span>
+            <FontAwesomeIcon
+              icon={faRss}
+              style={{ fontSize: "22px", color: "#c42" }}
+            />
+          </span>
+          <span>Blog</span>
+        </div>
+      </a>
     </List>
   </div>
 );
