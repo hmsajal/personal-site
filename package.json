@@ -40,7 +40,7 @@
     "dev": "webpack-dev-server --mode=development",
     "webpack-dev-server": "webpack-dev-server",
     "prod": "webpack --mode=production",
-    "clean": "rm -rf build"
+    "clean": "rm -rf build/*"
   },
   "eslintConfig": {
     "extends": "react-app"
