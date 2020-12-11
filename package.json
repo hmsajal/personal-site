@@ -39,7 +39,8 @@
     "port": "8080",
     "dev": "webpack-dev-server --mode=development",
     "webpack-dev-server": "webpack-dev-server",
-    "prod": "webpack --mode=production"
+    "prod": "webpack --mode=production",
+    "clean": "rm -rf build"
   },
   "eslintConfig": {
     "extends": "react-app"
