@@ -1,37 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom'
 
-import styles from "./home.module.scss";
-import Nav from "../menu/navBar";
-import HomeInfo from "./homeInfo";
-import ProfileLinks from "../common/profileLinks";
-import SButton from "../common/sbutton";
+import styles from './home.module.scss'
 
-function Home() {
-  return (
-    <div className={styles.homeDiv}>
-      <div className={styles.nameNavDiv}>
-        <div className={styles.name}>hmsajal</div>
-        <Nav />
-      </div>
-      <div className={styles.infoDiv}>
-        <HomeInfo />
-      </div>
-      <div className={styles.buttons}>
-        <SButton
-          url="https://drive.google.com/file/d/1EVu-E7OASiWEqWnnZegXnB0zMpJHcPUj/view?usp=sharing"
-          text="Resume"
-          buttonClass={styles.resumeButton}
-        />
-        <Link to="/bio/contact">
-          <button className={styles.contactButton}>Contact</button>
-        </Link>
-      </div>
-      <div className={styles.prolinkDiv}>
-        <ProfileLinks icolor="gray" iconSize={22} width="320px" />
-      </div>
-    </div>
-  );
-}
+const Home = () => {
+    return (
+        <div className={styles.outerDiv}>
+            <div className={styles.main}>
+                <h2 className={styles.title}>Hasan Mahmud Sajal</h2>
+                <div className={styles.menu}>
+                    <Link to="/bio">Bio</Link>
+                    <Link to="/career">Career</Link>
+                    <a href="https://blog.hmsajal.com">Blog</a>
+                </div>
+                <div className={styles.social}></div>
+                <div className={styles.para}>
+                    Hi, I am Hasan Mahmud Sajal. I am a front-end software engineer and love to
+                    code in JavaScript. This page is the gateway to all my online portfolios,
+                    profiles and my other online activities. The links I have provided in this page
+                    are important because you'll get to know different aspects of me by clicking on
+                    different links in this page. If you want to contact me directly please
+                    <a href="mailto:sajal.hm@gmail.com"> email</a> me.
+                </div>
+            </div>
+        </div>
+    )
+};
 
-export default Home;
+export default Home
