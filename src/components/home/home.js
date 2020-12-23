@@ -15,12 +15,11 @@ const Home = () => {
                 </div>
                 <div className={styles.social}></div>
                 <div className={styles.para}>
-                    Hi, I am Hasan Mahmud Sajal. I am a front-end software engineer and love to
-                    code in JavaScript. This page is the gateway to all my online portfolios,
-                    profiles and my other online activities. The links I have provided in this page
-                    are important because you'll get to know different aspects of me by clicking on
-                    different links in this page. If you want to contact me directly please
-                    <a href="mailto:sajal.hm@gmail.com"> email</a> me.
+                    Hi, I am Hasan Mahmud Sajal. I am a front-end web developer and JavaScript is my 
+                    de facto programming language for developing applications. This page is a gateway to 
+                    all of my online portfolios. You'll get to know different aspects of me by clicking 
+                    on different links in this page. Please <a href="mailto:sajal.hm@gmail.com">mail me</a>, 
+                    if you want to contact directly.
                 </div>
             </div>
         </div>
