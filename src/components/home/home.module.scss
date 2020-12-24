@@ -30,13 +30,11 @@
         width: 58%; 
     }    
     @include mqCommon(1000px){
-        margin-left:200px;  
-        padding-top:130px;          
+        margin-left:200px;                  
         width: 52%; 
     }
     @include mqCommon(1200px){
-        margin-left:250px;  
-        padding-top:140px;          
+        margin-left:250px;                  
         width: 50%; 
     }
 }
@@ -87,7 +85,11 @@
     font-size:18px;
     line-height: 30px;
     word-spacing: 8px;        
-    
+    a{
+        &:hover{
+            text-decoration:underline;
+        }
+    }
      @include mqCommon(800px){
         font-size:20px;       
         line-height: 33px;       
