@@ -1,19 +1,25 @@
 import React from "react";
 
-import { ButtonBase } from "@material-ui/core";
+import { ButtonBase, Drawer } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
-import MyDrawer from "./myDrawer";
+import DrawerInside from "./drawerInside";
 
 export default function NavBar() {
-  let [state, setState] = React.useState(false);
+  let [drawerState, setDrawerState] = React.useState(false);
 
   return (
     <React.Fragment>
-      <ButtonBase onClick={() => setState(true)}>
+      <ButtonBase onClick={() => setDrawerState(true)}>
         <MenuIcon style={{ fontSize: 28 }} />
       </ButtonBase>
-      <MyDrawer drawerState={state} />
+      <Drawer
+        open={drawerState}
+        anchor="top"
+        onClose={() => setDrawerState(false)}
+      >
+        <DrawerInside setDrawer={(state) => setDrawerState(state)} />
+      </Drawer>
     </React.Fragment>
   );
 }
