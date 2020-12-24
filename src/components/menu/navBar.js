@@ -1,67 +1,19 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
-import { Drawer, List, ButtonBase } from "@material-ui/core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { ButtonBase } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close";
-import { faUser } from "@fortawesome/free-regular-svg-icons";
-import { faCode, faRss } from "@fortawesome/free-solid-svg-icons";
 
-import styles from "./navBar.module.css";
+import MyDrawer from "./myDrawer";
 
 export default function NavBar() {
-  let [drawerState, setState] = React.useState(false);
+  let [state, setState] = React.useState(false);
 
   return (
     <React.Fragment>
       <ButtonBase onClick={() => setState(true)}>
         <MenuIcon style={{ fontSize: 28 }} />
       </ButtonBase>
-      <Drawer open={drawerState} anchor="top" onClose={() => setState(false)}>
-        <DrawerChild toggleDrawer={() => setState(false)} />
-      </Drawer>
+      <MyDrawer drawerState={state} />
     </React.Fragment>
   );
 }
-
-const LinkItem = ({ index, text }) => {
-  return (<div className={styles.iconText}>
-    <span>
-      <FontAwesomeIcon
-        icon={index === 0 ? faUser : index === 1 ? faCode : faRss}
-        style={{ fontSize: "22px", color: "#c42" }}
-      />
-    </span>
-    <span>{text}</span>
-  </div>)
-}
-
-const DrawerChild = (props) => (
-  <div className={styles.child}>
-    <ButtonBase
-      style={{ margin: "50px 0px" }}
-      onClick={() => props.toggleDrawer()}
-    >
-      <CloseIcon style={{ fontSize: 34 }} />
-    </ButtonBase>
-    <List className={styles.list}>
-      {["bio", "career", "blog"].map((text, index) => (
-        text === "blog"
-          ?
-          <a href="https://blog.hmsajal.com">
-            <LinkItem index={index} text={text} />
-          </a>
-          :
-          <NavLink
-            key={index}
-            to={`/${text}`}
-            onClick={() => props.toggleDrawer()}
-          >
-            <LinkItem index={index} text={text} />
-          </NavLink>
-      ))}
-    </List>
-  </div>
-);
